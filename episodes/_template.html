@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex vs Blob · Ep. N TITLE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<!--
+  NEW EPISODE TEMPLATE
+  1. Copy this file to episodes/00N-short-name.html (don't keep the underscore).
+  2. Change data-episode below, the <title>, and the episode line in the header.
+  3. Write your panels. --i is the order a panel appears (0,1,2,3);
+     --b is the order of bubbles inside a panel (0,1).
+  4. Add one line to episodes.js. Done.
+-->
+<body data-root="../" data-episode="2">
+<script src="../shared/characters.js"></script>
+
+<div class="wrap play" id="comic">
+  <header>
+    <div>
+      <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
+      <p class="ep">Episode 2 · Episode Title<small>An internal conflict, one page at a time.</small></p>
+    </div>
+    <button type="button" id="replay">▶ Replay</button>
+  </header>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+
+  <main class="page">
+    <!-- PANEL 1: wide panel, outside Dan -->
+    <section class="panel wide" style="--i:0" aria-label="Panel 1">
+      <div class="caption">Caption: where and when.</div>
+      <div class="bubbles">
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>Dan says something confidently wrong.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Describe the picture">
+        <rect width="800" height="230" fill="#FFFEF8"/>
+        <g transform="translate(400,88)"><use href="#danBody"/></g>
+      </svg>
+    </section>
+
+    <!-- PANEL 2: inside Dan -->
+    <section class="panel inside" style="--i:1" aria-label="Panel 2">
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Flex gets excited.</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Blob is sarcastic.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Describe the picture">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <g transform="translate(92,160)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexHappy"/></g></g>
+        <g transform="translate(305,172)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/></g></g>
+      </svg>
+    </section>
+
+    <!-- PANEL 3: inside Dan -->
+    <section class="panel inside" style="--i:2" aria-label="Panel 3">
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Flex panics.</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Blob delivers the punchline.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Describe the picture">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <g transform="translate(88,162)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
+        <g transform="translate(308,174)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobShades"/></g></g>
+      </svg>
+    </section>
+  </main>
+
+  <aside class="myth" aria-label="Myth buster">
+    <h2>MYTH BUSTED</h2>
+    <p><b>Myth:</b> The popular belief.</p>
+    <p><b>Reality:</b> What's actually true, in one or two sentences.</p>
+  </aside>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+</div>
+
+<script src="../episodes.js"></script>
+<script src="../shared/site.js"></script>
+</body>
+</html>

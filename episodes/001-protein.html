@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex vs Blob · Ep. 1 The Protein Cookie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body data-root="../" data-episode="1">
+<script src="../shared/characters.js"></script>
+
+<div class="wrap play" id="comic">
+  <header>
+    <div>
+      <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
+      <p class="ep">Episode 1 · The Protein Cookie<small>An internal conflict, one page at a time.</small></p>
+    </div>
+    <button type="button" id="replay">▶ Replay</button>
+  </header>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+
+  <main class="page">
+    <!-- PANEL 1 -->
+    <section class="panel wide" style="--i:0" aria-label="Panel 1">
+      <div class="caption">Day 12 of “getting shredded.” Supermarket, aisle 7.</div>
+      <div class="bubbles">
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>“High protein”? That's basically broccoli. In cookie form.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan holds up a box of high protein cookies in a supermarket aisle, eyes sparkling">
+        <rect width="800" height="230" fill="url(#shelf)"/>
+        <rect y="200" width="800" height="30" fill="#CFC6BC"/>
+        <g transform="translate(400,88)">
+          <use href="#danBody"/>
+          <path d="M-18 -4 l4 -8 l4 8 l-8 -5 h8z M10 -4 l4 -8 l4 8 l-8 -5 h8z" fill="#FFC83D" stroke="#17131A" stroke-width="1.5"/>
+          <path d="M-10 12 Q0 22 12 12" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M36 50 Q64 30 70 -2" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <path d="M36 50 Q64 30 70 -2" stroke="#17131A" stroke-width="20" fill="none" stroke-linecap="round" opacity="0" />
+          <g transform="translate(78,-40) rotate(-8)">
+            <rect x="-44" y="-30" width="88" height="60" rx="3" fill="#1E9C97" stroke="#17131A" stroke-width="4"/>
+            <text x="0" y="-7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8">HIGH</text>
+            <text x="0" y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8">PROTEIN!</text>
+            <text x="0" y="25" text-anchor="middle" font-family="Kalam, cursive" font-size="8" fill="#fff">double choc cookies</text>
+          </g>
+          <circle cx="70" cy="-2" r="10" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
+        </g>
+        <g fill="#FFC83D" stroke="#17131A" stroke-width="2">
+          <path class="spark" d="M540 30 l5 12 l12 5 l-12 5 l-5 12 l-5 -12 l-12 -5 l12 -5z"/>
+          <path class="spark" d="M584 90 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
+          <path class="spark" d="M430 22 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3z"/>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 2 -->
+    <section class="panel inside" style="--i:1" aria-label="Panel 2">
+      <div class="caption">Meanwhile, inside Dan.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><em>PROTEIN INBOUND!</em> He's finally building me a home gym!</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Zoom in on the back, champ. 6 grams of protein. 31 grams of sugar.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex cheers while Blob reads the nutrition label on Dan's eye-cam through a magnifying glass">
+        <use href="#gutWall" transform="translate(0,0) scale(.5,1)"/>
+        <g transform="translate(118,14)">
+          <rect width="164" height="112" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
+          <rect x="10" y="10" width="144" height="92" rx="4" fill="#DDF4F2"/>
+          <text x="82" y="-3" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" letter-spacing="1">EYE-CAM · LIVE</text>
+          <rect x="30" y="16" width="104" height="80" fill="#fff" stroke="#17131A" stroke-width="2"/>
+          <text x="36" y="30" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#17131A">Nutrition Facts</text>
+          <path d="M34 35 H130" stroke="#17131A" stroke-width="3"/>
+          <text x="36" y="50" font-family="Arial, sans-serif" font-size="10" fill="#17131A">Protein</text>
+          <text x="128" y="50" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#17131A">6 g</text>
+          <path d="M34 56 H130" stroke="#17131A" stroke-width="1"/>
+          <rect x="33" y="60" width="98" height="16" fill="#FFE7A1"/>
+          <text x="36" y="72" font-family="Arial, sans-serif" font-size="10" fill="#17131A">Sugars</text>
+          <text x="128" y="72" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#E23A4E">31 g</text>
+          <path d="M34 80 H130" stroke="#17131A" stroke-width="1"/>
+          <text x="36" y="91" font-family="Arial, sans-serif" font-size="8" fill="#17131A">Calories 420</text>
+        </g>
+        <g transform="translate(92,160)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexHappy"/></g></g>
+        <g transform="translate(305,172)">
+          <g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/></g>
+          <path d="M-70 26 L-86 -2" stroke="#6B4A2A" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="-94" cy="-16" r="16" fill="#DDF4F2" fill-opacity=".6" stroke="#17131A" stroke-width="4"/>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 3 -->
+    <section class="panel inside" style="--i:2" aria-label="Panel 3">
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>But the front says <em>HIGH PROTEIN.</em> In CAPITALS!</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Sweetie, that's a cookie wearing a gym shirt. Capital letters are free.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex panics and points at the screen, which shows a cookie wearing a tank top. Blob looks unimpressed.">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <g transform="translate(128,18)">
+          <rect width="144" height="104" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
+          <rect x="10" y="10" width="124" height="84" rx="4" fill="#DDF4F2"/>
+          <g transform="translate(72,56)">
+            <use href="#cookie" transform="scale(1.9)"/>
+            <path d="M-20 12 L-14 -2 L-8 -2 Q0 6 8 -2 L14 -2 L20 12 L18 30 L-18 30 Z" fill="#E23A4E" stroke="#17131A" stroke-width="3" stroke-linejoin="round"/>
+            <text x="0" y="24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#fff">GYM</text>
+            <circle cx="-9" cy="-18" r="2.5" fill="#17131A"/><circle cx="9" cy="-18" r="2.5" fill="#17131A"/>
+            <path d="M-6 -10 Q0 -6 6 -10" stroke="#17131A" stroke-width="2" fill="none"/>
+          </g>
+        </g>
+        <g transform="translate(88,162)">
+          <g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g>
+        </g>
+        <g transform="translate(308,174)">
+          <g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/>
+            <path d="M-40 30 Q0 14 40 30" stroke="#17131A" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 4 -->
+    <section class="panel wide" style="--i:3" aria-label="Panel 4">
+      <div class="caption">Later: two cookies and a “post-workout” shake. There was no workout.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Wait… protein builds muscle <em>by itself,</em> right? We don't actually have to <em>LIFT?</em></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>You wait for the protein. I'll take the extra calories. I'm open 24/7.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan chugs a giant shake on the couch while inside him Flex sweats and Blob relaxes in sunglasses next to a Storage sign">
+        <rect width="310" height="240" fill="#FFFEF8"/>
+        <rect x="18" y="150" width="270" height="70" rx="14" fill="#9C6ADE" stroke="#17131A" stroke-width="4"/>
+        <rect x="18" y="120" width="270" height="44" rx="14" fill="#B38BEA" stroke="#17131A" stroke-width="4"/>
+        <g transform="translate(150,82)">
+          <use href="#danBody"/>
+          <path d="M-8 6 Q0 12 8 6" stroke="#17131A" stroke-width="3" fill="none"/>
+          <path d="M-18 -6 L-8 -4 M8 -4 L18 -6" stroke="#17131A" stroke-width="3" stroke-linecap="round"/>
+          <g transform="translate(26,-10) rotate(-55)">
+            <rect x="-15" y="-60" width="30" height="62" rx="4" fill="#fff" stroke="#17131A" stroke-width="4"/>
+            <rect x="-17" y="-72" width="34" height="14" rx="3" fill="#1E9C97" stroke="#17131A" stroke-width="4"/>
+            <rect x="-15" y="-40" width="30" height="42" fill="#C98A4B" opacity=".55"/>
+          </g>
+          <use href="#cookie" transform="translate(-52,62)"/>
+          <use href="#cookie" transform="translate(-64,82) scale(.8)"/>
+        </g>
+        <g class="sfx"><text x="222" y="36" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="2" transform="rotate(-8 222 36)">GLUG GLUG</text></g>
+
+        <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
+        <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
+        <g transform="translate(470,160)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
+        <g transform="translate(700,52)">
+          <rect x="-58" y="-26" width="116" height="40" fill="#FFFEF8" stroke="#17131A" stroke-width="3" transform="rotate(4)"/>
+          <text x="0" y="-4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" transform="rotate(4)" letter-spacing="1">STORAGE</text>
+          <text x="0" y="9" text-anchor="middle" font-family="Kalam, cursive" font-size="10" fill="#E23A4E" transform="rotate(4)">no limit · no questions</text>
+          <path d="M0 14 V60" stroke="#17131A" stroke-width="4"/>
+        </g>
+        <g transform="translate(640,170)">
+          <g class="blob-idle"><use href="#blobBody"/><use href="#blobShades"/></g>
+          <rect x="54" y="4" width="22" height="30" rx="3" fill="#fff" stroke="#17131A" stroke-width="3"/>
+          <path d="M66 4 L60 -22 L42 -2" stroke="#E23A4E" stroke-width="3" fill="none"/>
+          <text x="65" y="23" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="8" fill="#17131A">kcal</text>
+        </g>
+      </svg>
+    </section>
+  </main>
+
+  <aside class="myth" aria-label="Myth buster">
+    <h2>MYTH BUSTED</h2>
+    <p><b>Myth:</b> “High protein” on the front of the box means it's healthy.</p>
+    <p><b>Reality:</b> turn the box around. Protein helps muscle repair after training, but it doesn't replace the training. Extra calories still land somewhere. (Ask Blob.)</p>
+  </aside>
+  <p class="foot">Next week: “I'll start Monday.”</p>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+</div>
+
+<script src="../episodes.js"></script>
+<script src="../shared/site.js"></script>
+</body>
+</html>
