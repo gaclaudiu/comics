@@ -5,4 +5,6 @@ window.EPISODES = [
     teaser: "A cookie wearing a gym shirt walks into Dan's shopping basket." },
   { num: 2, title: "Muscle Fever", file: "002-muscle-fever.html", date: "2026-10-05",
     teaser: "Dan's first leg day. Two days later, the stairs have opinions." },
+  { num: 3, title: "The CrossFit War", file: "003-crossfit-war.html", date: "2026-10-12",
+    teaser: "Dan joins CrossFit. Flex and Blob wake up in a war nobody declared." },
 ];
