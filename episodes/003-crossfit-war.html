@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex vs Blob · Ep. 3 The CrossFit War</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  /* episode-only tweaks */
+  .three .bubble{flex:1 1 28%;max-width:none}
+  .alarm{animation:alarm .8s steps(2,end) infinite}
+  @keyframes alarm{50%{opacity:0}}
+  .boom{animation:boom 1.1s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+  .b2 .boom{animation-delay:.35s}.b3 .boom{animation-delay:.7s}
+  @keyframes boom{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.12) rotate(6deg)}}
+  .wave{animation:wave 1s ease-in-out infinite;transform-box:fill-box;transform-origin:0% 100%}
+  @keyframes wave{50%{transform:skewY(-8deg) scaleX(.9)}}
+</style>
+</head>
+<body data-root="../" data-episode="3">
+<script src="../shared/characters.js"></script>
+
+<!-- props used only in this episode -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="helmetFlex">
+      <path d="M-44 -40 Q-46 -92 0 -92 Q46 -92 44 -40 Z" fill="#6F7D3C" stroke="#17131A" stroke-width="4"/>
+      <path d="M-54 -40 H54" stroke="#17131A" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-20 -76 q6 -6 12 0 M4 -70 q6 -6 12 0" stroke="#4F5A28" stroke-width="3" fill="none"/>
+    </g>
+    <g id="helmetBlob">
+      <path d="M-46 -30 Q-48 -84 0 -84 Q48 -84 46 -30 Z" fill="#6F7D3C" stroke="#17131A" stroke-width="4"/>
+      <path d="M-56 -30 H56" stroke="#17131A" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-18 -66 q6 -6 12 0 M8 -58 q6 -6 12 0" stroke="#4F5A28" stroke-width="3" fill="none"/>
+    </g>
+    <g id="blobWorried">
+      <circle cx="-16" cy="-6" r="10" fill="#fff" stroke="#17131A" stroke-width="3"/>
+      <circle cx="16" cy="-6" r="10" fill="#fff" stroke="#17131A" stroke-width="3"/>
+      <circle cx="-16" cy="-4" r="3" fill="#17131A"/><circle cx="16" cy="-4" r="3" fill="#17131A"/>
+      <path d="M-28 -24 L-10 -18 M28 -24 L10 -18" stroke="#17131A" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M-14 20 q4 -6 8 0 q4 6 8 0 q4 -6 8 0" stroke="#17131A" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M40 -22 q6 10 0 14 q-6 -4 0 -14z" fill="#8FD3F4" stroke="#17131A" stroke-width="2"/>
+    </g>
+    <g id="kettlebell">
+      <path d="M-12 -18 Q-12 -34 0 -34 Q12 -34 12 -18" stroke="#17131A" stroke-width="6" fill="none"/>
+      <circle r="20" fill="#2A2530" stroke="#17131A" stroke-width="3"/>
+      <text y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#FFC83D">24kg</text>
+    </g>
+    <g id="sandbag">
+      <rect x="-30" y="-14" width="60" height="28" rx="12" fill="#C9B48A" stroke="#17131A" stroke-width="3"/>
+      <path d="M-18 -4 h8 M6 4 h10" stroke="#9C865C" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <polygon id="star" points="36.0,0.0 20.3,5.4 31.2,18.0 14.8,14.8 18.0,31.2 5.4,20.3 0.0,36.0 -5.4,20.3 -18.0,31.2 -14.8,14.8 -31.2,18.0 -20.3,5.4 -36.0,0.0 -20.3,-5.4 -31.2,-18.0 -14.8,-14.8 -18.0,-31.2 -5.4,-20.3 -0.0,-36.0 5.4,-20.3 18.0,-31.2 14.8,-14.8 31.2,-18.0 20.3,-5.4" fill="#FFC83D" stroke="#17131A" stroke-width="3" stroke-linejoin="round"/>
+    <g id="whiteFlag">
+      <path d="M0 0 V-74" stroke="#6B4A2A" stroke-width="4" stroke-linecap="round"/>
+      <path class="wave" d="M0 -74 q18 -8 38 0 q-6 12 0 24 q-20 -8 -38 0 Z" fill="#fff" stroke="#17131A" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="wrap play" id="comic">
+  <header>
+    <div>
+      <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
+      <p class="ep">Episode 3 · The CrossFit War<small>An internal conflict, one page at a time.</small></p>
+    </div>
+    <button type="button" id="replay">▶ Replay</button>
+  </header>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+
+  <main class="page">
+    <!-- PANEL 1 -->
+    <section class="panel wide" style="--i:0" aria-label="Panel 1">
+      <div class="caption">Day 20. Dan joined CrossFit 40 minutes ago. He has told 11 people.</div>
+      <div class="bubbles">
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>It's not a gym, it's a <em>BOX.</em> It's not a workout, it's a <em>WOD.</em> And I'm in a <em>COMMUNITY</em> now.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan in a CrossFit box lifts a kettlebell in a cloud of chalk. The whiteboard lists a brutal workout called The Destroyer.">
+        <rect width="800" height="230" fill="#DCD8E0"/>
+        <path d="M0 60 H800 M0 120 H800" stroke="#C9C3CF" stroke-width="3"/>
+        <rect y="200" width="800" height="30" fill="#3A3540"/>
+        <path d="M0 200 H800" stroke="#17131A" stroke-width="4"/>
+        <g transform="translate(40,26) rotate(-1.5)">
+          <rect width="210" height="140" fill="#fff" stroke="#17131A" stroke-width="4"/>
+          <text x="105" y="26" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#17131A" letter-spacing="1">WOD: THE DESTROYER</text>
+          <text x="16" y="52" font-family="Kalam, cursive" font-weight="700" font-size="15" fill="#E23A4E">21-15-9 of:</text>
+          <text x="16" y="72" font-family="Kalam, cursive" font-size="14" fill="#17131A">• burpees • thrusters</text>
+          <text x="16" y="91" font-family="Kalam, cursive" font-size="14" fill="#17131A">• box jumps • rope climbs</text>
+          <text x="16" y="110" font-family="Kalam, cursive" font-size="14" fill="#17131A">• then? MORE burpees</text>
+          <text x="16" y="129" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#1E9C97">time cap: till you see ancestors</text>
+        </g>
+        <g transform="translate(640,0)">
+          <path d="M0 200 V30 M130 200 V30 M-8 34 H138" stroke="#17131A" stroke-width="8" stroke-linecap="round"/>
+          <path d="M65 34 q6 40 -2 80 q-6 40 4 80" stroke="#C9A06B" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(540,160)">
+          <rect x="-34" y="0" width="68" height="40" fill="#C98A4B" stroke="#17131A" stroke-width="4"/>
+          <text x="0" y="27" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A">BOX</text>
+        </g>
+        <g fill="#fff" stroke="#17131A" stroke-width="2" opacity=".95">
+          <circle cx="468" cy="44" r="14"/><circle cx="488" cy="34" r="12"/><circle cx="490" cy="56" r="10"/><circle cx="452" cy="30" r="8"/>
+        </g>
+        <g transform="translate(400,88)">
+          <path d="M-18 112 L-22 128 M18 112 L22 128" stroke="#17131A" stroke-width="7" stroke-linecap="round"/>
+          <use href="#danBody"/>
+          <path d="M-32 -12 Q0 -24 32 -12 L31 -4 Q0 -16 -31 -4 Z" fill="#E23A4E" stroke="#17131A" stroke-width="2.5"/>
+          <path d="M-20 4 L-8 8 M8 8 L20 4" stroke="#17131A" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="-12" cy="10" r="3" fill="#17131A"/><circle cx="12" cy="10" r="3" fill="#17131A"/>
+          <path d="M-14 17 H14 Q10 28 0 28 Q-10 28 -14 17 Z" fill="#fff" stroke="#17131A" stroke-width="3"/>
+          <path d="M36 50 Q58 20 68 -18" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <path d="M-36 50 Q-56 40 -60 60" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <use href="#kettlebell" transform="translate(72,-52)"/>
+          <circle cx="68" cy="-20" r="10" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 2 -->
+    <section class="panel inside" style="--i:1" aria-label="Panel 2">
+      <div class="caption">Inside Dan. 0.3 seconds into the warm-up.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><em>WE'RE UNDER ATTACK!</em> Nobody declared war! I had a schedule! Chest on Mondays!</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Burpees, kettlebells AND a rope. At the same time. There are conventions against this.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Alarm lights flash red inside Dan. Flex and Blob wear army helmets. Flex panics while Blob holds a map.">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".22"/>
+        <g transform="translate(200,26)">
+          <path class="alarm" d="M-30 -6 L-70 -24 M30 -6 L70 -24 M-34 10 L-74 14 M34 10 L74 14" stroke="#E23A4E" stroke-width="5" stroke-linecap="round"/>
+          <path d="M-18 14 Q-18 -16 0 -16 Q18 -16 18 14 Z" fill="#E23A4E" stroke="#17131A" stroke-width="3"/>
+          <rect x="-24" y="12" width="48" height="10" fill="#2A2530" stroke="#17131A" stroke-width="3"/>
+          <text x="0" y="48" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#17131A" letter-spacing="1">DEFCON: BURPEE</text>
+        </g>
+        <g transform="translate(96,168)">
+          <g class="shake"><use href="#flexBody"/><use href="#flexPanic"/><use href="#helmetFlex"/></g>
+        </g>
+        <g transform="translate(305,176)">
+          <g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/><use href="#helmetBlob"/></g>
+          <g transform="translate(-92,6) rotate(-10)">
+            <rect x="-26" y="-20" width="52" height="40" fill="#F3EFE6" stroke="#17131A" stroke-width="3"/>
+            <path d="M-26 -6 H26 M-8 -20 V20 M10 -20 V20" stroke="#C9C3CF" stroke-width="1.5"/>
+            <path d="M-18 12 L-4 2 L6 8 L18 -10" stroke="#E23A4E" stroke-width="2.5" fill="none" stroke-dasharray="4 3"/>
+            <path d="M14 -14 l8 8 M22 -14 l-8 8" stroke="#E23A4E" stroke-width="3" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 3 -->
+    <section class="panel inside" style="--i:2" aria-label="Panel 3">
+      <div class="caption">Minute 4. The trenches.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Blob… <em>truce?</em></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Truce. First time in history the muscle and the fat agree: this man needs a babysitter.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex and Blob hide side by side behind sandbags while explosions labelled burpee, thruster and box jump go off overhead.">
+        <rect width="400" height="250" fill="#F8D3CD"/>
+        <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".14"/>
+        <g transform="translate(70,44)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A">BURPEE!</text></g></g>
+        <g class="b2" transform="translate(330,50) scale(1.1)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#17131A">THRUSTER!</text></g></g>
+        <g class="b3" transform="translate(200,82) scale(.85)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A">BOX JUMP!</text></g></g>
+        <g transform="translate(130,164)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/><use href="#helmetFlex"/></g></g>
+        <g transform="translate(272,172)"><g class="shake"><use href="#blobBody"/><use href="#blobWorried"/><use href="#helmetBlob"/></g></g>
+        <use href="#sandbag" transform="translate(40,226)"/><use href="#sandbag" transform="translate(100,226)"/><use href="#sandbag" transform="translate(160,226)"/>
+        <use href="#sandbag" transform="translate(220,226)"/><use href="#sandbag" transform="translate(280,226)"/><use href="#sandbag" transform="translate(340,226)"/>
+        <use href="#sandbag" transform="translate(70,202)"/><use href="#sandbag" transform="translate(130,204)"/><use href="#sandbag" transform="translate(250,204)"/><use href="#sandbag" transform="translate(310,202)"/>
+        <use href="#sandbag" transform="translate(0,204)"/><use href="#sandbag" transform="translate(380,204)"/>
+      </svg>
+    </section>
+
+    <!-- PANEL 4 -->
+    <section class="panel wide three" style="--i:3" aria-label="Panel 4">
+      <div class="caption">Minute 12 of 12.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Best. Workout. EVER. <em>Same time tomorrow!</em></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Tomorrow?! We haven't even buried <em>today</em> yet!</p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Relax. He'll quit in three weeks. He'll just never stop talking about it.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan lies flat on the floor in a puddle of sweat and chalk under a timer reading 12:00. Inside, Flex and Blob both wave white flags.">
+        <rect width="310" height="240" fill="#DCD8E0"/>
+        <rect y="200" width="310" height="40" fill="#3A3540"/>
+        <path d="M0 200 H310" stroke="#17131A" stroke-width="4"/>
+        <g transform="translate(150,26)">
+          <rect x="-58" y="0" width="116" height="40" rx="4" fill="#17131A"/>
+          <text x="0" y="31" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="30" fill="#E23A4E">12:00</text>
+        </g>
+        <ellipse cx="160" cy="206" rx="120" ry="12" fill="#8FD3F4" stroke="#17131A" stroke-width="2.5" opacity=".9"/>
+        <path d="M232 196 L270 190 M232 204 L272 206" stroke="#17131A" stroke-width="7" stroke-linecap="round"/>
+        <g transform="translate(70,190) scale(.82) rotate(-90)">
+          <use href="#danBody"/>
+          <path d="M-20 -12 q6 -8 12 0 q-6 8 -12 0 M8 -12 q6 -8 12 0 q-6 8 -12 0" stroke="#17131A" stroke-width="3" fill="none"/>
+          <path d="M-10 10 Q0 20 10 10" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        </g>
+        <g fill="#fff" stroke="#17131A" stroke-width="2"><circle cx="48" cy="150" r="8"/><circle cx="60" cy="140" r="6"/><circle cx="250" cy="176" r="7"/></g>
+        <text x="90" y="120" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A" transform="rotate(-10 90 120)">wheeze…</text>
+
+        <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
+        <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
+        <g transform="translate(480,168)">
+          <use href="#whiteFlag" transform="translate(72,-58)"/>
+          <g class="shake"><use href="#flexBody"/><use href="#flexPanic"/><use href="#helmetFlex"/></g>
+        </g>
+        <g transform="translate(680,176)">
+          <use href="#whiteFlag" transform="translate(-80,14) scale(-1,1)"/>
+          <g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/><use href="#helmetBlob"/></g>
+        </g>
+        <g transform="translate(704,34) rotate(-3)">
+          <rect x="-62" y="-18" width="124" height="34" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
+          <text x="0" y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" letter-spacing="1">CEASEFIRE?</text>
+        </g>
+      </svg>
+    </section>
+  </main>
+
+  <aside class="myth" aria-label="Myth buster">
+    <h2>MYTH BUSTED</h2>
+    <p><b>Myth:</b> The harder you go every single day, the faster you get fit.</p>
+    <p><b>Reality:</b> CrossFit isn't the problem. Going from couch to maximum effort every day is. Muscles get stronger while they recover, not while they're being flattened. Scale the workout, learn the technique first, and take rest days. Your joints will send a thank-you card.</p>
+  </aside>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+</div>
+
+<script src="../episodes.js"></script>
+<script src="../shared/site.js"></script>
+</body>
+</html>
