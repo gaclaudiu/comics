@@ -7,4 +7,8 @@ window.EPISODES = [
     teaser: "Dan's first leg day. Two days later, the stairs have opinions." },
   { num: 3, title: "The CrossFit War", file: "003-crossfit-war.html", date: "2026-10-12",
     teaser: "Dan joins CrossFit. Flex and Blob wake up in a war nobody declared." },
+  { num: 4, title: "The Case of the Angry Shoulder", file: "004-shoulder-case.html", date: "2026-10-19",
+    teaser: "Dan's shoulder hurts. Detectives Flex and Blob take the case." },
+  { num: 5, title: "Operation Cheat Day", file: "005-operation-cheat-day.html", date: "2026-10-26",
+    teaser: "Six weeks of clean eating. Flex is thriving. Blob is plotting." },
 ];
