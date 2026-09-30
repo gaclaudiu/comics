@@ -11,4 +11,6 @@ window.EPISODES = [
     teaser: "Dan's shoulder hurts. Detectives Flex and Blob take the case." },
   { num: 5, title: "Operation Cheat Day", file: "005-operation-cheat-day.html", date: "2026-09-29",
     teaser: "Six weeks of clean eating. Flex is thriving. Blob is plotting." },
+  { num: 6, title: "Stick With It", file: "006-stick-with-it.html", date: "2026-09-30",
+    teaser: "Dan tapes his knees like an Olympian. Taking it off is another story." },
 ];
