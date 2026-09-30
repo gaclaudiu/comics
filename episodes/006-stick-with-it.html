@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex vs Blob · Ep. 6 Stick With It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  /* episode-only tweaks */
+  .three .bubble{flex:1 1 28%;max-width:none}
+  .alarm{animation:alarm .8s steps(2,end) infinite}
+  @keyframes alarm{50%{opacity:0}}
+  .march{animation:march .6s steps(2,end) infinite;transform-box:fill-box}
+  @keyframes march{50%{transform:translateY(-3px)}}
+  .fly{animation:fly 1.4s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+  @keyframes fly{0%{transform:translate(0,0) rotate(0)}100%{transform:translate(18px,-22px) rotate(90deg);opacity:0}}
+  .heart{animation:heart 1.2s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+  @keyframes heart{50%{transform:translateY(-6px) scale(1.15)}}
+</style>
+</head>
+<body data-root="../" data-episode="6">
+<script src="../shared/characters.js"></script>
+
+<!-- props used only in this episode -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Dan's shorts and legs (sits under danBody; hips at y 104, feet at y 200) -->
+    <g id="danLegs">
+      <rect x="-34" y="130" width="22" height="66" fill="#F2C29B" stroke="#17131A" stroke-width="3.5"/>
+      <rect x="12" y="130" width="22" height="66" fill="#F2C29B" stroke="#17131A" stroke-width="3.5"/>
+      <path d="M-30 142 l4 -3 M-20 148 l4 -3 M-28 184 l4 -3 M-18 190 l4 -3 M16 144 l4 -3 M26 150 l4 -3 M18 186 l4 -3 M28 190 l4 -3" stroke="#17131A" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="-26" cy="200" rx="16" ry="7" fill="#E23A4E" stroke="#17131A" stroke-width="3"/>
+      <ellipse cx="26" cy="200" rx="16" ry="7" fill="#E23A4E" stroke="#17131A" stroke-width="3"/>
+      <path d="M-46 100 L46 100 L48 138 L6 138 L0 124 L-6 138 L-48 138 Z" fill="#2A2530" stroke="#17131A" stroke-width="3.5" stroke-linejoin="round"/>
+    </g>
+    <g id="kneeTapeL">
+      <path d="M-33 152 L-13 178" stroke="#2E7FD9" stroke-width="7" stroke-linecap="round"/>
+      <path d="M-13 152 L-33 178" stroke="#F2549A" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g id="kneeTapeR">
+      <path d="M13 152 L33 178" stroke="#2E7FD9" stroke-width="7" stroke-linecap="round"/>
+      <path d="M33 152 L13 178" stroke="#F2549A" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g id="danProud">
+      <use href="#danLegs"/><use href="#kneeTapeL"/><use href="#kneeTapeR"/>
+      <path d="M-36 52 Q-62 76 -40 96 M36 52 Q62 76 40 96" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <use href="#danBody"/>
+      <path d="M-18 -4 Q-12 -10 -6 -4 M6 -4 Q12 -10 18 -4" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M-10 12 Q4 20 14 8" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="hairGuy">
+      <g class="march">
+        <path d="M0 0 q-7 -12 0 -24 q7 -12 0 -26" stroke="#17131A" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="-3" cy="-44" r="2.6" fill="#fff" stroke="#17131A" stroke-width="1"/><circle cx="3" cy="-44" r="2.6" fill="#fff" stroke="#17131A" stroke-width="1"/>
+        <path d="M4 -18 H10" stroke="#17131A" stroke-width="2.5"/>
+        <rect x="8" y="-22" width="14" height="11" rx="2" fill="#A67C52" stroke="#17131A" stroke-width="2"/>
+        <path d="M12 -22 v-3 h6 v3" stroke="#17131A" stroke-width="1.8" fill="none"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<div class="wrap play" id="comic">
+  <header>
+    <div>
+      <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
+      <p class="ep">Episode 6 · Stick With It<small>An internal conflict, one page at a time.</small></p>
+    </div>
+    <button type="button" id="replay">▶ Replay</button>
+  </header>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+
+  <main class="page">
+    <!-- PANEL 1 -->
+    <section class="panel wide" style="--i:0" aria-label="Panel 1">
+      <div class="caption">Dan saw an Olympian on TV wearing colourful tape. Now Dan wears colourful tape.</div>
+      <div class="bubbles">
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>Pro-athlete knees. <em>Nothing</em> can hurt me now.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan poses proudly in shorts with bright blue and pink tape crossed over both knees, admiring himself in a gym mirror">
+        <rect width="800" height="230" fill="#E7F1F0"/>
+        <rect y="206" width="800" height="24" fill="#8C8492"/>
+        <path d="M0 206 H800" stroke="#17131A" stroke-width="4"/>
+        <g transform="translate(120,36) rotate(-3)">
+          <rect x="-58" y="0" width="116" height="70" fill="#fff" stroke="#17131A" stroke-width="3"/>
+          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#2E7FD9" letter-spacing="1">KINESIO TAPE</text>
+          <text x="0" y="40" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">“as seen on athletes!”</text>
+          <text x="0" y="58" text-anchor="middle" font-family="Kalam, cursive" font-size="9" fill="#E23A4E">(results not included)</text>
+        </g>
+        <g transform="translate(330,36) scale(.84)">
+          <use href="#danProud"/>
+        </g>
+        <g fill="#FFC83D" stroke="#17131A" stroke-width="2">
+          <path class="spark" d="M268 150 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
+          <path class="spark" d="M396 150 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
+        </g>
+        <g transform="translate(600,14)">
+          <rect x="0" y="0" width="150" height="192" rx="6" fill="#CDE7F3" stroke="#17131A" stroke-width="5"/>
+          <path d="M20 20 L50 0 M20 60 L110 0" stroke="#fff" stroke-width="6" opacity=".7"/>
+          <g transform="translate(75,24) scale(-.72,.72)"><use href="#danProud"/></g>
+        </g>
+      </svg>
+    </section>
+
+    <!-- PANEL 2 -->
+    <section class="panel inside" style="--i:1" aria-label="Panel 2">
+      <div class="caption">Inside Dan's left knee.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>The tape is protecting us! I feel so… <em>supported!</em> Emotionally!</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>It's sticky fabric, champ. The only thing it's holding together is his confidence.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Inside the knee, a giant strip of blue tape runs across the sky. Flex beams with little hearts floating around him while Blob looks unimpressed.">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <g transform="rotate(-10 200 40)">
+          <rect x="-40" y="18" width="480" height="40" fill="#2E7FD9" opacity=".85" stroke="#17131A" stroke-width="3"/>
+          <path d="M-40 30 Q-20 24 0 30 T40 30 T80 30 T120 30 T160 30 T200 30 T240 30 T280 30 T320 30 T360 30 T400 30 T440 30 M-40 46 Q-20 40 0 46 T40 46 T80 46 T120 46 T160 46 T200 46 T240 46 T280 46 T320 46 T360 46 T400 46 T440 46" stroke="#8FC3F7" stroke-width="2" fill="none"/>
+          <text x="210" y="44" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#fff" letter-spacing="2">KINESIO TAPE (MOSTLY DECORATIVE)</text>
+        </g>
+        <g transform="translate(96,166)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexHappy"/></g></g>
+        <g fill="#F2549A" stroke="#17131A" stroke-width="2">
+          <path class="heart" d="M180 110 c-6 -8 -18 -2 -12 8 l12 12 l12 -12 c6 -10 -6 -16 -12 -8z"/>
+          <path class="heart" d="M30 100 c-4 -6 -13 -1 -9 6 l9 9 l9 -9 c4 -7 -5 -12 -9 -6z" style="animation-delay:.4s"/>
+        </g>
+        <g transform="translate(312,176)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/></g></g>
+      </svg>
+    </section>
+
+    <!-- PANEL 3 -->
+    <section class="panel inside" style="--i:2" aria-label="Panel 3">
+      <div class="caption">That evening. Removal time.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Why are all the leg hairs packing suitcases?</p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>He's about to rip it off in one go. Like a magician with a tablecloth. Except the tablecloth is skin.</p>
+      </div>
+      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Red alarm lights flash. A line of tiny leg hairs carrying suitcases marches towards an exit sign while Flex looks alarmed and Blob watches calmly.">
+        <use href="#gutWall" transform="scale(.5,1)"/>
+        <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".2"/>
+        <g transform="translate(200,24)">
+          <rect x="-96" y="-14" width="192" height="30" fill="#17131A"/>
+          <text class="alarm" x="0" y="8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#FFC83D" letter-spacing="1.5">⚠ HAIR EVACUATION ⚠</text>
+        </g>
+        <g transform="translate(348,72)">
+          <rect x="-34" y="-14" width="68" height="28" fill="#3BB273" stroke="#17131A" stroke-width="3"/>
+          <text x="0" y="7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#fff" letter-spacing="1">EXIT →</text>
+        </g>
+        <g transform="translate(66,178) scale(.8)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
+        <use href="#hairGuy" transform="translate(120,214) scale(1)"/>
+        <use href="#hairGuy" transform="translate(146,210) scale(0.9)"/>
+        <use href="#hairGuy" transform="translate(172,216) scale(1.05)"/>
+        <use href="#hairGuy" transform="translate(200,212) scale(0.95)"/>
+        <use href="#hairGuy" transform="translate(226,216) scale(1)"/>
+        <g transform="translate(336,190) scale(.72)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/></g></g>
+      </svg>
+    </section>
+
+    <!-- PANEL 4 -->
+    <section class="panel wide three" style="--i:3" aria-label="Panel 4">
+      <div class="caption">One second later.</div>
+      <div class="bubbles">
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>THE KNEES ARE FINE! <em>EVERYTHING ELSE IS GONE!</em></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Zero knee injuries. One emotional injury.</p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Next time: peel it slowly, in the shower, with a bit of oil. Or keep it forever. Like a tattoo.</p>
+      </div>
+      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan screams as he rips a strip of tape off his knee, leaving a bald stripe. Inside, Flex looks shaken and Blob calmly gives advice while a tiny hair holds a sign reading RIP.">
+        <rect width="310" height="240" fill="#E7F1F0"/>
+        <rect y="214" width="310" height="26" fill="#8C8492"/>
+        <path d="M0 214 H310" stroke="#17131A" stroke-width="4"/>
+        <g transform="translate(92,44) scale(.8)">
+          <use href="#danLegs"/><use href="#kneeTapeL"/>
+          <rect x="14" y="150" width="18" height="30" fill="#FBE6D6"/>
+          <path d="M36 52 Q70 30 84 -8" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <path d="M-36 52 Q-60 64 -64 84" stroke="#4B5BA6" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <use href="#danBody"/>
+          <path d="M-20 -12 L-8 -6 L-20 0 M20 -12 L8 -6 L20 0" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="0" cy="16" rx="11" ry="12" fill="#17131A"/>
+          <path d="M-24 2 q-4 8 0 12 M24 2 q4 8 0 12" stroke="#8FD3F4" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M86 -10 Q136 60 34 158" stroke="#F2549A" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M116 30 l6 -3 M122 50 l6 -2 M122 70 l7 0 M116 90 l6 2 M104 110 l6 3 M88 128 l5 4" stroke="#17131A" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="86" cy="-12" r="10" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
+        </g>
+        <g stroke="#17131A" stroke-width="2.5" stroke-linecap="round">
+          <path class="fly" d="M150 150 q4 -6 0 -12"/><path class="fly" d="M166 136 q4 -6 0 -12" style="animation-delay:.3s"/>
+          <path class="fly" d="M140 126 q4 -6 0 -12" style="animation-delay:.6s"/><path class="fly" d="M176 160 q4 -6 0 -12" style="animation-delay:.9s"/>
+        </g>
+        <g class="sfx"><text x="224" y="196" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="24" fill="#F2549A" stroke="#17131A" stroke-width="1.6" transform="rotate(-6 224 196)">RRRRIIIIPPP!</text></g>
+
+        <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
+        <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
+        <g transform="translate(460,160)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
+        <g transform="translate(580,214)">
+          <use href="#hairGuy"/>
+          <rect x="-30" y="-78" width="36" height="22" fill="#fff" stroke="#17131A" stroke-width="2"/>
+          <path d="M-12 -56 V-40" stroke="#6B4A2A" stroke-width="3"/>
+          <text x="-12" y="-62" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A">RIP</text>
+        </g>
+        <g transform="translate(700,172)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobShades"/></g></g>
+      </svg>
+    </section>
+  </main>
+
+  <aside class="myth" aria-label="Myth buster">
+    <h2>MYTH BUSTED</h2>
+    <p><b>Myth:</b> Colourful kinesio tape protects your knees from injury.</p>
+    <p><b>Reality:</b> the evidence that tape prevents injuries is weak. Some people feel a bit less pain or more confident with it, and that's about it. What actually protects knees: strong legs, good technique and not doubling your workload overnight. To take tape off, soak it with oil or in the shower, hold the skin down, and peel slowly in the direction the hair grows.</p>
+  </aside>
+
+  <nav class="ep-nav" aria-label="Episodes"></nav>
+  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+</div>
+
+<script src="../episodes.js"></script>
+<script src="../shared/site.js"></script>
+</body>
+</html>
