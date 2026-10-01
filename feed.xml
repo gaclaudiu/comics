@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flex vs Blob</title>
+    <link>https://flexandblob.com/</link>
+    <description>The muscle wants gains. The fat wants snacks. Dan wants to believe every label he reads. A weekly webcomic about getting fit, and the myths along the way.</description>
+    <language>en</language>
+    <atom:link href="https://flexandblob.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Wed, 30 Sep 2026 08:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Ep. 7: Hold My Pants</title>
+      <link>https://flexandblob.com/episodes/007-hold-my-pants.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/007-hold-my-pants.html</guid>
+      <pubDate>Wed, 30 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Carp fishing with Michael. The net breaks. Dan&#x27;s grip strength finally matters.</p><p><a href="https://flexandblob.com/episodes/007-hold-my-pants.html"><img src="https://flexandblob.com/images/og/007.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 6: Stick With It</title>
+      <link>https://flexandblob.com/episodes/006-stick-with-it.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/006-stick-with-it.html</guid>
+      <pubDate>Wed, 30 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Dan tapes his knees like an Olympian. Taking it off is another story.</p><p><a href="https://flexandblob.com/episodes/006-stick-with-it.html"><img src="https://flexandblob.com/images/og/006.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 5: Operation Cheat Day</title>
+      <link>https://flexandblob.com/episodes/005-operation-cheat-day.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/005-operation-cheat-day.html</guid>
+      <pubDate>Tue, 29 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Six weeks of clean eating. Flex is thriving. Blob is plotting.</p><p><a href="https://flexandblob.com/episodes/005-operation-cheat-day.html"><img src="https://flexandblob.com/images/og/005.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 4: The Case of the Angry Shoulder</title>
+      <link>https://flexandblob.com/episodes/004-shoulder-case.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/004-shoulder-case.html</guid>
+      <pubDate>Mon, 28 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Dan&#x27;s shoulder hurts. Detectives Flex and Blob take the case.</p><p><a href="https://flexandblob.com/episodes/004-shoulder-case.html"><img src="https://flexandblob.com/images/og/004.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 3: The CrossFit War</title>
+      <link>https://flexandblob.com/episodes/003-crossfit-war.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/003-crossfit-war.html</guid>
+      <pubDate>Sun, 27 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Dan joins CrossFit. Flex and Blob wake up in a war nobody declared.</p><p><a href="https://flexandblob.com/episodes/003-crossfit-war.html"><img src="https://flexandblob.com/images/og/003.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 2: Muscle Fever</title>
+      <link>https://flexandblob.com/episodes/002-muscle-fever.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/002-muscle-fever.html</guid>
+      <pubDate>Sat, 26 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Dan&#x27;s first leg day. Two days later, the stairs have opinions.</p><p><a href="https://flexandblob.com/episodes/002-muscle-fever.html"><img src="https://flexandblob.com/images/og/002.png" alt="" width="600"></a></p>]]></description>
+    </item>
+    <item>
+      <title>Ep. 1: The Protein Cookie</title>
+      <link>https://flexandblob.com/episodes/001-protein.html</link>
+      <guid isPermaLink="true">https://flexandblob.com/episodes/001-protein.html</guid>
+      <pubDate>Fri, 25 Sep 2026 08:00:00 +0000</pubDate>
+      <description><![CDATA[<p>A cookie wearing a gym shirt walks into Dan&#x27;s shopping basket.</p><p><a href="https://flexandblob.com/episodes/001-protein.html"><img src="https://flexandblob.com/images/og/001.png" alt="" width="600"></a></p>]]></description>
+    </item>
+  </channel>
+</rss>

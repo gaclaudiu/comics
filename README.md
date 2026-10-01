@@ -10,6 +10,9 @@ episodes.js             The list of episodes. Add one line per new episode.
 episodes/
   001-protein.html      Episode 1
   _template.html        Starting point for new episodes (not published)
+images/og/              Link-preview images (1200×630) shown when an episode is shared
+tools/build.py          Regenerates preview tags, sitemap.xml, feed.xml, robots.txt
+sitemap.xml, feed.xml   For Google Search Console and RSS readers (generated)
 shared/
   style.css             Comic look, fonts, animations
   characters.js         Flex, Blob, Dan and props, drawn once
@@ -25,7 +28,9 @@ shared/
    ```js
    { num: 2, title: "Your Title", file: "002-your-title.html", date: "2026-10-05", teaser: "One-line hook." },
    ```
-5. Commit and push. GitHub Pages updates in about a minute.
+5. Run `python tools/build.py` to refresh the link-preview tags, `sitemap.xml`, `feed.xml` and `robots.txt`.
+6. Add a preview image at `images/og/<number>.png` (1200×630), e.g. `images/og/008.png`. Claude can render it for you.
+7. Commit and push. GitHub Pages updates in about a minute.
 
 The home page, archive and Previous/Next buttons update on their own.
 
