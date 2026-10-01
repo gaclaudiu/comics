@@ -36,6 +36,39 @@
     }).join('');
   }
 
+  // Share buttons (episode pages only), placed above the bottom navigation
+  if (current) {
+    var navs = document.querySelectorAll('.ep-nav');
+    var bottom = navs[navs.length - 1];
+    var canon = document.querySelector('link[rel="canonical"]');
+    var url = canon ? canon.href : location.href;
+    var ogt = document.querySelector('meta[property="og:title"]');
+    var title = ogt ? ogt.content : document.title;
+    var u = encodeURIComponent(url), t = encodeURIComponent(title);
+    var box = document.createElement('section');
+    box.className = 'share';
+    box.setAttribute('aria-label', 'Share this episode');
+    box.innerHTML =
+      '<p class="share-title">Know a Dan? Send him this.</p>' +
+      '<div class="share-row">' +
+      '<a class="sbtn wa" target="_blank" rel="noopener" href="https://wa.me/?text=' + t + '%20' + u + '">WhatsApp</a>' +
+      '<a class="sbtn fb" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '">Facebook</a>' +
+      '<a class="sbtn xx" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + t + '&url=' + u + '">X</a>' +
+      '<a class="sbtn rd" target="_blank" rel="noopener" href="https://www.reddit.com/submit?url=' + u + '&title=' + t + '">Reddit</a>' +
+      '<button type="button" class="sbtn cp">Copy link</button>' +
+      (navigator.share ? '<button type="button" class="sbtn more">More…</button>' : '') +
+      '</div>';
+    box.querySelector('.cp').addEventListener('click', function (ev) {
+      var b = ev.currentTarget;
+      var done = function () { b.textContent = 'Copied!'; setTimeout(function () { b.textContent = 'Copy link'; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this link:', url); });
+      else window.prompt('Copy this link:', url);
+    });
+    var more = box.querySelector('.more');
+    if (more) more.addEventListener('click', function () { navigator.share({ title: title, url: url }).catch(function () {}); });
+    if (bottom) bottom.parentNode.insertBefore(box, bottom);
+  }
+
   // Replay button
   var btn = document.getElementById('replay');
   if (btn) btn.addEventListener('click', function () {
