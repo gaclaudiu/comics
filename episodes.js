@@ -15,4 +15,6 @@ window.EPISODES = [
     teaser: "Dan tapes his knees like an Olympian. Taking it off is another story." },
   { num: 7, title: "Hold My Pants", file: "007-hold-my-pants.html", date: "2026-09-30",
     teaser: "Carp fishing with Michael. The net breaks. Dan's grip strength finally matters." },
+  { num: 8, title: "Train Like a Pro", file: "008-train-like-a-pro.html", date: "2026-10-01",
+    teaser: "Dan trains with Seba, number 7 in Romania's volleyball first division. It goes exactly as well as you think." },
 ];
