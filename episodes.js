@@ -21,4 +21,6 @@ window.EPISODES = [
     teaser: "Dan waits for motivation. The Brain explains why that never works, and Blob accidentally proves it." },
   { num: 10, title: "Deload Week", file: "010-deload-week.html", date: "2026-10-05",
     teaser: "23 days without rest. Flex is falling apart, the Brain is overheating, and Blob is somehow tired too." },
+  { num: 11, title: "The Village Olympics", file: "011-village-olympics.html", date: "2026-10-05",
+    teaser: "Dan invents Țăran Fit: hoe, scythe and well buckets. Bunica wins every event." },
 ];
