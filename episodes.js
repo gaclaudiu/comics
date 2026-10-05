@@ -19,4 +19,6 @@ window.EPISODES = [
     teaser: "Dan trains with Seba, number 7 in Romania's volleyball first division. It goes exactly as well as you think." },
   { num: 9, title: "Mind Over Mattress", file: "009-mind-over-mattress.html", date: "2026-10-05",
     teaser: "Dan waits for motivation. The Brain explains why that never works, and Blob accidentally proves it." },
+  { num: 10, title: "Deload Week", file: "010-deload-week.html", date: "2026-10-05",
+    teaser: "23 days without rest. Flex is falling apart, the Brain is overheating, and Blob is somehow tired too." },
 ];
