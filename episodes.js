@@ -17,4 +17,6 @@ window.EPISODES = [
     teaser: "Carp fishing with Michael. The net breaks. Dan's grip strength finally matters." },
   { num: 8, title: "Train Like a Pro", file: "008-train-like-a-pro.html", date: "2026-10-01",
     teaser: "Dan trains with Seba, number 7 in Romania's volleyball first division. It goes exactly as well as you think." },
+  { num: 9, title: "Mind Over Mattress", file: "009-mind-over-mattress.html", date: "2026-10-05",
+    teaser: "Dan waits for motivation. The Brain explains why that never works, and Blob accidentally proves it." },
 ];
