@@ -92,9 +92,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 9 · Mind Over Mattress<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 9 · Mind Over Mattress</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -102,11 +102,11 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Week 10. Monday, 6:00 a.m. It's raining. Dan's motivation has called in sick.</div>
+      <div class="caption" data-t="p1.cap">Week 10. Monday, 6:00 a.m. It's raining. Dan's motivation has called in sick.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>I'll go to the gym when I <em>feel motivated.</em> Any day now. Any year now.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">I'll go to the gym when I <em>feel motivated.</em> Any day now. Any year now.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="A rainy dark morning. Dan lies in bed under the blanket glaring at a ringing alarm clock that says 6:00. A battery-style meter on the wall shows motivation at 2 percent.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="A rainy dark morning. Dan lies in bed under the blanket glaring at a ringing alarm clock that says 6:00. A battery-style meter on the wall shows motivation at 2 percent.">
         <rect width="800" height="230" fill="#C9D3E6"/>
         <!-- window with rain -->
         <rect x="40" y="24" width="110" height="110" fill="#5E6E8E" stroke="#17131A" stroke-width="5"/>
@@ -114,7 +114,7 @@
         <g><path class="rain" d="M52 40 l-6 14" style="animation-delay:0s"/><path class="rain" d="M70 60 l-6 14" style="animation-delay:0.3s"/><path class="rain" d="M90 36 l-6 14" style="animation-delay:0.6s"/><path class="rain" d="M108 70 l-6 14" style="animation-delay:0.2s"/><path class="rain" d="M126 48 l-6 14" style="animation-delay:0.5s"/><path class="rain" d="M64 92 l-6 14" style="animation-delay:0.8s"/><path class="rain" d="M100 104 l-6 14" style="animation-delay:0.4s"/><path class="rain" d="M118 30 l-6 14" style="animation-delay:0.7s"/><path class="rain" d="M82 120 l-6 14" style="animation-delay:0.1s"/></g>
         <!-- motivation meter -->
         <g transform="translate(250,40)">
-          <text x="0" y="-6" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A" letter-spacing="1">MOTIVATION</text>
+          <text x="0" y="-6" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A" letter-spacing="1" data-t="s.motiv">MOTIVATION</text>
           <rect x="0" y="0" width="120" height="34" rx="4" fill="#fff" stroke="#17131A" stroke-width="4"/>
           <rect x="120" y="10" width="8" height="14" fill="#17131A"/>
           <rect class="blink" x="5" y="5" width="6" height="24" fill="#E23A4E"/>
@@ -144,24 +144,24 @@
           <rect x="-22" y="-32" width="44" height="24" rx="3" fill="#17131A"/>
           <text y="-14" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="16" fill="#FFC83D">06:00</text>
         </g></g>
-        <g class="sfx"><text x="700" y="70" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(8 700 70)">BEEP BEEP!</text></g>
+        <g class="sfx"><text x="700" y="70" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(8 700 70)" data-t="s.beep">BEEP BEEP!</text></g>
       </svg>
     </section>
 
     <!-- PANEL 2 -->
     <section class="panel hq" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Meanwhile, upstairs. The Brain calls a staff meeting.</div>
+      <div class="caption" data-t="p2.cap">Meanwhile, upstairs. The Brain calls a staff meeting.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who brain">THE BRAIN</span>Lesson one: motivation is a guest. It comes when it wants. <em>Habits live here.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Objection! I eat a snack at 10 p.m. every single day. Zero motivation required.</p>
+        <p class="bubble" style="--b:0"><span class="who brain" data-t="who.brain">THE BRAIN</span><span data-t="p2.b0">Lesson one: motivation is a guest. It comes when it wants. <em>Habits live here.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">Objection! I eat a snack at 10 p.m. every single day. Zero motivation required.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="In a classroom inside Dan's head, a pink brain with round glasses points at a whiteboard reading Motivation is a mood, Habit is autopilot. Flex and Blob sit at school desks.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="In a classroom inside Dan's head, a pink brain with round glasses points at a whiteboard reading Motivation is a mood, Habit is autopilot. Flex and Blob sit at school desks.">
         <rect width="400" height="250" fill="#DCE4EF"/>
         <g transform="translate(200,14)">
           <rect x="-110" y="0" width="220" height="76" fill="#fff" stroke="#17131A" stroke-width="4"/>
           <g font-family="Kalam, cursive" font-weight="700" font-size="15">
-            <text x="-96" y="30" fill="#17131A">MOTIVATION = a mood</text>
-            <text x="-96" y="58" fill="#1E9C97">HABIT = autopilot ✓</text>
+            <text x="-96" y="30" fill="#17131A" data-t="s.b1">MOTIVATION = a mood</text>
+            <text x="-96" y="58" fill="#1E9C97" data-t="s.b2">HABIT = autopilot ✓</text>
           </g>
         </g>
         <path d="M118 120 L150 74" stroke="#6B4A2A" stroke-width="4" stroke-linecap="round"/>
@@ -176,32 +176,32 @@
 
     <!-- PANEL 3 -->
     <section class="panel hq" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Lesson two: how a habit is built.</div>
+      <div class="caption" data-t="p3.cap">Lesson two: how a habit is built.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who brain">THE BRAIN</span>Make it obvious, tiny and rewarding. Shoes by the bed. Bag by the door. <em>Ten minutes counts.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who flex">FLEX</span>Ten minutes?! That's not a workout, that's a <em>rumour!</em></p>
+        <p class="bubble" style="--b:0"><span class="who brain" data-t="who.brain">THE BRAIN</span><span data-t="p3.b0">Make it obvious, tiny and rewarding. Shoes by the bed. Bag by the door. <em>Ten minutes counts.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who flex">FLEX</span><span data-t="p3.b1">Ten minutes?! That's not a workout, that's a <em>rumour!</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="The Brain points at a habit loop diagram on the whiteboard: cue, shoes by the bed; routine, 10 minutes; reward, a check mark on the calendar. Flex looks shocked.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="The Brain points at a habit loop diagram on the whiteboard: cue, shoes by the bed; routine, 10 minutes; reward, a check mark on the calendar. Flex looks shocked.">
         <rect width="400" height="250" fill="#DCE4EF"/>
         <g transform="translate(200,12)">
           <rect x="-150" y="0" width="300" height="120" fill="#fff" stroke="#17131A" stroke-width="4"/>
-          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#C2477A" letter-spacing="1">THE HABIT LOOP</text>
+          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#C2477A" letter-spacing="1" data-t="s.loop">THE HABIT LOOP</text>
           <g font-family="Bangers, Impact, sans-serif" font-size="14" text-anchor="middle">
             <rect x="-138" y="36" width="80" height="44" rx="8" fill="#FFE7A1" stroke="#17131A" stroke-width="2.5"/>
-            <text x="-98" y="54" fill="#17131A">1. CUE</text>
+            <text x="-98" y="54" fill="#17131A" data-t="s.cue">1. CUE</text>
             <rect x="-40" y="36" width="80" height="44" rx="8" fill="#CDEFE9" stroke="#17131A" stroke-width="2.5"/>
-            <text x="0" y="54" fill="#17131A">2. ROUTINE</text>
+            <text x="0" y="54" fill="#17131A" data-t="s.routine">2. ROUTINE</text>
             <rect x="58" y="36" width="80" height="44" rx="8" fill="#FBD3E0" stroke="#17131A" stroke-width="2.5"/>
-            <text x="98" y="54" fill="#17131A">3. REWARD</text>
+            <text x="98" y="54" fill="#17131A" data-t="s.reward">3. REWARD</text>
           </g>
           <g font-family="Kalam, cursive" font-weight="700" font-size="9.5" text-anchor="middle" fill="#17131A">
-            <text x="-98" y="70">shoes by bed</text><text x="0" y="70">just 10 min</text><text x="98" y="70">✓ on calendar</text>
+            <text x="-98" y="70" data-t="s.shoes">shoes by bed</text><text x="0" y="70" data-t="s.ten">just 10 min</text><text x="98" y="70" data-t="s.cal">✓ on calendar</text>
           </g>
           <path d="M-58 58 H-44 M40 58 H54" stroke="#17131A" stroke-width="2.5"/>
           <path d="M-48 54 l6 4 l-6 4 M50 54 l6 4 l-6 4" stroke="#17131A" stroke-width="2.5" fill="none"/>
           <path d="M98 82 Q98 98 0 98 Q-98 98 -98 82" stroke="#17131A" stroke-width="2.5" fill="none" stroke-dasharray="5 4"/>
           <path d="M-102 88 l4 -6 l4 6" stroke="#17131A" stroke-width="2.5" fill="none"/>
-          <text x="0" y="114" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#17131A">repeat for ~2 months → autopilot</text>
+          <text x="0" y="114" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#17131A" data-t="s.repeat">repeat for ~2 months → autopilot</text>
         </g>
         <g transform="translate(80,196) scale(.72)"><g class="think"><use href="#brainBody"/><use href="#brainFace"/></g></g>
         <path d="M110 170 L150 136" stroke="#6B4A2A" stroke-width="4" stroke-linecap="round"/>
@@ -211,13 +211,13 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Six Mondays later. Still raining. Still 6:00 a.m.</div>
+      <div class="caption" data-t="p4.cap">Six Mondays later. Still raining. Still 6:00 a.m.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Not motivated. Going anyway. <em>Just ten minutes.</em></p>
-        <p class="bubble" style="--b:1"><span class="who brain">THE BRAIN</span>That's it. That's the whole secret. Nobody believes it's this boring.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Fine. But my 10 p.m. snack habit has a <em>400-day streak.</em> Respect the streak.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Not motivated. Going anyway. <em>Just ten minutes.</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who brain" data-t="who.brain">THE BRAIN</span><span data-t="p4.b1">That's it. That's the whole secret. Nobody believes it's this boring.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Fine. But my 10 p.m. snack habit has a <em>400-day streak.</em> Respect the streak.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 250" role="img" aria-label="Dan, still sleepy, heads out the door in the rain with his gym bag, past a calendar full of check marks. Inside, the Brain sips coffee, Flex cries proud tears, and Blob holds up a sign reading 400 day streak.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 250" role="img" aria-label="Dan, still sleepy, heads out the door in the rain with his gym bag, past a calendar full of check marks. Inside, the Brain sips coffee, Flex cries proud tears, and Blob holds up a sign reading 400 day streak.">
         <rect width="310" height="250" fill="#C9D3E6"/>
         <rect y="224" width="310" height="26" fill="#8C8492"/>
         <path d="M0 224 H310" stroke="#17131A" stroke-width="4"/>
@@ -225,7 +225,7 @@
         <g transform="translate(30,26)">
           <rect width="104" height="92" fill="#fff" stroke="#17131A" stroke-width="3.5"/>
           <rect width="104" height="18" fill="#E23A4E" stroke="#17131A" stroke-width="3.5"/>
-          <text x="52" y="14" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#fff" letter-spacing="1">NOVEMBER</text>
+          <text x="52" y="14" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#fff" letter-spacing="1" data-t="s.nov">NOVEMBER</text>
           <g stroke="#1E9C97" stroke-width="3" stroke-linecap="round" fill="none">
             <path d="M12 30 l4 5 l8 -10 M27 30 l4 5 l8 -10 M42 30 l4 5 l8 -10 M57 30 l4 5 l8 -10 M72 30 l4 5 l8 -10 M87 30 l4 5 l8 -10 M12 50 l4 5 l8 -10 M27 50 l4 5 l8 -10 M42 50 l4 5 l8 -10 M57 50 l4 5 l8 -10 M72 50 l4 5 l8 -10 M87 50 l4 5 l8 -10 M12 70 l4 5 l8 -10 M27 70 l4 5 l8 -10 M42 70 l4 5 l8 -10 M57 70 l4 5 l8 -10 M72 70 l4 5 l8 -10 M87 70 l4 5 l8 -10"/>
           </g>
@@ -257,23 +257,65 @@
         <g transform="translate(712,52) rotate(3)">
           <path d="M0 18 V56" stroke="#6B4A2A" stroke-width="4"/>
           <rect x="-62" y="-20" width="124" height="40" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text y="-2" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#E23A4E" letter-spacing="1">SNACK STREAK</text>
-          <text y="14" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A">400 DAYS</text>
+          <text y="-2" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#E23A4E" letter-spacing="1" data-t="s.streak">SNACK STREAK</text>
+          <text y="14" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A" data-t="s.days">400 DAYS</text>
         </g>
       </svg>
     </section>
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> People who stick with training are just more motivated than you.</p>
-    <p><b>Reality:</b> everyone's motivation goes up and down, pros included. What keeps them going is routine: a fixed time, gear ready the night before, a small goal for bad days, and a way to track progress. Habits form by repeating the same thing in the same context. In one well-known study it took about two months on average, with big differences between people, and missing a single day didn't break the habit. Blob's snack habit works exactly the same way. Use his weapon against him.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> People who stick with training are just more motivated than you.</p>
+    <p data-t="myth.2"><b>Reality:</b> everyone's motivation goes up and down, pros included. What keeps them going is routine: a fixed time, gear ready the night before, a small goal for bad days, and a way to track progress. Habits form by repeating the same thing in the same context. In one well-known study it took about two months on average, with big differences between people, and missing a single day didn't break the habit. Blob's snack habit works exactly the same way. Use his weapon against him.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 9 Mai tare decât salteaua",
+  "ep.title": "Episodul 9 · Mai tare decât salteaua",
+  "who.brain": "CREIERUL",
+  "p1.cap": "Săptămâna 10. Luni, 6:00 dimineața. Plouă. Motivația lui Dan și-a luat concediu medical.",
+  "p1.b0": "Merg la sală când o să <em>mă simt motivat.</em> Din zi în zi. Din an în an.",
+  "p1.alt": "O dimineață ploioasă și întunecată. Dan stă în pat sub pătură și se uită urât la un ceas deșteptător care sună și arată 6:00. Un indicator ca de baterie pe perete arată motivația la 2 la sută.",
+  "p2.cap": "Între timp, la etaj. Creierul convoacă ședință.",
+  "p2.b0": "Lecția unu: motivația e un musafir. Vine când vrea ea. <em>Obiceiurile locuiesc aici.</em>",
+  "p2.b1": "Obiecție! Eu mănânc o gustare la 10 seara în fiecare zi. Zero motivație necesară.",
+  "p2.alt": "Într-o clasă din capul lui Dan, un creier roz cu ochelari rotunzi arată spre o tablă pe care scrie Motivația e o stare, Obiceiul e pilot automat. Flex și Blob stau în bănci.",
+  "p3.cap": "Lecția doi: cum se construiește un obicei.",
+  "p3.b0": "Fă-l evident, mic și răsplătit. Pantofii lângă pat. Geanta lângă ușă. <em>Zece minute contează.</em>",
+  "p3.b1": "Zece minute?! Ăla nu e antrenament, e un <em>zvon!</em>",
+  "p3.alt": "Creierul arată spre o diagramă a buclei obiceiului pe tablă: semnalul, pantofii lângă pat; rutina, 10 minute; răsplata, o bifă în calendar. Flex e șocat.",
+  "p4.cap": "Șase zile de luni mai târziu. Tot plouă. Tot 6:00 dimineața.",
+  "p4.b0": "Nu sunt motivat. Merg oricum. <em>Doar zece minute.</em>",
+  "p4.b1": "Asta e. Ăsta e tot secretul. Nimeni nu crede că e atât de plictisitor.",
+  "p4.b2": "Bine. Dar obiceiul meu de gustare de la 10 seara are o <em>serie de 400 de zile.</em> Respect pentru serie.",
+  "p4.alt": "Dan, încă somnoros, iese pe ușă în ploaie cu geanta de sală, pe lângă un calendar plin de bife. Înăuntru, Creierul își bea cafeaua, Flex plânge de mândrie, iar Blob ține o pancartă cu Serie de 400 de zile.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Cei care nu renunță la antrenament sunt pur și simplu mai motivați decât tine.",
+  "myth.2": "<b>Realitate:</b> motivația tuturor urcă și coboară, inclusiv a profesioniștilor. Ce îi ține pe drum e rutina: o oră fixă, echipamentul pregătit de cu seară, un obiectiv mic pentru zilele proaste și un mod de a-și urmări progresul. Obiceiurile se formează repetând același lucru în același context. Într-un studiu cunoscut a durat în medie cam două luni, cu diferențe mari între oameni, iar o zi ratată nu a stricat obiceiul. Obiceiul de gustări al lui Blob funcționează exact la fel. Folosește-i arma împotriva lui.",
+  "s.motiv": "MOTIVAȚIE",
+  "s.beep": "BIP BIP!",
+  "s.b1": "MOTIVAȚIA = o stare",
+  "s.b2": "OBICEIUL = pilot automat ✓",
+  "s.loop": "BUCLA OBICEIULUI",
+  "s.cue": "1. SEMNAL",
+  "s.routine": "2. RUTINĂ",
+  "s.reward": "3. RĂSPLATĂ",
+  "s.shoes": "pantofi la pat",
+  "s.ten": "doar 10 min",
+  "s.cal": "✓ în calendar",
+  "s.repeat": "repetă ~2 luni → pilot automat",
+  "s.nov": "NOIEMBRIE",
+  "s.streak": "SERIE DE GUSTĂRI",
+  "s.days": "400 DE ZILE"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

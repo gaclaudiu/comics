@@ -32,9 +32,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 2 · Episode Title<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep">Episode 2 · Episode Title<small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -86,9 +86,10 @@
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

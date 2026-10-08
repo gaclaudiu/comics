@@ -136,3 +136,25 @@ a{color:inherit}
 .sbtn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 .sbtn.wa{background:#2E9E5B}.sbtn.fb{background:#4B5BA6}.sbtn.xx{background:var(--ink)}
 .sbtn.rd{background:#E2582B}.sbtn.cp,.sbtn.more{background:var(--fat);color:var(--ink)}
+
+/* ---------- language toggle ---------- */
+header{position:relative}
+.hdr-right{display:flex;flex-direction:column;align-items:flex-end;gap:12px;margin-left:auto;align-self:flex-start}
+.lang-toggle{display:inline-flex;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);background:var(--paper)}
+.lang-toggle button{font-family:var(--display);font-size:18px;letter-spacing:1.5px;line-height:1;color:var(--ink);
+  background:transparent;border:0;box-shadow:none;padding:8px 14px;min-width:48px;min-height:40px;cursor:pointer}
+.lang-toggle button + button{border-left:3px solid var(--ink)}
+.lang-toggle button[aria-pressed="true"]{background:var(--fat);box-shadow:inset 2px 2px 0 rgba(23,19,26,.25)}
+.lang-toggle button[aria-pressed="false"]:hover{background:var(--fat-lt)}
+.lang-toggle button:active{transform:none}
+.lang-toggle button:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+.lang-hint{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--fat-lt);
+  border:3px dashed var(--ink);padding:6px 8px 6px 14px}
+.lang-hint-go{font-family:var(--display);font-size:18px;letter-spacing:1px;background:none;border:0;box-shadow:none;padding:4px 0;cursor:pointer;color:var(--ink);text-decoration:underline}
+.lang-hint-x{font-size:22px;line-height:1;background:none;border:0;box-shadow:none;padding:2px 8px;cursor:pointer;color:var(--ink)}
+.lang-hint-go:active,.lang-hint-x:active{transform:none;box-shadow:none}
+.lang-notice{margin:0;background:var(--fat-lt);border:3px dashed var(--ink);padding:8px 14px;font-weight:700;font-size:15px}
+/* gentle fade when the language changes */
+.lang-swap [data-t]{animation:langfade .25s ease}
+@keyframes langfade{from{opacity:.25}}
+@media (max-width:520px){.hdr-right{margin-left:0;align-self:auto}.lang-toggle{position:absolute;top:0;right:0}.lang-toggle button{min-width:44px;padding:8px 10px}}

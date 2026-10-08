@@ -114,9 +114,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 10 · Deload Week<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 10 · Deload Week</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -124,17 +124,17 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Week 14. Dan hasn't taken a day off in 23 days. He is very proud. Nobody else is.</div>
+      <div class="caption" data-t="p1.cap">Week 14. Dan hasn't taken a day off in 23 days. He is very proud. Nobody else is.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>Rest days are for people who don't <em>want it</em> enough. I want it. I want it so much my eye does this now.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">Rest days are for people who don't <em>want it</em> enough. I want it. I want it so much my eye does this now.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="At the gym, a wild-eyed Dan with dark circles holds a giant coffee and a dumbbell. A calendar shows 23 crossed-off days under a No Days Off banner, and his watch reads Recovery 12 percent.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="At the gym, a wild-eyed Dan with dark circles holds a giant coffee and a dumbbell. A calendar shows 23 crossed-off days under a No Days Off banner, and his watch reads Recovery 12 percent.">
         <rect width="800" height="230" fill="#E7F1F0"/>
         <rect y="206" width="800" height="24" fill="#8C8492"/>
         <path d="M0 206 H800" stroke="#17131A" stroke-width="4"/>
         <g transform="translate(60,20) rotate(-2)">
           <rect x="-10" y="-4" width="128" height="22" fill="#17131A"/>
-          <text x="54" y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#FFC83D" letter-spacing="1.5">NO DAYS OFF!!!</text>
+          <text x="54" y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#FFC83D" letter-spacing="1.5" data-t="s.nodays">NO DAYS OFF!!!</text>
           <rect x="0" y="22" width="108" height="76" fill="#fff" stroke="#17131A" stroke-width="3.5"/>
           <path d="M10 34 l9 9 M19 34 l-9 9 M24 34 l9 9 M33 34 l-9 9 M38 34 l9 9 M47 34 l-9 9 M52 34 l9 9 M61 34 l-9 9 M66 34 l9 9 M75 34 l-9 9 M80 34 l9 9 M89 34 l-9 9 M94 34 l9 9 M103 34 l-9 9 M10 50 l9 9 M19 50 l-9 9 M24 50 l9 9 M33 50 l-9 9 M38 50 l9 9 M47 50 l-9 9 M52 50 l9 9 M61 50 l-9 9 M66 50 l9 9 M75 50 l-9 9 M80 50 l9 9 M89 50 l-9 9 M94 50 l9 9 M103 50 l-9 9 M10 66 l9 9 M19 66 l-9 9 M24 66 l9 9 M33 66 l-9 9 M38 66 l9 9 M47 66 l-9 9 M52 66 l9 9 M61 66 l-9 9 M66 66 l9 9 M75 66 l-9 9 M80 66 l9 9 M89 66 l-9 9 M94 66 l9 9 M103 66 l-9 9 M10 82 l9 9 M19 82 l-9 9 M24 82 l9 9 M33 82 l-9 9" stroke="#E23A4E" stroke-width="2.5" stroke-linecap="round"/>
         </g>
@@ -169,16 +169,16 @@
         <g transform="translate(590,104)">
           <path d="M-60 34 L-120 22" stroke="#17131A" stroke-width="2" stroke-dasharray="4 3"/>
           <rect x="-60" y="0" width="120" height="58" rx="12" fill="#17131A"/>
-          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#fff" letter-spacing="1">RECOVERY</text>
+          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#fff" letter-spacing="1" data-t="s.rec">RECOVERY</text>
           <text class="alarm" x="0" y="48" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#E23A4E">12%</text>
         </g>
         <g transform="translate(690,60)" font-family="Kalam, cursive" font-weight="700" font-size="13" fill="#17131A">
           <rect x="-56" y="-22" width="112" height="78" fill="#FFE7A1" stroke="#17131A" stroke-width="2.5" transform="rotate(4)"/>
           <g transform="rotate(4)">
-            <text x="-46" y="-2">Today's plan:</text>
-            <text x="-46" y="16">legs (again)</text>
-            <text x="-46" y="32">cardio (again)</text>
-            <text x="-46" y="48" fill="#E23A4E">sleep: optional</text>
+            <text x="-46" y="-2" data-t="s.plan">Today's plan:</text>
+            <text x="-46" y="16" data-t="s.legs">legs (again)</text>
+            <text x="-46" y="32" data-t="s.cardio">cardio (again)</text>
+            <text x="-46" y="48" fill="#E23A4E" data-t="s.sleepopt">sleep: optional</text>
           </g>
         </g>
       </svg>
@@ -186,12 +186,12 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan. The control panel has opinions.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan. The control panel has opinions.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>I haven't been fully repaired since Tuesday. <em>Of last month.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Even <em>I'm</em> exhausted. And my whole job is lying here.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0">I haven't been fully repaired since Tuesday. <em>Of last month.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">Even <em>I'm</em> exhausted. And my whole job is lying here.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Red alarm lights flash over three gauges, muscle repair, sleep and joints, all deep in the red. Flex, covered in bandages, holds a sign saying We need a break. Blob lies flat and tired.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Red alarm lights flash over three gauges, muscle repair, sleep and joints, all deep in the red. Flex, covered in bandages, holds a sign saying We need a break. Blob lies flat and tired.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".18"/>
         <g transform="translate(200,14)">
@@ -200,7 +200,7 @@
           <g transform="translate(0,46)"><use href="#gauge"/><path class="needle" d="M0 0 L26 -10" stroke="#17131A" stroke-width="4" stroke-linecap="round"/></g>
           <g transform="translate(110,46)"><use href="#gauge"/><path class="needle" d="M0 0 L24 -14" stroke="#17131A" stroke-width="4" stroke-linecap="round"/></g>
           <g font-family="Bangers, Impact, sans-serif" font-size="11" fill="#fff" text-anchor="middle" letter-spacing=".5">
-            <text x="-110" y="12">MUSCLE REPAIR</text><text x="0" y="12">SLEEP</text><text x="110" y="12">JOINTS</text>
+            <text x="-110" y="12" data-t="s.g1">MUSCLE REPAIR</text><text x="0" y="12" data-t="s.g2">SLEEP</text><text x="110" y="12" data-t="s.g3">JOINTS</text>
           </g>
         </g>
         <g transform="translate(100,176)">
@@ -212,8 +212,8 @@
         </g>
         <g transform="translate(176,108) rotate(6)">
           <rect x="-44" y="-16" width="88" height="34" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E">WE NEED</text>
-          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E">A BREAK</text>
+          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E" data-t="s.need1">WE NEED</text>
+          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E" data-t="s.need2">A BREAK</text>
         </g>
         <g transform="translate(312,196) scale(1,.82)">
           <g class="blob-idle"><use href="#blobBody"/>
@@ -228,12 +228,12 @@
 
     <!-- PANEL 3 -->
     <section class="panel hq" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Upstairs is not doing great either.</div>
+      <div class="caption" data-t="p3.cap">Upstairs is not doing great either.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who brain">THE BRAIN</span>Same rules up here. I can't max out every day either. Today Dan <em>argued with a vending machine.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who flex">FLEX</span>What did the vending machine do?</p>
+        <p class="bubble" style="--b:0"><span class="who brain" data-t="who.brain">THE BRAIN</span><span data-t="p3.b0">Same rules up here. I can't max out every day either. Today Dan <em>argued with a vending machine.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who flex">FLEX</span><span data-t="p3.b1">What did the vending machine do?</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="An overheating Brain with spiral eyes lets off steam next to a thermometer marked Spicy. A screen shows a vending machine with an Out of Order sign.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="An overheating Brain with spiral eyes lets off steam next to a thermometer marked Spicy. A screen shows a vending machine with an Out of Order sign.">
         <rect width="400" height="250" fill="#DCE4EF"/>
         <g transform="translate(250,14)">
           <rect width="136" height="104" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
@@ -244,16 +244,16 @@
           <rect x="80" y="26" width="10" height="20" fill="#2A2530"/>
           <g transform="translate(68,52) rotate(-10)">
             <rect x="-30" y="-9" width="60" height="18" fill="#fff" stroke="#17131A" stroke-width="2"/>
-            <text y="4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="9" fill="#17131A">OUT OF ORDER</text>
+            <text y="4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="9" fill="#17131A" data-t="s.ooo">OUT OF ORDER</text>
           </g>
-          <text x="68" y="-4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#17131A" letter-spacing="1">EYE-CAM · 14:02</text>
+          <text x="68" y="-4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#17131A" letter-spacing="1" data-t="s.cam">EYE-CAM · 14:02</text>
         </g>
         <g transform="translate(36,30)">
           <rect x="-8" y="0" width="16" height="96" rx="8" fill="#fff" stroke="#17131A" stroke-width="3"/>
           <rect x="-4" y="10" width="8" height="84" rx="4" fill="#E23A4E"/>
           <circle cx="0" cy="104" r="12" fill="#E23A4E" stroke="#17131A" stroke-width="3"/>
-          <text x="14" y="16" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E">SPICY</text>
-          <text x="14" y="94" font-family="Kalam, cursive" font-size="10" fill="#17131A">chill</text>
+          <text x="14" y="16" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E" data-t="s.spicy">SPICY</text>
+          <text x="14" y="94" font-family="Kalam, cursive" font-size="10" fill="#17131A" data-t="s.chill">chill</text>
         </g>
         <g transform="translate(140,180)"><g class="shake">
           <g style="filter:hue-rotate(-25deg) saturate(1.4)"><use href="#brainBody"/></g><use href="#brainFried"/>
@@ -267,20 +267,20 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">The next week. The Brain declares an emergency deload.</div>
+      <div class="caption" data-t="p4.cap">The next week. The Brain declares an emergency deload.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Easy week: half the weights, eight hours of sleep, a walk, and <em>zero guilt.</em> The guilt is the hard part.</p>
-        <p class="bubble" style="--b:1"><span class="who brain">THE BRAIN</span>Spa mode activated. Do not disturb. Unless it's a nap.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Wait. He rests for a week and gets <em>stronger?</em> I've rested for 30 years. Where are MY gains?</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Easy week: half the weights, eight hours of sleep, a walk, and <em>zero guilt.</em> The guilt is the hard part.</span></p>
+        <p class="bubble" style="--b:1"><span class="who brain" data-t="who.brain">THE BRAIN</span><span data-t="p4.b1">Spa mode activated. Do not disturb. Unless it's a nap.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Wait. He rests for a week and gets <em>stronger?</em> I've rested for 30 years. Where are MY gains?</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 250" role="img" aria-label="Dan strolls happily through a sunny park with headphones under a Deload Week flag. Inside, the Brain relaxes with cucumber slices on its eyes, a repair worker fixes a smiling Flex, and Blob looks confused.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 250" role="img" aria-label="Dan strolls happily through a sunny park with headphones under a Deload Week flag. Inside, the Brain relaxes with cucumber slices on its eyes, a repair worker fixes a smiling Flex, and Blob looks confused.">
         <rect width="310" height="250" fill="#DFF0F7"/>
         <circle cx="260" cy="44" r="26" fill="#FFC83D" stroke="#17131A" stroke-width="3"/>
         <path d="M0 196 Q150 180 310 200 V250 H0 Z" fill="#7DBB5A" stroke="#17131A" stroke-width="4"/>
         <g transform="translate(34,206)">
           <path d="M0 0 V-110" stroke="#6B4A2A" stroke-width="5"/>
           <path class="flutter" d="M2 -108 Q40 -116 78 -108 Q72 -94 78 -80 Q40 -88 2 -80 Z" fill="#1E9C97" stroke="#17131A" stroke-width="3"/>
-          <text x="40" y="-90" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#fff" letter-spacing="1">DELOAD WEEK</text>
+          <text x="40" y="-90" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#fff" letter-spacing="1" data-t="s.flag">DELOAD WEEK</text>
         </g>
         <g transform="translate(170,52) scale(.74)"><g class="stroll">
           <use href="#danPants10"/>
@@ -313,15 +313,58 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> No days off. Rest is for the weak.</p>
-    <p><b>Reality:</b> training breaks the body down. It gets stronger while it recovers. Push hard for weeks without a break and you get stalled progress, niggling injuries, bad sleep, a short temper and a motivation crash. That's why many training plans include an easier “deload” week every 4 to 8 weeks: lighter weights, fewer sets, more sleep, gentle movement. Your head works the same way, and gym stress adds to work and life stress. If exhaustion, low mood or anxiety stick around even after rest, talk to a doctor or a mental health professional. That's training too.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> No days off. Rest is for the weak.</p>
+    <p data-t="myth.2"><b>Reality:</b> training breaks the body down. It gets stronger while it recovers. Push hard for weeks without a break and you get stalled progress, niggling injuries, bad sleep, a short temper and a motivation crash. That's why many training plans include an easier “deload” week every 4 to 8 weeks: lighter weights, fewer sets, more sleep, gentle movement. Your head works the same way, and gym stress adds to work and life stress. If exhaustion, low mood or anxiety stick around even after rest, talk to a doctor or a mental health professional. That's training too.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 10 Săptămâna ușoară",
+  "ep.title": "Episodul 10 · Săptămâna ușoară",
+  "who.brain": "CREIERUL",
+  "p1.cap": "Săptămâna 14. Dan n-a mai luat nicio zi liberă de 23 de zile. E foarte mândru. Restul lumii, nu.",
+  "p1.b0": "Zilele de pauză sunt pentru cei care nu <em>își doresc</em> destul. Eu îmi doresc. Îmi doresc atât de tare că acum ochiul meu face asta.",
+  "p1.alt": "La sală, un Dan cu ochii holbați și cearcăne ține o cafea uriașă și o ganteră. Un calendar arată 23 de zile tăiate sub un banner Zero pauze, iar ceasul lui arată Recuperare 12 la sută.",
+  "p2.cap": "În interiorul lui Dan. Panoul de control are păreri.",
+  "p2.b0": "N-am mai fost reparat complet de marți. <em>De luna trecută.</em>",
+  "p2.b1": "Până și <em>eu</em> sunt epuizat. Și toată treaba mea e să stau întins aici.",
+  "p2.alt": "Lumini roșii de alarmă clipesc deasupra a trei indicatoare, repararea mușchilor, somnul și articulațiile, toate adânc în roșu. Flex, plin de bandaje, ține o pancartă Avem nevoie de pauză. Blob zace întins și obosit.",
+  "p3.cap": "Nici la etaj nu merge prea bine.",
+  "p3.b0": "Aceleași reguli și aici sus. Nici eu nu pot trage la maximum în fiecare zi. Azi Dan <em>s-a certat cu un automat de cafea.</em>",
+  "p3.b1": "Și ce i-a făcut automatul?",
+  "p3.alt": "Un Creier supraîncălzit, cu ochi în spirală, scoate aburi lângă un termometru marcat Picant. Un ecran arată un automat cu un semn Defect.",
+  "p4.cap": "Săptămâna următoare. Creierul declară o săptămână ușoară de urgență.",
+  "p4.b0": "Săptămână ușoară: jumătate din greutăți, opt ore de somn, o plimbare și <em>zero vinovăție.</em> Vinovăția e partea grea.",
+  "p4.b1": "Mod spa activat. Nu deranjați. Decât dacă e vorba de un pui de somn.",
+  "p4.b2": "Stai. Se odihnește o săptămână și devine <em>mai puternic?</em> Eu mă odihnesc de 30 de ani. Unde sunt progresele MELE?",
+  "p4.alt": "Dan se plimbă fericit printr-un parc însorit, cu căști, sub un steag Săptămâna ușoară. Înăuntru, Creierul se relaxează cu felii de castravete pe ochi, un muncitor îl repară pe Flex, care zâmbește, iar Blob e confuz.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Fără zile libere. Odihna e pentru cei slabi.",
+  "myth.2": "<b>Realitate:</b> antrenamentul solicită corpul, iar el se întărește cât se reface. Dacă tragi tare săptămâni la rând fără pauză, te alegi cu progres blocat, mici accidentări, somn prost, nervi întinși și o prăbușire a motivației. De-asta multe planuri de antrenament includ o săptămână mai ușoară („deload”) la fiecare 4–8 săptămâni: greutăți mai mici, mai puține serii, mai mult somn, mișcare blândă. Și mintea funcționează la fel, iar stresul de la sală se adună peste cel de la job și din viață. Dacă oboseala, starea proastă sau anxietatea nu trec nici după odihnă, vorbește cu un medic sau cu un specialist în sănătate mintală. Și asta e tot antrenament.",
+  "s.nodays": "ZERO PAUZE!!!",
+  "s.rec": "RECUPERARE",
+  "s.plan": "Planul de azi:",
+  "s.legs": "picioare (iar)",
+  "s.cardio": "cardio (iar)",
+  "s.sleepopt": "somn: opțional",
+  "s.g1": "REPARARE MUȘCHI",
+  "s.g2": "SOMN",
+  "s.g3": "ARTICULAȚII",
+  "s.need1": "AVEM NEVOIE",
+  "s.need2": "DE PAUZĂ",
+  "s.ooo": "DEFECT",
+  "s.cam": "OCHI-CAM · 14:02",
+  "s.spicy": "PICANT",
+  "s.chill": "relaxat",
+  "s.flag": "SĂPT. UȘOARĂ"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

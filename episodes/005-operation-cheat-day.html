@@ -85,9 +85,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 5 · Operation Cheat Day<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 5 · Operation Cheat Day</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -95,18 +95,18 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Week 6 of eating clean. Dan has meal-prepped 21 identical boxes of chicken, rice and broccoli.</div>
+      <div class="caption" data-t="p1.cap">Week 6 of eating clean. Dan has meal-prepped 21 identical boxes of chicken, rice and broccoli.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>I don't even miss pizza. I have <em>evolved</em> beyond pizza.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">I don't even miss pizza. I have <em>evolved</em> beyond pizza.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan proudly holds up a meal-prep box in his kitchen, surrounded by 21 identical boxes of chicken, rice and broccoli">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="Dan proudly holds up a meal-prep box in his kitchen, surrounded by 21 identical boxes of chicken, rice and broccoli">
         <rect width="800" height="230" fill="#EAF3E6"/>
         <rect x="30" y="18" width="104" height="212" rx="8" fill="#fff" stroke="#17131A" stroke-width="4"/>
         <path d="M30 92 H134 M118 40 V76 M118 110 V160" stroke="#17131A" stroke-width="4" stroke-linecap="round"/>
         <g transform="translate(82,130) rotate(-4)">
           <rect x="-24" y="-16" width="48" height="32" fill="#FFE7A1" stroke="#17131A" stroke-width="2"/>
-          <text y="-2" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#17131A">NO PIZZA</text>
-          <text y="10" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E">EVER.</text>
+          <text y="-2" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#17131A" data-t="s.nopizza">NO PIZZA</text>
+          <text y="10" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.ever">EVER.</text>
         </g>
         <rect x="176" y="64" width="248" height="8" fill="#A67C52" stroke="#17131A" stroke-width="3"/>
         <rect x="150" y="158" width="650" height="14" fill="#A67C52" stroke="#17131A" stroke-width="4"/>
@@ -151,12 +151,12 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan. The balance of power has shifted.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan. The balance of power has shifted.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Look at me! I have <em>DEFINITION!</em> I found a new muscle yesterday. I named it Kevin.</p>
-        <p class="bubble r small-voice" style="--b:1"><span class="who blob">blob</span>I used to be a love handle. Now I'm a love… suggestion.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0">Look at me! I have <em>DEFINITION!</em> I found a new muscle yesterday. I named it Kevin.</span></p>
+        <p class="bubble r small-voice" style="--b:1"><span class="who blob">blob</span><span data-t="p2.b1">I used to be a love handle. Now I'm a love… suggestion.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="A much bigger, sparkling Flex shows off a new muscle bump labelled Kevin, while a tiny, sad Blob sheds a tear in the corner">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="A much bigger, sparkling Flex shows off a new muscle bump labelled Kevin, while a tiny, sad Blob sheds a tear in the corner">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(118,152) scale(1.2)">
           <g class="flex-idle">
@@ -167,7 +167,7 @@
         </g>
         <path d="M262 84 Q240 90 222 114" stroke="#17131A" stroke-width="2.5" fill="none"/>
         <path d="M222 114 l2 -10 M222 114 l9 -4" stroke="#17131A" stroke-width="2.5" stroke-linecap="round"/>
-        <text x="284" y="84" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A" letter-spacing="1">KEVIN</text>
+        <text x="284" y="84" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A" letter-spacing="1" data-t="s.kevin">KEVIN</text>
         <g fill="#FFC83D" stroke="#17131A" stroke-width="2">
           <path class="spark" d="M30 40 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
           <path class="spark" d="M200 36 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4z"/>
@@ -182,21 +182,21 @@
 
     <!-- PANEL 3 -->
     <section class="panel lair" style="--i:2" aria-label="Panel 3">
-      <div class="caption">That night. Blob's secret lair (a spare corner of the liver).</div>
+      <div class="caption" data-t="p3.cap">That night. Blob's secret lair (a spare corner of the liver).</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who blob">BLOB</span>Phase 1: keep him up till 2 a.m. watching cooking videos. Phase 2: a Monday.</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Phase 3: three magic words. <em>“You. Deserve. It.”</em> Mwahahaha!</p>
+        <p class="bubble" style="--b:0"><span class="who blob">BLOB</span><span data-t="p3.b0">Phase 1: keep him up till 2 a.m. watching cooking videos. Phase 2: a Monday.</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">Phase 3: three magic words. <em>“You. Deserve. It.”</em> Mwahahaha!</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="In a dark lair, a small Blob with an evil grin points at a whiteboard titled Operation Cheat Day, listing his plan and a drawing of pizza">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="In a dark lair, a small Blob with an evil grin points at a whiteboard titled Operation Cheat Day, listing his plan and a drawing of pizza">
         <rect width="400" height="250" fill="#2A2530"/>
         <polygon class="flicker" points="200,0 70,250 330,250" fill="#FFE7A1" opacity=".16"/>
         <g transform="translate(200,16) rotate(-1.5)">
           <rect x="-130" y="0" width="260" height="130" fill="#fff" stroke="#17131A" stroke-width="4"/>
-          <text x="0" y="24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="20" fill="#E23A4E" letter-spacing="1">OPERATION CHEAT DAY</text>
+          <text x="0" y="24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="20" fill="#E23A4E" letter-spacing="1" data-t="s.op">OPERATION CHEAT DAY</text>
           <g font-family="Kalam, cursive" font-weight="700" font-size="12" fill="#17131A">
-            <text x="-118" y="48">1. only 5 hours of sleep</text>
-            <text x="-118" y="66">2. add stress (a Monday)</text>
-            <text x="-118" y="84">3. whisper “you deserve it”</text>
+            <text x="-118" y="48" data-t="s.l1">1. only 5 hours of sleep</text>
+            <text x="-118" y="66" data-t="s.l2">2. add stress (a Monday)</text>
+            <text x="-118" y="84" data-t="s.l3">3. whisper “you deserve it”</text>
             <text x="-118" y="102">4. ???</text>
             <text x="-118" y="120" fill="#E23A4E">5. PIZZA</text>
           </g>
@@ -216,18 +216,18 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Tuesday, 11:04 a.m. Five hours of sleep. It's Gary from accounting's birthday.</div>
+      <div class="caption" data-t="p4.cap">Tuesday, 11:04 a.m. Five hours of sleep. It's Gary from accounting's birthday.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>One slice won't… I mean… I kind of <em>deserve it?</em></p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>One slice, Blob. Enjoy your twenty minutes of fame.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Twenty minutes is all I need. <em>I'M BACK, BABY!</em></p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">One slice won't… I mean… I kind of <em>deserve it?</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p4.b1">One slice, Blob. Enjoy your twenty minutes of fame.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Twenty minutes is all I need. <em>I'M BACK, BABY!</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="At the office, a trembling Dan stares at a birthday cake with a fork in hand. Inside, a big calm Flex watches a party-hat-wearing Blob celebrate among confetti.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="At the office, a trembling Dan stares at a birthday cake with a fork in hand. Inside, a big calm Flex watches a party-hat-wearing Blob celebrate among confetti.">
         <rect width="310" height="240" fill="#EFEAF6"/>
         <path d="M0 18 Q155 50 310 18" stroke="#17131A" stroke-width="2" fill="none"/>
         <g font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" text-anchor="middle">
           <path d="M28 22 l14 3 l-5 16 Z M70 29 l14 2 l-4 16 Z M112 33 l14 1 l-3 16 Z M154 34 l14 0 l-3 16 Z M196 33 l14 -1 l-2 16 Z M238 29 l14 -2 l-2 16 Z M278 22 l14 -3 l0 16 Z" fill="#FFC83D" stroke="#17131A" stroke-width="2"/>
-          <text x="92" y="70" font-size="14" fill="#9C6ADE" letter-spacing="1">HAPPY BDAY GARY!</text>
+          <text x="92" y="70" font-size="14" fill="#9C6ADE" letter-spacing="1" data-t="s.bday">HAPPY BDAY GARY!</text>
         </g>
         <g transform="translate(212,84) scale(.82)">
           <g class="shake">
@@ -269,22 +269,57 @@
         </g>
         <g transform="translate(700,34) rotate(3)">
           <rect x="-74" y="-18" width="148" height="34" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#E23A4E" letter-spacing="1">PHASE 5: COMPLETE</text>
+          <text x="0" y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#E23A4E" letter-spacing="1" data-t="s.phase">PHASE 5: COMPLETE</text>
         </g>
       </svg>
     </section>
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> Eating clean means zero treats forever, and one slice of cake undoes weeks of work.</p>
-    <p><b>Reality:</b> progress comes from what you do most of the time, not from one slice. Strict all-or-nothing rules often backfire into a full pizza weekend. And yes, short sleep and stress really do make cravings louder. Blob didn't invent that. He just uses it.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> Eating clean means zero treats forever, and one slice of cake undoes weeks of work.</p>
+    <p data-t="myth.2"><b>Reality:</b> progress comes from what you do most of the time, not from one slice. Strict all-or-nothing rules often backfire into a full pizza weekend. And yes, short sleep and stress really do make cravings louder. Blob didn't invent that. He just uses it.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 5 Operațiunea Cheat Day",
+  "ep.title": "Episodul 5 · Operațiunea Cheat Day",
+  "p1.cap": "Săptămâna 6 de mâncat curat. Dan are 21 de caserole identice cu pui, orez și broccoli.",
+  "p1.b0": "Nici nu-mi mai lipsește pizza. Am <em>evoluat</em> dincolo de pizza.",
+  "p1.alt": "Dan ridică mândru o caserolă în bucătărie, înconjurat de 21 de caserole identice cu pui, orez și broccoli.",
+  "p2.cap": "În interiorul lui Dan. Echilibrul puterii s-a schimbat.",
+  "p2.b0": "Uită-te la mine! Am <em>DEFINIRE!</em> Ieri am găsit un mușchi nou. L-am botezat Costel.",
+  "p2.b1": "Pe vremuri eram colac. Acum sunt doar… o aluzie de colăcel.",
+  "p2.alt": "Un Flex mult mai mare și strălucitor își arată un mușchi nou, numit Costel, în timp ce un Blob minuscul și trist varsă o lacrimă într-un colț.",
+  "p3.cap": "În noaptea aceea. Bârlogul secret al lui Blob (un colț liber din ficat).",
+  "p3.b0": "Faza 1: îl țin treaz până la 2 noaptea cu video-uri de gătit. Faza 2: o zi de luni.",
+  "p3.b1": "Faza 3: trei cuvinte magice. <em>„Chiar. Meriți. Asta.”</em> Muhahaha!",
+  "p3.alt": "Într-un bârlog întunecat, un Blob mic cu un rânjet malefic arată spre o tablă intitulată Operațiunea Cheat Day, cu planul lui și un desen cu pizza.",
+  "p4.cap": "Marți, 11:04. Cinci ore de somn. E ziua lui Gigel de la contabilitate.",
+  "p4.b0": "O felie n-o să… adică… parcă <em>merit?</em>",
+  "p4.b1": "O felie, Blob. Bucură-te de cele douăzeci de minute de glorie.",
+  "p4.b2": "Douăzeci de minute îmi ajung. <em>M-AM ÎNTORS, IUBIȚILOR!</em>",
+  "p4.alt": "La birou, Dan tremură cu furculița în mână în fața unui tort aniversar. Înăuntru, un Flex mare și calm se uită la Blob care sărbătorește cu coif de petrecere printre confetti.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Să mănânci curat înseamnă zero dulciuri pe viață, iar o felie de tort îți strică săptămâni de muncă.",
+  "myth.2": "<b>Realitate:</b> progresul vine din ce faci de cele mai multe ori, nu dintr-o felie. Regulile stricte de tip „totul sau nimic” se termină des cu un weekend întreg de pizza. Și da, somnul puțin și stresul chiar fac poftele mai mari. Nu Blob a inventat asta. Doar profită.",
+  "s.nopizza": "NU PIZZA",
+  "s.ever": "DELOC.",
+  "s.kevin": "COSTEL",
+  "s.op": "OPERAȚIUNEA CHEAT DAY",
+  "s.l1": "1. doar 5 ore de somn",
+  "s.l2": "2. plus stres (e luni)",
+  "s.l3": "3. șoptește „meriți”",
+  "s.bday": "LA MULȚI ANI, GIGEL!",
+  "s.phase": "FAZA 5: GATA"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

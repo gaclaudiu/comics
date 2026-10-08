@@ -105,9 +105,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 8 · Train Like a Pro<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 8 · Train Like a Pro</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -115,12 +115,12 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Dan's friend Seba plays volleyball in Romania's first division. Number 7. Today Dan is “training with a pro.”</div>
+      <div class="caption" data-t="p1.cap">Dan's friend Seba plays volleyball in Romania's first division. Number 7. Today Dan is “training with a pro.”</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who seba">SEBA #7</span>Easy warm-up today. Just <em>200 jumps.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span>Perfect. I'll do 200… <em>thoughts</em> about jumping.</p>
+        <p class="bubble" style="--b:0"><span class="who seba">SEBA #7</span><span data-t="p1.b0">Easy warm-up today. Just <em>200 jumps.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span><span data-t="p1.b1">Perfect. I'll do 200… <em>thoughts</em> about jumping.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 260" role="img" aria-label="In a sports hall, Seba in a teal number 7 jersey jumps so high his head clears the volleyball net, while Dan, out of breath, does small arm circles.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 260" role="img" aria-label="In a sports hall, Seba in a teal number 7 jersey jumps so high his head clears the volleyball net, while Dan, out of breath, does small arm circles.">
         <rect width="800" height="260" fill="#F4E4C8"/>
         <path d="M0 60 H800 M0 110 H800" stroke="#E8D3AE" stroke-width="3"/>
         <rect y="226" width="800" height="34" fill="#E8A35C"/>
@@ -142,7 +142,7 @@
           </g>
         </g></g>
         <g font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A">
-          <text x="702" y="186">JUMP 137</text>
+          <text x="702" y="186" data-t="s.j137">JUMP 137</text>
         </g>
         <!-- Dan, breathing hard -->
         <g transform="translate(180,48) scale(.78)">
@@ -156,29 +156,29 @@
           <circle cx="-62" cy="10" r="9" fill="#F2C29B" stroke="#17131A" stroke-width="3"/><circle cx="62" cy="10" r="9" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
         </g>
         <g fill="#fff" stroke="#17131A" stroke-width="2"><circle class="puff" cx="228" cy="68" r="9"/><circle class="puff" cx="242" cy="58" r="7" style="animation-delay:.5s"/></g>
-        <text x="180" y="248" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A">JUMP 1</text>
+        <text x="180" y="248" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A" data-t="s.j1">JUMP 1</text>
       </svg>
     </section>
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan. The scouting report.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan. The scouting report.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Look at him… That could be <em>us!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>He trains 20 hours a week and sleeps nine. You'd have to cancel 2 a.m. YouTube. Forever.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0">Look at him… That could be <em>us!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">He trains 20 hours a week and sleeps nine. You'd have to cancel 2 a.m. YouTube. Forever.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="On Dan's eye-cam screen, a scouting report on Seba lists his stats. Flex stares with star-struck eyes while Blob looks unimpressed.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="On Dan's eye-cam screen, a scouting report on Seba lists his stats. Flex stares with star-struck eyes while Blob looks unimpressed.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(150,8) scale(.85)">
           <rect width="192" height="126" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
           <rect x="10" y="10" width="172" height="106" rx="4" fill="#DDF4F2"/>
-          <text x="96" y="27" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#E23A4E" letter-spacing="1">SCOUTING REPORT: SEBA #7</text>
+          <text x="96" y="27" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#E23A4E" letter-spacing="1" data-t="s.report">SCOUTING REPORT: SEBA #7</text>
           <g font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">
-            <text x="18" y="46">Training: 20 h / week</text>
-            <text x="18" y="62">Sleep: 9 h / night</text>
-            <text x="18" y="78">Vertical jump: “yes”</text>
-            <text x="18" y="94">Warm-up: longer than yours</text>
-            <text x="18" y="110" fill="#E23A4E">Snacks at 2 a.m.: 0</text>
+            <text x="18" y="46" data-t="s.r1">Training: 20 h / week</text>
+            <text x="18" y="62" data-t="s.r2">Sleep: 9 h / night</text>
+            <text x="18" y="78" data-t="s.r3">Vertical jump: “yes”</text>
+            <text x="18" y="94" data-t="s.r4">Warm-up: longer than yours</text>
+            <text x="18" y="110" fill="#E23A4E" data-t="s.r5">Snacks at 2 a.m.: 0</text>
           </g>
         </g>
         <g transform="translate(82,170)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexStars"/></g></g>
@@ -191,12 +191,12 @@
 
     <!-- PANEL 3 -->
     <section class="panel" style="--i:2" aria-label="Panel 3">
-      <div class="caption">The block.</div>
+      <div class="caption" data-t="p3.cap">The block.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><em>BLOCK!</em> Did you see that? <em>I JUMPED!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who seba">SEBA #7</span>That was a tiptoe, Dan.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p3.b0"><em>BLOCK!</em> Did you see that? <em>I JUMPED!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who seba">SEBA #7</span><span data-t="p3.b1">That was a tiptoe, Dan.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="At the net, Seba spikes from high in the air while Dan, barely off the ground with his eyes shut, gets hit in the face by the ball.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="At the net, Seba spikes from high in the air while Dan, barely off the ground with his eyes shut, gets hit in the face by the ball.">
         <rect width="400" height="250" fill="#F4E4C8"/>
         <rect y="222" width="400" height="28" fill="#E8A35C"/>
         <path d="M0 222 H400" stroke="#17131A" stroke-width="4"/>
@@ -212,7 +212,7 @@
         <!-- ball flying at Dan -->
         <path d="M222 40 Q190 40 156 48" stroke="#17131A" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
         <g transform="translate(140,50)"><g class="zoom"><use href="#vball"/></g></g>
-        <g class="sfx"><text x="52" y="42" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(-12 52 42)">WHAM!</text></g>
+        <g class="sfx"><text x="52" y="42" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(-12 52 42)" data-t="s.wham">WHAM!</text></g>
         <!-- Dan, tiptoe "jump" -->
         <g transform="translate(110,64) scale(.72)">
           <use href="#danShorts"/>
@@ -223,19 +223,19 @@
           <circle cx="-30" cy="-14" r="9" fill="#F2C29B" stroke="#17131A" stroke-width="3"/><circle cx="30" cy="-14" r="9" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
         </g>
         <path d="M84 214 h52" stroke="#17131A" stroke-width="2" stroke-dasharray="3 3"/>
-        <text x="110" y="244" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">air time: 2 cm</text>
+        <text x="110" y="244" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A" data-t="s.air">air time: 2 cm</text>
       </svg>
     </section>
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">After training. Seba starts the part nobody films.</div>
+      <div class="caption" data-t="p4.cap">After training. Seba starts the part nobody films.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who seba">SEBA #7</span>Now the real training: stretch, proper dinner, <em>bed by ten.</em></p>
-        <p class="bubble" style="--b:1"><span class="who dan">DAN</span>Wait. The big secret of pro athletes is… <em>going to bed?</em></p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Relax, Dan. Amateurs have one advantage over pros: <em>chips.</em></p>
+        <p class="bubble" style="--b:0"><span class="who seba">SEBA #7</span><span data-t="p4.b0">Now the real training: stretch, proper dinner, <em>bed by ten.</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who dan">DAN</span><span data-t="p4.b1">Wait. The big secret of pro athletes is… <em>going to bed?</em></span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Relax, Dan. Amateurs have one advantage over pros: <em>chips.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 250" role="img" aria-label="Seba, fresh, holds a water bottle next to a clock showing 21:45, while Dan lies flat on the floor eating chips. Inside Dan, Flex holds a sign saying Sleep 9 hours with shock, and Blob happily hugs a bag of chips.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 250" role="img" aria-label="Seba, fresh, holds a water bottle next to a clock showing 21:45, while Dan lies flat on the floor eating chips. Inside Dan, Flex holds a sign saying Sleep 9 hours with shock, and Blob happily hugs a bag of chips.">
         <rect width="310" height="250" fill="#F4E4C8"/>
         <rect y="216" width="310" height="34" fill="#E8A35C"/>
         <path d="M0 216 H310" stroke="#17131A" stroke-width="4"/>
@@ -259,7 +259,7 @@
           <path d="M-8 14 Q0 20 8 14" stroke="#17131A" stroke-width="3" fill="none"/>
         </g>
         <use href="#chips" transform="translate(92,176) rotate(-20) scale(.8)"/>
-        <text x="110" y="150" font-family="Kalam, cursive" font-weight="700" font-size="14" fill="#17131A" transform="rotate(-8 110 150)">crunch…</text>
+        <text x="110" y="150" font-family="Kalam, cursive" font-weight="700" font-size="14" fill="#17131A" transform="rotate(-8 110 150)" data-t="s.crunch">crunch…</text>
 
         <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 250 L800 250 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
         <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
@@ -268,8 +268,8 @@
           <g transform="translate(0,-110) rotate(-4)">
             <path d="M0 26 V44" stroke="#6B4A2A" stroke-width="4"/>
             <rect x="-56" y="-18" width="112" height="44" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-            <text y="2" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#17131A" letter-spacing="1">SLEEP 9 HOURS?!</text>
-            <text y="18" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#E23A4E">on purpose?!</text>
+            <text y="2" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#17131A" letter-spacing="1" data-t="s.sleep">SLEEP 9 HOURS?!</text>
+            <text y="18" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#E23A4E" data-t="s.purpose">on purpose?!</text>
           </g>
         </g>
         <g transform="translate(680,176)">
@@ -281,15 +281,55 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> Train like a pro and you'll look like a pro.</p>
-    <p><b>Reality:</b> pros like Seba build their workload over years, with coaches, physios, a nutrition plan and a lot of sleep. Copying their sessions as a beginner mostly gets you injured. Copy their habits instead: warm up properly, train consistently, eat real meals, sleep 7 to 9 hours, and recover like it's part of the job. Because for them, it is.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> Train like a pro and you'll look like a pro.</p>
+    <p data-t="myth.2"><b>Reality:</b> pros like Seba build their workload over years, with coaches, physios, a nutrition plan and a lot of sleep. Copying their sessions as a beginner mostly gets you injured. Copy their habits instead: warm up properly, train consistently, eat real meals, sleep 7 to 9 hours, and recover like it's part of the job. Because for them, it is.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 8 Antrenează-te ca un profesionist",
+  "ep.title": "Episodul 8 · Antrenează-te ca un profesionist",
+  "p1.cap": "Prietenul lui Dan, Seba, joacă volei în prima divizie din România. Numărul 7. Azi Dan „se antrenează cu un profesionist”.",
+  "p1.b0": "Încălzire ușoară azi. Doar <em>200 de sărituri.</em>",
+  "p1.b1": "Perfect. Eu fac 200 de… <em>gânduri</em> despre sărituri.",
+  "p1.alt": "Într-o sală de sport, Seba, în tricoul turcoaz cu numărul 7, sare atât de sus încât trece cu capul peste fileu, în timp ce Dan, fără suflu, face cercuri mici cu brațele.",
+  "p2.cap": "În interiorul lui Dan. Raportul de scouting.",
+  "p2.b0": "Uită-te la el… Am putea fi <em>noi!</em>",
+  "p2.b1": "Se antrenează 20 de ore pe săptămână și doarme nouă. Ar trebui să renunți la YouTube la 2 noaptea. Pentru totdeauna.",
+  "p2.alt": "Pe ecranul camerei-ochi a lui Dan, un raport de scouting despre Seba îi listează statisticile. Flex se uită cu stele în ochi, iar Blob nu pare impresionat.",
+  "p3.cap": "Blocajul.",
+  "p3.b0": "<em>BLOC!</em> Ai văzut? <em>AM SĂRIT!</em>",
+  "p3.b1": "Aia a fost o ridicare pe vârfuri, Dan.",
+  "p3.alt": "La fileu, Seba atacă din aer de foarte sus, în timp ce Dan, abia desprins de sol și cu ochii închiși, ia mingea în față.",
+  "p4.cap": "După antrenament. Seba începe partea pe care n-o filmează nimeni.",
+  "p4.b0": "Acum antrenamentul adevărat: stretching, o cină ca lumea, <em>la culcare până la zece.</em>",
+  "p4.b1": "Stai. Marele secret al sportivilor profesioniști e… <em>să se culce?</em>",
+  "p4.b2": "Liniștește-te, Dan. Amatorii au un avantaj față de profesioniști: <em>chipsurile.</em>",
+  "p4.alt": "Seba, odihnit, ține o sticlă de apă lângă un ceas care arată 21:45, în timp ce Dan zace pe jos și mănâncă chipsuri. În interiorul lui Dan, Flex ține șocat o pancartă cu Somn 9 ore, iar Blob îmbrățișează fericit o pungă de chipsuri.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Antrenează-te ca un profesionist și o să arăți ca un profesionist.",
+  "myth.2": "<b>Realitate:</b> profesioniștii ca Seba își cresc efortul de-a lungul anilor, cu antrenori, kinetoterapeuți, un plan de nutriție și mult somn. Dacă le copiezi antrenamentele ca începător, cel mai probabil te accidentezi. Copiază-le în schimb obiceiurile: încălzire ca lumea, antrenament constant, mese adevărate, 7–9 ore de somn și recuperare tratată ca parte din job. Pentru că, pentru ei, chiar este.",
+  "s.j137": "SĂRITURA 137",
+  "s.j1": "SĂRITURA 1",
+  "s.report": "RAPORT DE SCOUTING: SEBA #7",
+  "s.r1": "Antrenament: 20 h / săpt.",
+  "s.r2": "Somn: 9 h / noapte",
+  "s.r3": "Detentă: „da”",
+  "s.r4": "Încălzire: mai lungă ca a ta",
+  "s.r5": "Gustări la 2 noaptea: 0",
+  "s.wham": "BUF!",
+  "s.air": "zbor: 2 cm",
+  "s.crunch": "cronț…",
+  "s.sleep": "SOMN 9 ORE?!",
+  "s.purpose": "intenționat?!"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

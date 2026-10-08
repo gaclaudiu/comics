@@ -140,9 +140,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 12 · Zacuscă Season<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 12 · Zacuscă Season</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -150,12 +150,12 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">October. Zacuscă season. Dan came to the countryside “to relax.”</div>
+      <div class="caption" data-t="p1.cap">October. Zacuscă season. Dan came to the countryside “to relax.”</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who mama">MAMA</span>Just a little help, dragă. Only <em>20 kilos</em> of peppers. And the eggplants. And the onions.</p>
-        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span>Twenty KILOS? That's not cooking, Mama. That's a <em>deadlift.</em></p>
+        <p class="bubble" style="--b:0"><span class="who mama">MAMA</span><span data-t="p1.b0">Just a little help, dragă. Only <em>20 kilos</em> of peppers. And the eggplants. And the onions.</span></p>
+        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span><span data-t="p1.b1">Twenty KILOS? That's not cooking, Mama. That's a <em>deadlift.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="In an autumn country yard, Mama in a flowery apron points at mountains of crates full of red peppers and purple eggplants while peppers roast on a metal plate over a fire. Dan, in a straw hat, stares at the crates in horror.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="In an autumn country yard, Mama in a flowery apron points at mountains of crates full of red peppers and purple eggplants while peppers roast on a metal plate over a fire. Dan, in a straw hat, stares at the crates in horror.">
         <rect width="800" height="230" fill="#F6E3C4"/>
         <path d="M0 150 Q200 120 420 140 T800 130 V230 H0 Z" fill="#D9B26B"/>
         <path d="M0 184 Q260 166 520 182 T800 176 V230 H0 Z" fill="#B7C46A" stroke="#17131A" stroke-width="3"/>
@@ -204,12 +204,12 @@
 
     <!-- PANEL 2: peeling -->
     <section class="panel" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Step 1: peel the roasted peppers. While they're hot.</div>
+      <div class="caption" data-t="p2.cap">Step 1: peel the roasted peppers. While they're hot.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><em>AU! AU!</em> Mama, they're four hundred degrees!</p>
-        <p class="bubble r" style="--b:1"><span class="who mama">MAMA</span>Blow on your fingers. I've done this every October since 1984.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p2.b0"><em>AU! AU!</em> Mama, they're four hundred degrees!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who mama">MAMA</span><span data-t="p2.b1">Blow on your fingers. I've done this every October since 1984.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="At an outdoor table, Dan juggles a steaming roasted pepper with red, burnt fingertips while Mama calmly peels them barehanded, building a huge tidy pile.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="At an outdoor table, Dan juggles a steaming roasted pepper with red, burnt fingertips while Mama calmly peels them barehanded, building a huge tidy pile.">
         <rect width="400" height="250" fill="#F6E3C4"/>
         <rect x="0" y="176" width="400" height="16" fill="#A67C52" stroke="#17131A" stroke-width="3.5"/>
         <path d="M30 192 V250 M370 192 V250" stroke="#17131A" stroke-width="8"/>
@@ -235,19 +235,19 @@
           <use href="#pepper" transform="translate(-20,0) rotate(80)"/><use href="#pepper" transform="translate(4,-2) rotate(100)"/><use href="#pepper" transform="translate(-8,-14) rotate(70)"/><use href="#pepper" transform="translate(16,-14) rotate(90)"/><use href="#pepper" transform="translate(4,-26) rotate(85)"/>
         </g>
         <path d="M150 172 q8 -8 16 0 q6 -6 12 0 M60 172 q8 -6 14 0" stroke="#7A3A2A" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <text x="232" y="122" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">peeled: 147</text>
-        <text x="110" y="168" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">peeled: ½</text>
+        <text x="232" y="122" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A" data-t="s.peeled1">peeled: 147</text>
+        <text x="110" y="168" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A" data-t="s.peeled2">peeled: ½</text>
       </svg>
     </section>
 
     <!-- PANEL 3: inside -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Inside Dan. The early reviews.</div>
+      <div class="caption" data-t="p3.cap">Inside Dan. The early reviews.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Forearms on fire! Grip endurance! Hour two of peeling! <em>I love the countryside!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Vegetables. Boring. Wake me up when <em>the oil</em> arrives.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">Forearms on fire! Grip endurance! Hour two of peeling! <em>I love the countryside!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">Vegetables. Boring. Wake me up when <em>the oil</em> arrives.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex flexes with burning forearms and gritted joy while Blob naps in a hammock made of a pepper skin.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Flex flexes with burning forearms and gritted joy while Blob naps in a hammock made of a pepper skin.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(110,166)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexBurn"/>
           <g class="flame" transform="translate(-70,-70) scale(.5)"><path d="M-20 0 Q-24 -24 -8 -36 Q-8 -18 2 -22 Q2 -40 14 -44 Q12 -26 22 -20 Q24 -8 20 0 Z" fill="#F28C3C" stroke="#17131A" stroke-width="3"/></g>
@@ -265,12 +265,12 @@
 
     <!-- PANEL 4: oil -->
     <section class="panel" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Step 2: “a little oil.”</div>
+      <div class="caption" data-t="p4.cap">Step 2: “a little oil.”</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Mama… how much is <em>“a little oil”?</em></p>
-        <p class="bubble r" style="--b:1"><span class="who mama">MAMA</span>As much as it asks for, dragă. It's asking for one more.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Mama… how much is <em>“a little oil”?</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who mama">MAMA</span><span data-t="p4.b1">As much as it asks for, dragă. It's asking for one more.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Mama pours a big bottle of sunflower oil into a black cauldron over a fire, next to two bottles that are already empty. Dan watches in shock. An inset shows Blob floating happily in a pool of oil.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 400 250" role="img" aria-label="Mama pours a big bottle of sunflower oil into a black cauldron over a fire, next to two bottles that are already empty. Dan watches in shock. An inset shows Blob floating happily in a pool of oil.">
         <rect width="400" height="250" fill="#F6E3C4"/>
         <path d="M0 212 H400 V250 H0 Z" fill="#B7C46A"/>
         <path d="M0 212 H400" stroke="#17131A" stroke-width="3"/>
@@ -278,7 +278,7 @@
         <g transform="translate(206,240)"><use href="#fire"/></g>
         <use href="#oil" transform="translate(296,196) scale(.6)" opacity=".55"/>
         <use href="#oil" transform="translate(326,198) scale(.6) rotate(80)" opacity=".55"/>
-        <text x="312" y="234" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#17131A">empty. empty.</text>
+        <text x="312" y="234" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="10" fill="#17131A" data-t="s.empty">empty. empty.</text>
         <!-- Mama pouring -->
         <g transform="translate(286,44) scale(.6)">
           <path d="M-36 44 Q-60 20 -84 4" stroke="#3F7D4A" stroke-width="13" fill="none" stroke-linecap="round"/>
@@ -304,19 +304,19 @@
           <circle r="44" fill="#F8D3CD" stroke="#17131A" stroke-width="3.5"/>
           <path d="M-42 12 Q0 4 42 12 L36 30 Q0 50 -36 30 Z" fill="#F7D774" stroke="#17131A" stroke-width="2"/>
           <g transform="translate(0,14) scale(.34)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobShades"/></g></g>
-          <text y="-26" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#E23A4E">IT'S HAPPENING!</text>
+          <text y="-26" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#E23A4E" data-t="s.happening">IT'S HAPPENING!</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 5: stirring -->
     <section class="panel" style="--i:4" aria-label="Panel 5">
-      <div class="caption">Step 3: stir. For four hours. Without stopping.</div>
+      <div class="caption" data-t="p5.cap">Step 3: stir. For four hours. Without stopping.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who mama">MAMA</span>Don't stop stirring or it sticks! And if it sticks, <em>we start again.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span>Hour four. I can't feel my arms. I can't feel my <em>soul.</em></p>
+        <p class="bubble" style="--b:0"><span class="who mama">MAMA</span><span data-t="p5.b0">Don't stop stirring or it sticks! And if it sticks, <em>we start again.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span><span data-t="p5.b1">Hour four. I can't feel my arms. I can't feel my <em>soul.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Dan, drenched in sweat, stirs the bubbling cauldron with a huge wooden paddle as the sun sets. A sundial-style sign marks hour four. An inset shows Flex shouting that it is the best endurance session ever.">
+      <svg class="art" data-t-aria="p5.alt" viewBox="0 0 400 250" role="img" aria-label="Dan, drenched in sweat, stirs the bubbling cauldron with a huge wooden paddle as the sun sets. A sundial-style sign marks hour four. An inset shows Flex shouting that it is the best endurance session ever.">
         <rect width="400" height="250" fill="#F2C49B"/>
         <circle cx="330" cy="150" r="40" fill="#F28C3C" opacity=".8"/>
         <path d="M0 212 H400 V250 H0 Z" fill="#B7C46A"/>
@@ -340,28 +340,28 @@
         </g>
         <g transform="translate(318,60) rotate(3)">
           <rect x="-48" y="-18" width="96" height="36" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A">HOUR 4 / 4</text>
-          <text y="13" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E">(Mama: “almost done”)</text>
+          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A" data-t="s.hour">HOUR 4 / 4</text>
+          <text y="13" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.almost">(Mama: “almost done”)</text>
         </g>
         <!-- inset: Flex -->
         <g transform="translate(56,60)">
           <circle r="44" fill="#F8D3CD" stroke="#17131A" stroke-width="3.5"/>
           <g transform="translate(0,26) scale(.32)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexStars"/></g></g>
-          <text y="-24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E">BEST ENDURANCE</text>
-          <text y="-13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E">SESSION EVER!</text>
+          <text y="-24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E" data-t="s.best1">BEST ENDURANCE</text>
+          <text y="-13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E" data-t="s.best2">SESSION EVER!</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 6 -->
     <section class="panel wide three" style="--i:5" aria-label="Panel 6">
-      <div class="caption">Midnight. The pantry is full. Quality control has begun.</div>
+      <div class="caption" data-t="p6.cap">Midnight. The pantry is full. Quality control has begun.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Just tasting it. For <em>quality control.</em> Third slice. Very thorough control.</p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>We burned about 800 calories making this!</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>And he's eating them back one spoon at a time. <em>The circle of life.</em></p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p6.b0">Just tasting it. For <em>quality control.</em> Third slice. Very thorough control.</span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p6.b1">We burned about 800 calories making this!</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p6.b2">And he's eating them back one spoon at a time. <em>The circle of life.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 250" role="img" aria-label="In the pantry, shelves hold 27 jars of zacuscă. Dan, exhausted but happy, eats a thick slice of bread with zacuscă while Mama proudly holds up another jar. Inside, Flex cheers about calories burned and Blob happily eats from a jar with a spoon.">
+      <svg class="art" data-t-aria="p6.alt" viewBox="0 0 800 250" role="img" aria-label="In the pantry, shelves hold 27 jars of zacuscă. Dan, exhausted but happy, eats a thick slice of bread with zacuscă while Mama proudly holds up another jar. Inside, Flex cheers about calories burned and Blob happily eats from a jar with a spoon.">
         <rect width="310" height="250" fill="#E9D8BC"/>
         <g stroke="#17131A" stroke-width="3" fill="#A67C52">
           <rect x="10" y="104" width="280" height="8"/><rect x="10" y="160" width="280" height="8"/><rect x="10" y="216" width="280" height="8"/>
@@ -420,8 +420,8 @@
         <g transform="translate(470,162)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexStars"/></g></g>
         <g transform="translate(560,40) rotate(-3)">
           <rect x="-58" y="-18" width="116" height="36" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#3BB273">BURNED: ~800 kcal</text>
-          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E">EATEN: ~ALSO 800</text>
+          <text y="-1" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#3BB273" data-t="s.burned">BURNED: ~800 kcal</text>
+          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E" data-t="s.eaten">EATEN: ~ALSO 800</text>
         </g>
         <g transform="translate(680,178)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobSmug"/></g>
           <use href="#jar" transform="translate(-76,20) scale(1.5)"/>
@@ -433,15 +433,60 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> It's just vegetables, so you can eat the whole jar.</p>
-    <p><b>Reality:</b> zacuscă is mostly peppers, eggplant and onion, which is great: fibre, vitamins, real food, made at home. But traditional recipes use a lot of sunflower oil, and one tablespoon of oil has about 120 calories. So a jar is closer to a meal than a snack. Enjoy it on bread, in normal portions, and keep the rest for winter. That's why Mama made 27 jars.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> It's just vegetables, so you can eat the whole jar.</p>
+    <p data-t="myth.2"><b>Reality:</b> zacuscă is mostly peppers, eggplant and onion, which is great: fibre, vitamins, real food, made at home. But traditional recipes use a lot of sunflower oil, and one tablespoon of oil has about 120 calories. So a jar is closer to a meal than a snack. Enjoy it on bread, in normal portions, and keep the rest for winter. That's why Mama made 27 jars.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 12 Sezonul de zacuscă",
+  "ep.title": "Episodul 12 · Sezonul de zacuscă",
+  "p1.cap": "Octombrie. Sezonul de zacuscă. Dan a venit la țară „să se relaxeze”.",
+  "p1.b0": "Doar un pic de ajutor, dragă. Numai <em>20 de kile</em> de gogoșari. Și vinetele. Și ceapa.",
+  "p1.b1": "Douăzeci de KILE? Mamă, asta nu-i gătit. Asta-i <em>deadlift.</em>",
+  "p1.alt": "Într-o curte de la țară, toamna, mama, cu un șorț înflorat, arată spre lăzi pline cu gogoșari și vinete, în timp ce pe plită se coc ardeii. Dan, cu pălărie de paie, se uită îngrozit la lăzi.",
+  "p2.cap": "Pasul 1: cureți gogoșarii copți. Cât sunt fierbinți.",
+  "p2.b0": "<em>AU! AU!</em> Mamă, au patru sute de grade!",
+  "p2.b1": "Suflă-ți în degete. Fac asta în fiecare octombrie din 1984.",
+  "p2.alt": "La masa din curte, Dan jonglează cu un ardei copt fierbinte, cu vârfurile degetelor roșii, în timp ce mama îi curăță liniștită cu mâna goală și face o grămadă uriașă.",
+  "p3.cap": "În interiorul lui Dan. Primele recenzii.",
+  "p3.b0": "Antebrațe în flăcări! Priză de fier! Ora a doua de curățat! <em>Ador viața la țară!</em>",
+  "p3.b1": "Legume. Plictiseală. Treziți-mă când vine <em>uleiul.</em>",
+  "p3.alt": "Flex se încordează cu antebrațele în flăcări, iar Blob doarme într-un hamac făcut dintr-o coajă de ardei.",
+  "p4.cap": "Pasul 2: „un pic de ulei”.",
+  "p4.b0": "Mamă… cât înseamnă <em>„un pic de ulei”?</em>",
+  "p4.b1": "Cât cere, dragă. Acum mai cere o sticlă.",
+  "p4.alt": "Mama toarnă o sticlă mare de ulei de floarea-soarelui într-un ceaun pus pe foc, lângă două sticle deja goale. Dan privește șocat. Într-un cerc, Blob plutește fericit într-o baltă de ulei.",
+  "p5.cap": "Pasul 3: amesteci. Patru ore. Fără oprire.",
+  "p5.b0": "Nu te opri din amestecat, că se prinde! Și dacă se prinde, <em>o luăm de la capăt.</em>",
+  "p5.b1": "Ora patru. Nu-mi mai simt brațele. Nu-mi mai simt <em>sufletul.</em>",
+  "p5.alt": "Dan, ud de transpirație, amestecă în ceaunul care bolborosește cu un făcăleț uriaș, la apus. Un panou arată ora patru. Într-un cerc, Flex strigă că e cel mai bun antrenament de rezistență.",
+  "p6.cap": "Miezul nopții. Cămara e plină. A început controlul calității.",
+  "p6.b0": "Doar gust. Pentru <em>controlul calității.</em> A treia felie. Control foarte riguros.",
+  "p6.b1": "Am ars vreo 800 de calorii făcând-o!",
+  "p6.b2": "Și el le mănâncă la loc, linguriță cu linguriță. <em>Cercul vieții.</em>",
+  "p6.alt": "În cămară, pe rafturi, stau 27 de borcane de zacuscă. Dan, obosit dar fericit, mănâncă o felie groasă de pâine cu zacuscă, iar mama ridică mândră încă un borcan. Înăuntru, Flex se bucură de caloriile arse, iar Blob mănâncă direct din borcan.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Sunt doar legume, deci poți mânca tot borcanul.",
+  "myth.2": "<b>Realitate:</b> zacusca e în mare parte gogoșari, vinete și ceapă, și asta e foarte bine: fibre, vitamine, mâncare adevărată, făcută acasă. Dar rețetele tradiționale folosesc mult ulei de floarea-soarelui, iar o lingură de ulei are cam 120 de calorii. Așa că un borcan e mai degrabă o masă decât o gustare. Mănânc-o pe pâine, în porții normale, și păstrează restul pentru iarnă. De-asta a făcut mama 27 de borcane.",
+  "s.peeled1": "curățați: 147",
+  "s.peeled2": "curățați: ½",
+  "s.empty": "goală. goală.",
+  "s.happening": "ÎNCEPE!",
+  "s.hour": "ORA 4 / 4",
+  "s.almost": "(Mama: „aproape gata”)",
+  "s.best1": "CEL MAI BUN",
+  "s.best2": "ANTRENAMENT!",
+  "s.burned": "ARS: ~800 kcal",
+  "s.eaten": "MÂNCAT: ~TOT 800"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

@@ -39,9 +39,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 1 · The Protein Cookie<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 1 · The Protein Cookie</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -49,11 +49,11 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Day 12 of “getting shredded.” Supermarket, aisle 7.</div>
+      <div class="caption" data-t="p1.cap">Day 12 of “getting shredded.” Supermarket, aisle 7.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>“High protein”? That's basically broccoli. In cookie form.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">“High protein”? That's basically broccoli. In cookie form.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan holds up a box of high protein cookies in a supermarket aisle, eyes sparkling">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="Dan holds up a box of high protein cookies in a supermarket aisle, eyes sparkling">
         <rect width="800" height="230" fill="url(#shelf)"/>
         <rect y="200" width="800" height="30" fill="#CFC6BC"/>
         <g transform="translate(400,88)">
@@ -64,9 +64,9 @@
           <path d="M36 50 Q64 30 70 -2" stroke="#17131A" stroke-width="20" fill="none" stroke-linecap="round" opacity="0" />
           <g transform="translate(78,-40) rotate(-8)">
             <rect x="-44" y="-30" width="88" height="60" rx="3" fill="#1E9C97" stroke="#17131A" stroke-width="4"/>
-            <text x="0" y="-7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8">HIGH</text>
-            <text x="0" y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8">PROTEIN!</text>
-            <text x="0" y="25" text-anchor="middle" font-family="Kalam, cursive" font-size="8" fill="#fff">double choc cookies</text>
+            <text x="0" y="-7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8" data-t="s.high">HIGH</text>
+            <text x="0" y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="19" fill="#fff" stroke="#17131A" stroke-width=".8" data-t="s.protein">PROTEIN!</text>
+            <text x="0" y="25" text-anchor="middle" font-family="Kalam, cursive" font-size="8" fill="#fff" data-t="s.cookies">double choc cookies</text>
           </g>
           <circle cx="70" cy="-2" r="10" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
         </g>
@@ -80,28 +80,28 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Meanwhile, inside Dan.</div>
+      <div class="caption" data-t="p2.cap">Meanwhile, inside Dan.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><em>PROTEIN INBOUND!</em> He's finally building me a home gym!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Zoom in on the back, champ. 6 grams of protein. 31 grams of sugar.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0"><em>PROTEIN INBOUND!</em> He's finally building me a home gym!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">Zoom in on the back, champ. 6 grams of protein. 31 grams of sugar.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex cheers while Blob reads the nutrition label on Dan's eye-cam through a magnifying glass">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Flex cheers while Blob reads the nutrition label on Dan's eye-cam through a magnifying glass">
         <use href="#gutWall" transform="translate(0,0) scale(.5,1)"/>
         <g transform="translate(118,14)">
           <rect width="164" height="112" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
           <rect x="10" y="10" width="144" height="92" rx="4" fill="#DDF4F2"/>
-          <text x="82" y="-3" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" letter-spacing="1">EYE-CAM · LIVE</text>
+          <text x="82" y="-3" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" letter-spacing="1" data-t="s.cam">EYE-CAM · LIVE</text>
           <rect x="30" y="16" width="104" height="80" fill="#fff" stroke="#17131A" stroke-width="2"/>
-          <text x="36" y="30" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#17131A">Nutrition Facts</text>
+          <text x="36" y="30" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#17131A" data-t="s.nf">Nutrition Facts</text>
           <path d="M34 35 H130" stroke="#17131A" stroke-width="3"/>
-          <text x="36" y="50" font-family="Arial, sans-serif" font-size="10" fill="#17131A">Protein</text>
+          <text x="36" y="50" font-family="Arial, sans-serif" font-size="10" fill="#17131A" data-t="s.prot">Protein</text>
           <text x="128" y="50" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#17131A">6 g</text>
           <path d="M34 56 H130" stroke="#17131A" stroke-width="1"/>
           <rect x="33" y="60" width="98" height="16" fill="#FFE7A1"/>
-          <text x="36" y="72" font-family="Arial, sans-serif" font-size="10" fill="#17131A">Sugars</text>
+          <text x="36" y="72" font-family="Arial, sans-serif" font-size="10" fill="#17131A" data-t="s.sug">Sugars</text>
           <text x="128" y="72" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#E23A4E">31 g</text>
           <path d="M34 80 H130" stroke="#17131A" stroke-width="1"/>
-          <text x="36" y="91" font-family="Arial, sans-serif" font-size="8" fill="#17131A">Calories 420</text>
+          <text x="36" y="91" font-family="Arial, sans-serif" font-size="8" fill="#17131A" data-t="s.cal">Calories 420</text>
         </g>
         <g transform="translate(92,160)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexHappy"/></g></g>
         <g transform="translate(305,172)">
@@ -115,10 +115,10 @@
     <!-- PANEL 3 -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>But the front says <em>HIGH PROTEIN.</em> In CAPITALS!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Sweetie, that's a cookie wearing a gym shirt. Capital letters are free.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">But the front says <em>HIGH PROTEIN.</em> In CAPITALS!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">Sweetie, that's a cookie wearing a gym shirt. Capital letters are free.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex panics and points at the screen, which shows a cookie wearing a tank top. Blob looks unimpressed.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Flex panics and points at the screen, which shows a cookie wearing a tank top. Blob looks unimpressed.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(128,18)">
           <rect width="144" height="104" rx="8" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
@@ -144,12 +144,12 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Later: two cookies and a “post-workout” shake. There was no workout.</div>
+      <div class="caption" data-t="p4.cap">Later: two cookies and a “post-workout” shake. There was no workout.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Wait… protein builds muscle <em>by itself,</em> right? We don't actually have to <em>LIFT?</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>You wait for the protein. I'll take the extra calories. I'm open 24/7.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p4.b0">Wait… protein builds muscle <em>by itself,</em> right? We don't actually have to <em>LIFT?</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p4.b1">You wait for the protein. I'll take the extra calories. I'm open 24/7.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan chugs a giant shake on the couch while inside him Flex sweats and Blob relaxes in sunglasses next to a Storage sign">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="Dan chugs a giant shake on the couch while inside him Flex sweats and Blob relaxes in sunglasses next to a Storage sign">
         <rect width="310" height="240" fill="#FFFEF8"/>
         <rect x="18" y="150" width="270" height="70" rx="14" fill="#9C6ADE" stroke="#17131A" stroke-width="4"/>
         <rect x="18" y="120" width="270" height="44" rx="14" fill="#B38BEA" stroke="#17131A" stroke-width="4"/>
@@ -172,8 +172,8 @@
         <g transform="translate(470,160)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
         <g transform="translate(700,52)">
           <rect x="-58" y="-26" width="116" height="40" fill="#FFFEF8" stroke="#17131A" stroke-width="3" transform="rotate(4)"/>
-          <text x="0" y="-4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" transform="rotate(4)" letter-spacing="1">STORAGE</text>
-          <text x="0" y="9" text-anchor="middle" font-family="Kalam, cursive" font-size="10" fill="#E23A4E" transform="rotate(4)">no limit · no questions</text>
+          <text x="0" y="-4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" transform="rotate(4)" letter-spacing="1" data-t="s.storage">STORAGE</text>
+          <text x="0" y="9" text-anchor="middle" font-family="Kalam, cursive" font-size="10" fill="#E23A4E" transform="rotate(4)" data-t="s.nolimit">no limit · no questions</text>
           <path d="M0 14 V60" stroke="#17131A" stroke-width="4"/>
         </g>
         <g transform="translate(640,170)">
@@ -187,16 +187,50 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> “High protein” on the front of the box means it's healthy.</p>
-    <p><b>Reality:</b> turn the box around. Protein helps muscle repair after training, but it doesn't replace the training. Extra calories still land somewhere. (Ask Blob.)</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> “High protein” on the front of the box means it's healthy.</p>
+    <p data-t="myth.2"><b>Reality:</b> turn the box around. Protein helps muscle repair after training, but it doesn't replace the training. Extra calories still land somewhere. (Ask Blob.)</p>
   </aside>
   
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 1 Biscuitul proteic",
+  "ep.title": "Episodul 1 · Biscuitul proteic",
+  "p1.cap": "Ziua 12 din „mă usuc”. Supermarket, culoarul 7.",
+  "p1.b0": "„Bogat în proteine”? Practic e broccoli. În formă de biscuit.",
+  "p1.alt": "Dan ridică o cutie de biscuiți „bogați în proteine” pe un culoar de supermarket, cu ochii sclipind.",
+  "p2.cap": "Între timp, în interiorul lui Dan.",
+  "p2.b0": "<em>VIN PROTEINELE!</em> În sfârșit îmi face o sală acasă!",
+  "p2.b1": "Dă zoom pe spate, campionule. 6 grame de proteine. 31 de grame de zahăr.",
+  "p2.alt": "Flex se bucură, iar Blob citește cu lupa eticheta nutrițională de pe camera-ochi a lui Dan.",
+  "p3.b0": "Dar în față scrie <em>BOGAT ÎN PROTEINE.</em> Cu MAJUSCULE!",
+  "p3.b1": "Dragă, ăla e un biscuit cu maiou de sală. Majusculele sunt gratis.",
+  "p3.alt": "Flex intră în panică și arată spre ecran, unde e un biscuit îmbrăcat cu maiou. Blob nu pare impresionat.",
+  "p4.cap": "Mai târziu: doi biscuiți și un shake „după antrenament”. N-a fost niciun antrenament.",
+  "p4.b0": "Stai… proteinele fac mușchi <em>singure,</em> nu? Nu trebuie chiar să <em>RIDICĂM?</em>",
+  "p4.b1": "Tu aștepți proteinele. Eu iau caloriile în plus. Sunt deschis non-stop.",
+  "p4.alt": "Dan bea un shake uriaș pe canapea, iar în interiorul lui Flex transpiră și Blob se relaxează cu ochelari de soare lângă un panou „Depozit”.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> „Bogat în proteine” pe fața cutiei înseamnă că e sănătos.",
+  "myth.2": "<b>Realitate:</b> întoarce cutia. Proteinele ajută mușchii să se refacă după antrenament, dar nu înlocuiesc antrenamentul. Caloriile în plus tot ajung undeva. (Întreabă-l pe Blob.)",
+  "s.high": "BOGAT ÎN",
+  "s.protein": "PROTEINE!",
+  "s.cookies": "biscuiți cu ciocolată",
+  "s.cam": "OCHI-CAM · LIVE",
+  "s.nf": "Valori nutriționale",
+  "s.prot": "Proteine",
+  "s.sug": "Zaharuri",
+  "s.cal": "Calorii 420",
+  "s.storage": "DEPOZIT",
+  "s.nolimit": "fără limite, fără vorbe"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

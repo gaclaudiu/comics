@@ -90,9 +90,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 6 · Stick With It<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 6 · Stick With It</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -100,19 +100,19 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Dan saw an Olympian on TV wearing colourful tape. Now Dan wears colourful tape.</div>
+      <div class="caption" data-t="p1.cap">Dan saw an Olympian on TV wearing colourful tape. Now Dan wears colourful tape.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>Pro-athlete knees. <em>Nothing</em> can hurt me now.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">Pro-athlete knees. <em>Nothing</em> can hurt me now.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan poses proudly in shorts with bright blue and pink tape crossed over both knees, admiring himself in a gym mirror">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="Dan poses proudly in shorts with bright blue and pink tape crossed over both knees, admiring himself in a gym mirror">
         <rect width="800" height="230" fill="#E7F1F0"/>
         <rect y="206" width="800" height="24" fill="#8C8492"/>
         <path d="M0 206 H800" stroke="#17131A" stroke-width="4"/>
         <g transform="translate(120,36) rotate(-3)">
           <rect x="-58" y="0" width="116" height="70" fill="#fff" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#2E7FD9" letter-spacing="1">KINESIO TAPE</text>
-          <text x="0" y="40" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">“as seen on athletes!”</text>
-          <text x="0" y="58" text-anchor="middle" font-family="Kalam, cursive" font-size="9" fill="#E23A4E">(results not included)</text>
+          <text x="0" y="22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#2E7FD9" letter-spacing="1" data-t="s.kt">KINESIO TAPE</text>
+          <text x="0" y="40" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A" data-t="s.seen">“as seen on athletes!”</text>
+          <text x="0" y="58" text-anchor="middle" font-family="Kalam, cursive" font-size="9" fill="#E23A4E" data-t="s.results">(results not included)</text>
         </g>
         <g transform="translate(330,36) scale(.84)">
           <use href="#danProud"/>
@@ -131,17 +131,17 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan's left knee.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan's left knee.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>The tape is protecting us! I feel so… <em>supported!</em> Emotionally!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>It's sticky fabric, champ. The only thing it's holding together is his confidence.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0">The tape is protecting us! I feel so… <em>supported!</em> Emotionally!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">It's sticky fabric, champ. The only thing it's holding together is his confidence.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Inside the knee, a giant strip of blue tape runs across the sky. Flex beams with little hearts floating around him while Blob looks unimpressed.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Inside the knee, a giant strip of blue tape runs across the sky. Flex beams with little hearts floating around him while Blob looks unimpressed.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="rotate(-10 200 40)">
           <rect x="-40" y="18" width="480" height="40" fill="#2E7FD9" opacity=".85" stroke="#17131A" stroke-width="3"/>
           <path d="M-40 30 Q-20 24 0 30 T40 30 T80 30 T120 30 T160 30 T200 30 T240 30 T280 30 T320 30 T360 30 T400 30 T440 30 M-40 46 Q-20 40 0 46 T40 46 T80 46 T120 46 T160 46 T200 46 T240 46 T280 46 T320 46 T360 46 T400 46 T440 46" stroke="#8FC3F7" stroke-width="2" fill="none"/>
-          <text x="210" y="44" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#fff" letter-spacing="2">KINESIO TAPE (MOSTLY DECORATIVE)</text>
+          <text x="210" y="44" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#fff" letter-spacing="2" data-t="s.deco">KINESIO TAPE (MOSTLY DECORATIVE)</text>
         </g>
         <g transform="translate(96,166)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexHappy"/></g></g>
         <g fill="#F2549A" stroke="#17131A" stroke-width="2">
@@ -154,21 +154,21 @@
 
     <!-- PANEL 3 -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">That evening. Removal time.</div>
+      <div class="caption" data-t="p3.cap">That evening. Removal time.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Why are all the leg hairs packing suitcases?</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>He's about to rip it off in one go. Like a magician with a tablecloth. Except the tablecloth is skin.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">Why are all the leg hairs packing suitcases?</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">He's about to rip it off in one go. Like a magician with a tablecloth. Except the tablecloth is skin.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Red alarm lights flash. A line of tiny leg hairs carrying suitcases marches towards an exit sign while Flex looks alarmed and Blob watches calmly.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Red alarm lights flash. A line of tiny leg hairs carrying suitcases marches towards an exit sign while Flex looks alarmed and Blob watches calmly.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".2"/>
         <g transform="translate(200,24)">
           <rect x="-96" y="-14" width="192" height="30" fill="#17131A"/>
-          <text class="alarm" x="0" y="8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#FFC83D" letter-spacing="1.5">⚠ HAIR EVACUATION ⚠</text>
+          <text class="alarm" x="0" y="8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#FFC83D" letter-spacing="1.5" data-t="s.evac">⚠ HAIR EVACUATION ⚠</text>
         </g>
         <g transform="translate(348,72)">
           <rect x="-34" y="-14" width="68" height="28" fill="#3BB273" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#fff" letter-spacing="1">EXIT →</text>
+          <text x="0" y="7" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#fff" letter-spacing="1" data-t="s.exit">EXIT →</text>
         </g>
         <g transform="translate(66,178) scale(.8)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
         <use href="#hairGuy" transform="translate(120,214) scale(1)"/>
@@ -182,13 +182,13 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">One second later.</div>
+      <div class="caption" data-t="p4.cap">One second later.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>THE KNEES ARE FINE! <em>EVERYTHING ELSE IS GONE!</em></p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Zero knee injuries. One emotional injury.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Next time: peel it slowly, in the shower, with a bit of oil. Or keep it forever. Like a tattoo.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">THE KNEES ARE FINE! <em>EVERYTHING ELSE IS GONE!</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p4.b1">Zero knee injuries. One emotional injury.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Next time: peel it slowly, in the shower, with a bit of oil. Or keep it forever. Like a tattoo.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan screams as he rips a strip of tape off his knee, leaving a bald stripe. Inside, Flex looks shaken and Blob calmly gives advice while a tiny hair holds a sign reading RIP.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="Dan screams as he rips a strip of tape off his knee, leaving a bald stripe. Inside, Flex looks shaken and Blob calmly gives advice while a tiny hair holds a sign reading RIP.">
         <rect width="310" height="240" fill="#E7F1F0"/>
         <rect y="214" width="310" height="26" fill="#8C8492"/>
         <path d="M0 214 H310" stroke="#17131A" stroke-width="4"/>
@@ -209,7 +209,7 @@
           <path class="fly" d="M150 150 q4 -6 0 -12"/><path class="fly" d="M166 136 q4 -6 0 -12" style="animation-delay:.3s"/>
           <path class="fly" d="M140 126 q4 -6 0 -12" style="animation-delay:.6s"/><path class="fly" d="M176 160 q4 -6 0 -12" style="animation-delay:.9s"/>
         </g>
-        <g class="sfx"><text x="224" y="196" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="24" fill="#F2549A" stroke="#17131A" stroke-width="1.6" transform="rotate(-6 224 196)">RRRRIIIIPPP!</text></g>
+        <g class="sfx"><text x="224" y="196" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="24" fill="#F2549A" stroke="#17131A" stroke-width="1.6" transform="rotate(-6 224 196)" data-t="s.rip">RRRRIIIIPPP!</text></g>
 
         <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
         <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
@@ -226,15 +226,48 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> Colourful kinesio tape protects your knees from injury.</p>
-    <p><b>Reality:</b> the evidence that tape prevents injuries is weak. Some people feel a bit less pain or more confident with it, and that's about it. What actually protects knees: strong legs, good technique and not doubling your workload overnight. To take tape off, soak it with oil or in the shower, hold the skin down, and peel slowly in the direction the hair grows.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> Colourful kinesio tape protects your knees from injury.</p>
+    <p data-t="myth.2"><b>Reality:</b> the evidence that tape prevents injuries is weak. Some people feel a bit less pain or more confident with it, and that's about it. What actually protects knees: strong legs, good technique and not doubling your workload overnight. To take tape off, soak it with oil or in the shower, hold the skin down, and peel slowly in the direction the hair grows.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 6 Lipit pe viață",
+  "ep.title": "Episodul 6 · Lipit pe viață",
+  "p1.cap": "Dan a văzut la TV un sportiv olimpic cu bandă colorată. Acum Dan poartă bandă colorată.",
+  "p1.b0": "Genunchi de sportiv profesionist. Acum <em>nimic</em> nu mă mai poate răni.",
+  "p1.alt": "Dan pozează mândru în pantaloni scurți, cu bandă albastră și roz încrucișată pe genunchi, și se admiră în oglinda sălii.",
+  "p2.cap": "În genunchiul stâng al lui Dan.",
+  "p2.b0": "Banda ne protejează! Mă simt atât de… <em>susținut!</em> Emoțional!",
+  "p2.b1": "E material lipicios, campionule. Singurul lucru pe care îl ține lipit e încrederea lui.",
+  "p2.alt": "În genunchi, o fâșie uriașă de bandă albastră traversează cerul. Flex strălucește cu inimioare în jur, iar Blob nu pare impresionat.",
+  "p3.cap": "În aceeași seară. Momentul dezlipirii.",
+  "p3.b0": "De ce își fac toate firele de păr de pe picior bagajele?",
+  "p3.b1": "O s-o smulgă dintr-o mișcare. Ca un magician cu fața de masă. Doar că fața de masă e piele.",
+  "p3.alt": "Clipesc lumini roșii de alarmă. Un șir de fire de păr mici, cu valize, mărșăluiește spre un semn de ieșire, în timp ce Flex se sperie și Blob se uită liniștit.",
+  "p4.cap": "O secundă mai târziu.",
+  "p4.b0": "GENUNCHII SUNT BINE! <em>RESTUL A DISPĂRUT!</em>",
+  "p4.b1": "Zero accidentări la genunchi. O accidentare emoțională.",
+  "p4.b2": "Data viitoare: o dezlipești încet, la duș, cu puțin ulei. Sau o păstrezi pe viață. Ca pe un tatuaj.",
+  "p4.alt": "Dan urlă în timp ce își smulge o fâșie de bandă de pe genunchi și rămâne cu o dungă fără păr. Înăuntru, Flex e zguduit, iar Blob dă sfaturi calm, lângă un fir de păr care ține o pancartă RIP.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Banda kinesio colorată îți protejează genunchii de accidentări.",
+  "myth.2": "<b>Realitate:</b> dovezile că banda previne accidentările sunt slabe. Unii oameni simt puțin mai puțină durere sau mai multă încredere cu ea, și cam atât. Ce protejează cu adevărat genunchii: picioare puternice, tehnică bună și să nu-ți dublezi efortul peste noapte. Ca s-o dezlipești, înmoaie-o cu ulei sau la duș, ține pielea întinsă și trage încet, în direcția în care crește părul.",
+  "s.kt": "BANDĂ KINESIO",
+  "s.seen": "„ca la sportivi!”",
+  "s.results": "(rezultate neincluse)",
+  "s.deco": "BANDĂ KINESIO (MAI MULT DECORATIVĂ)",
+  "s.evac": "⚠ EVACUARE PĂR ⚠",
+  "s.exit": "IEȘIRE →",
+  "s.rip": "RRRRUUUPT!"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

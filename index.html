@@ -39,7 +39,7 @@
   <header>
     <div>
       <h1 class="logo"><a href="index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="tagline">The muscle wants gains. The fat wants snacks. Dan wants to believe every label he reads. A new page every week.</p>
+      <p class="tagline" data-t="ui.tagline">The muscle wants gains. The fat wants snacks. Dan wants to believe every label he reads. A new page every week.</p>
     </div>
   </header>
 
@@ -54,16 +54,17 @@
       <span class="kicker">NEW · Episode 1</span>
       <h2>The Protein Cookie</h2>
       <p>A cookie wearing a gym shirt walks into Dan's shopping basket.</p>
-      <span class="navbtn primary" style="align-self:flex-start">Read it →</span>
+      <span class="navbtn primary" style="align-self:flex-start" data-t="ui.readIt">Read it →</span>
     </div>
   </a>
 
-  <h2 class="section-title">All episodes</h2>
+  <h2 class="section-title" data-t="ui.allEpisodes">All episodes</h2>
   <ul class="archive" id="archive"></ul>
 
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script src="shared/i18n.js"></script>
 <script src="episodes.js"></script>
 <script src="shared/site.js"></script>
 <script src="shared/consent.js"></script>
