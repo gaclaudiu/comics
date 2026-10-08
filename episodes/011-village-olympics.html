@@ -112,9 +112,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 11 · The Village Olympics<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 11 · The Village Olympics</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -122,12 +122,12 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Day 80. Dan visits his grandma in the village. He has a business idea.</div>
+      <div class="caption" data-t="p1.cap">Day 80. Dan visits his grandma in the village. He has a business idea.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Gyms have copied farmers for years. <em>“Farmer's carry”?</em> Come on. I'm going back to the source: <em>ȚĂRAN FIT!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span>Back to the source? Dragă, the source wakes up at five.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">Gyms have copied farmers for years. <em>“Farmer's carry”?</em> Come on. I'm going back to the source: <em>ȚĂRAN FIT!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span><span data-t="p1.b1">Back to the source? Dragă, the source wakes up at five.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="In a Romanian village yard, Dan in a straw hat points at a poster for Țăran Fit, the Village Olympics, with three events: the hoe row, the scythe swing and the well walk. Bunica, in a red headscarf and embroidered blouse, watches with her arms crossed.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="In a Romanian village yard, Dan in a straw hat points at a poster for Țăran Fit, the Village Olympics, with three events: the hoe row, the scythe swing and the well walk. Bunica, in a red headscarf and embroidered blouse, watches with her arms crossed.">
         <rect width="800" height="230" fill="#CFE8F5"/>
         <path d="M0 150 Q160 110 340 140 T800 128 V230 H0 Z" fill="#9BCB6E"/>
         <path d="M0 176 Q240 150 520 172 T800 166 V230 H0 Z" fill="#7DBB5A" stroke="#17131A" stroke-width="3"/>
@@ -142,18 +142,18 @@
           <rect x="-150" y="0" width="300" height="164" fill="#FFFEF8" stroke="#17131A" stroke-width="4"/>
           <rect x="-150" y="0" width="300" height="40" fill="#B8322A" stroke="#17131A" stroke-width="4"/>
           <text x="0" y="31" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="30" fill="#FFC83D" stroke="#17131A" stroke-width="1" letter-spacing="2">ȚĂRAN FIT</text>
-          <text x="0" y="58" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#17131A" letter-spacing="1.5">THE VILLAGE OLYMPICS</text>
+          <text x="0" y="58" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#17131A" letter-spacing="1.5" data-t="s.vo">THE VILLAGE OLYMPICS</text>
           <g font-family="Bangers, Impact, sans-serif" font-size="12" text-anchor="middle" fill="#17131A">
             <rect x="-138" y="68" width="84" height="84" fill="#FFE7A1" stroke="#17131A" stroke-width="2.5"/>
             <path d="M-110 132 L-84 86 M-84 86 l-14 -6 l4 12 z" stroke="#6B4A2A" stroke-width="4" fill="#6E6873" stroke-linejoin="round"/>
-            <text x="-96" y="146">1. THE HOE ROW</text>
+            <text x="-96" y="146" data-t="s.e1">1. THE HOE ROW</text>
             <rect x="-42" y="68" width="84" height="84" fill="#CDEFE9" stroke="#17131A" stroke-width="2.5"/>
             <path d="M-22 132 Q0 100 16 84 M16 84 Q34 92 30 112" stroke="#6B4A2A" stroke-width="4" fill="none"/>
             <path d="M16 84 Q36 90 32 114" stroke="#6E6873" stroke-width="5" fill="none"/>
-            <text x="0" y="146">2. SCYTHE SWING</text>
+            <text x="0" y="146" data-t="s.e2">2. SCYTHE SWING</text>
             <rect x="54" y="68" width="84" height="84" fill="#FBD3E0" stroke="#17131A" stroke-width="2.5"/>
             <use href="#bucket" transform="translate(80,112)"/><use href="#bucket" transform="translate(112,112)"/>
-            <text x="96" y="146">3. THE WELL WALK</text>
+            <text x="96" y="146" data-t="s.e3">3. THE WELL WALK</text>
           </g>
         </g>
         <!-- Dan presenting -->
@@ -190,12 +190,12 @@
 
     <!-- PANEL 2: HOE -->
     <section class="panel" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Event 1: The Hoe Row. 34°C. No shade.</div>
+      <div class="caption" data-t="p2.cap">Event 1: The Hoe Row. 34°C. No shade.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>One row of corn. How hard can it… wait. The row is <em>400 meters?</em></p>
-        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span>That's the short one, dragă.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p2.b0">One row of corn. How hard can it… wait. The row is <em>400 meters?</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span><span data-t="p2.b1">That's the short one, dragă.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Dan, bent over and sweating, hoes a very long row of corn under a blazing sun, while far away Bunica has already finished several rows and waves.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Dan, bent over and sweating, hoes a very long row of corn under a blazing sun, while far away Bunica has already finished several rows and waves.">
         <rect width="400" height="250" fill="#FFE9B8"/>
         <g class="heat" transform="translate(350,40)"><circle r="24" fill="#FFC83D" stroke="#17131A" stroke-width="3"/><path d="M0 -36 V-30 M0 30 V36 M-36 0 H-30 M30 0 H36 M-26 -26 l4 4 M22 22 l4 4 M-26 26 l4 -4 M22 -22 l4 -4" stroke="#17131A" stroke-width="3" stroke-linecap="round"/></g>
         <path d="M0 120 H400 V250 H0 Z" fill="#C99A5E"/>
@@ -234,38 +234,38 @@
             <circle cx="90" cy="60" r="10" fill="#F2C29B" stroke="#17131A" stroke-width="3"/>
           </g>
         </g>
-        <g class="sfx"><text x="88" y="236" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#FFC83D" stroke="#17131A" stroke-width="1.2">THUNK… THUNK…</text></g>
+        <g class="sfx"><text x="88" y="236" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#FFC83D" stroke="#17131A" stroke-width="1.2" data-t="s.thunk">THUNK… THUNK…</text></g>
       </svg>
     </section>
 
     <!-- PANEL 3: inside, reaction to the hoe -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Inside Dan. Reviews of Event 1.</div>
+      <div class="caption" data-t="p3.cap">Inside Dan. Reviews of Event 1.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Rotation! Grip! Core! Shoulders! It's <em>full-body functional training!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>I'm sweating buckets, champ. But sweat is <em>water.</em> I'm still here.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">Rotation! Grip! Core! Shoulders! It's <em>full-body functional training!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">I'm sweating buckets, champ. But sweat is <em>water.</em> I'm still here.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex beams with star eyes, flexing, while Blob sweats heavily into a puddle but is clearly not getting any smaller.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Flex beams with star eyes, flexing, while Blob sweats heavily into a puddle but is clearly not getting any smaller.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(110,166)"><g class="flex-idle"><use href="#flexBody"/><use href="#flexStars"/></g></g>
         <g transform="translate(296,176)"><g class="blob-idle"><use href="#blobBody"/><use href="#blobHot"/></g></g>
         <ellipse cx="296" cy="240" rx="80" ry="8" fill="#8FD3F4" stroke="#17131A" stroke-width="2" opacity=".85"/>
         <g transform="translate(294,64) rotate(4)">
           <rect x="-60" y="-16" width="120" height="34" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text y="0" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A">WATER LOST: 1.5 L</text>
-          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E">FAT LOST: ~0</text>
+          <text y="0" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" data-t="s.water">WATER LOST: 1.5 L</text>
+          <text y="13" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#E23A4E" data-t="s.fat">FAT LOST: ~0</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 4: SCYTHE -->
     <section class="panel" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Event 2: The Scythe Swing.</div>
+      <div class="caption" data-t="p4.cap">Event 2: The Scythe Swing.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Rhythm! Rotation! Power! …Why is the grass still standing?</p>
-        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span>You're mowing the air, dragă. The grass is lower.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Rhythm! Rotation! Power! …Why is the grass still standing?</span></p>
+        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span><span data-t="p4.b1">You're mowing the air, dragă. The grass is lower.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="In a tall-grass meadow, Dan swings a scythe high through the air while the grass stays untouched. Behind him, Bunica has cut a perfectly neat strip. An inset shows Flex shouting about his obliques and Blob covering his ears.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 400 250" role="img" aria-label="In a tall-grass meadow, Dan swings a scythe high through the air while the grass stays untouched. Behind him, Bunica has cut a perfectly neat strip. An inset shows Flex shouting about his obliques and Blob covering his ears.">
         <rect width="400" height="250" fill="#CFE8F5"/>
         <path d="M0 150 H400 V250 H0 Z" fill="#9BCB6E"/>
         <g stroke="#4A7A34" stroke-width="3" fill="none" stroke-linecap="round"><path d="M4 226 q-2 -24 4 -30" /><path d="M18 226 q-2 -31 -4 -37" /><path d="M32 226 q-2 -24 4 -30" /><path d="M46 226 q-2 -31 -4 -37" /><path d="M60 226 q-2 -24 4 -30" /><path d="M74 226 q-2 -31 -4 -37" /><path d="M88 226 q-2 -24 4 -30" /><path d="M102 226 q-2 -31 -4 -37" /><path d="M116 226 q-2 -24 4 -30" /><path d="M130 226 q-2 -31 -4 -37" /><path d="M144 226 q-2 -24 4 -30" /><path d="M158 226 q-2 -31 -4 -37" /><path d="M172 226 q-2 -24 4 -30" /><path d="M186 226 q-2 -31 -4 -37" /><path d="M200 226 q-2 -24 4 -30" /><path d="M214 226 q-2 -31 -4 -37" /><path d="M228 226 q-2 -24 4 -30" /><path d="M242 226 q-2 -31 -4 -37" /><path d="M256 226 q-2 -24 4 -30" /><path d="M270 226 q-2 -31 -4 -37" /><path d="M284 226 q-2 -24 4 -30" /><path d="M298 226 q-2 -31 -4 -37" /><path d="M312 226 q-2 -24 4 -30" /><path d="M326 226 q-2 -31 -4 -37" /><path d="M340 226 q-2 -24 4 -30" /><path d="M354 226 q-2 -31 -4 -37" /><path d="M368 226 q-2 -24 4 -30" /><path d="M382 226 q-2 -31 -4 -37" /><path d="M396 226 q-2 -24 4 -30" /></g>
@@ -287,26 +287,26 @@
           </g>
         </g>
         <path d="M300 30 Q340 40 360 70 M290 46 Q326 56 342 82" stroke="#17131A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <g class="sfx"><text x="330" y="118" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="22" fill="#FFC83D" stroke="#17131A" stroke-width="1.4" transform="rotate(-10 330 118)">SWOOSH!</text></g>
+        <g class="sfx"><text x="330" y="118" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="22" fill="#FFC83D" stroke="#17131A" stroke-width="1.4" transform="rotate(-10 330 118)" data-t="s.swoosh">SWOOSH!</text></g>
         <!-- inset: inside reaction -->
         <g transform="translate(66,64)">
           <circle r="50" fill="#F8D3CD" stroke="#17131A" stroke-width="3.5"/>
           <g transform="translate(-20,24) scale(.32)"><use href="#flexBody"/><use href="#flexStars"/></g>
           <g transform="translate(22,30) scale(.3)"><use href="#blobBody"/><use href="#blobHot"/></g>
-          <text x="-8" y="-24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E">MY OBLIQUES!</text>
-          <text x="22" y="-8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#17131A">MY EARS!</text>
+          <text x="-8" y="-24" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#E23A4E" data-t="s.obl">MY OBLIQUES!</text>
+          <text x="22" y="-8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="10" fill="#17131A" data-t="s.ears">MY EARS!</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 5: WELL -->
     <section class="panel" style="--i:4" aria-label="Panel 5">
-      <div class="caption">Event 3: The Well Walk. Two buckets, 200 meters.</div>
+      <div class="caption" data-t="p5.cap">Event 3: The Well Walk. Two buckets, 200 meters.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Done! My arms are now <em>12 centimeters longer.</em></p>
-        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span>Good. Now again. The cow drinks 80 liters.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p5.b0">Done! My arms are now <em>12 centimeters longer.</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who bunica">BUNICA</span><span data-t="p5.b1">Good. Now again. The cow drinks 80 liters.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Next to a traditional Romanian well with a long wooden sweep pole, Dan staggers with two full buckets, his arms stretched comically long. Bunica strolls past carrying two buckets on a wooden yoke. An inset shows Flex praising his traps and Blob noting that 10 liters weigh 10 kilos.">
+      <svg class="art" data-t-aria="p5.alt" viewBox="0 0 400 250" role="img" aria-label="Next to a traditional Romanian well with a long wooden sweep pole, Dan staggers with two full buckets, his arms stretched comically long. Bunica strolls past carrying two buckets on a wooden yoke. An inset shows Flex praising his traps and Blob noting that 10 liters weigh 10 kilos.">
         <rect width="400" height="250" fill="#CFE8F5"/>
         <path d="M0 196 H400 V250 H0 Z" fill="#9BCB6E"/>
         <path d="M0 196 H400" stroke="#17131A" stroke-width="3"/>
@@ -345,31 +345,31 @@
           <circle r="40" fill="#F8D3CD" stroke="#17131A" stroke-width="3"/>
           <g transform="translate(-14,22) scale(.25)"><use href="#flexBody"/><use href="#flexHappy"/></g>
           <g transform="translate(18,26) scale(.22)"><use href="#blobBody"/><use href="#blobSmug"/></g>
-          <text x="0" y="-22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="9" fill="#E23A4E">TRAPS OF STEEL!</text>
-          <text x="0" y="-11" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="8" fill="#17131A">10 L = 10 kg. each.</text>
+          <text x="0" y="-22" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="9" fill="#E23A4E" data-t="s.traps">TRAPS OF STEEL!</text>
+          <text x="0" y="-11" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="8" fill="#17131A" data-t="s.10l">10 L = 10 kg. each.</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 6 -->
     <section class="panel wide three" style="--i:5" aria-label="Panel 6">
-      <div class="caption">Final results of the first Village Olympics.</div>
+      <div class="caption" data-t="p6.cap">Final results of the first Village Olympics.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Contest cancelled. I'm just going to sign up for <em>Bunica's normal Tuesday.</em></p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Best workout of my life. No membership, no mirrors, no protein cookies.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>And the prize is bread with zacuscă. Honestly? <em>I support this sport.</em></p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p6.b0">Contest cancelled. I'm just going to sign up for <em>Bunica's normal Tuesday.</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p6.b1">Best workout of my life. No membership, no mirrors, no protein cookies.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p6.b2">And the prize is bread with zacuscă. Honestly? <em>I support this sport.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 250" role="img" aria-label="A chalkboard scoreboard shows Bunica with three gold medals and Dan with a participation medal. Dan lies collapsed on a haystack while Bunica stands proudly wearing all three medals. Inside, Flex flexes happily and Blob holds a slice of bread with zacuscă.">
+      <svg class="art" data-t-aria="p6.alt" viewBox="0 0 800 250" role="img" aria-label="A chalkboard scoreboard shows Bunica with three gold medals and Dan with a participation medal. Dan lies collapsed on a haystack while Bunica stands proudly wearing all three medals. Inside, Flex flexes happily and Blob holds a slice of bread with zacuscă.">
         <rect width="310" height="250" fill="#CFE8F5"/>
         <path d="M0 200 H310 V250 H0 Z" fill="#9BCB6E"/>
         <path d="M0 200 H310" stroke="#17131A" stroke-width="3"/>
         <g transform="translate(18,14)">
           <rect width="150" height="96" fill="#2A3B33" stroke="#6B4A2A" stroke-width="6"/>
           <g font-family="Kalam, cursive" font-weight="700" fill="#fff">
-            <text x="10" y="20" font-size="13">RESULTS</text>
-            <text x="10" y="42" font-size="12">Bunica: 1st, 1st, 1st</text>
-            <text x="10" y="62" font-size="12">Dan: participated</text>
-            <text x="10" y="82" font-size="10" fill="#FFC83D">(technically)</text>
+            <text x="10" y="20" font-size="13" data-t="s.res">RESULTS</text>
+            <text x="10" y="42" font-size="12" data-t="s.r1">Bunica: 1st, 1st, 1st</text>
+            <text x="10" y="62" font-size="12" data-t="s.r2">Dan: participated</text>
+            <text x="10" y="82" font-size="10" fill="#FFC83D" data-t="s.r3">(technically)</text>
           </g>
         </g>
         <!-- haystack with Dan -->
@@ -407,15 +407,66 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> You need a gym to get fit. And sweating a lot means you're burning fat.</p>
-    <p><b>Reality:</b> long before gyms, people got strong by working: digging, carrying, lifting and walking all day. Gyms just package those movements, and the farmer's carry is literally named after it. Gardening, stairs and carrying shopping all count. Build up gradually, bend your knees and keep your back straight: Bunica has 60 years of practice. And sweat is mostly water you'll drink back. Fat loss comes from regular movement and what you eat over weeks, not from one sweaty afternoon.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> You need a gym to get fit. And sweating a lot means you're burning fat.</p>
+    <p data-t="myth.2"><b>Reality:</b> long before gyms, people got strong by working: digging, carrying, lifting and walking all day. Gyms just package those movements, and the farmer's carry is literally named after it. Gardening, stairs and carrying shopping all count. Build up gradually, bend your knees and keep your back straight: Bunica has 60 years of practice. And sweat is mostly water you'll drink back. Fat loss comes from regular movement and what you eat over weeks, not from one sweaty afternoon.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 11 Olimpiada satului",
+  "ep.title": "Episodul 11 · Olimpiada satului",
+  "p1.cap": "Ziua 80. Dan e în vizită la bunica, la țară. Are o idee de afacere.",
+  "p1.b0": "Sălile îi copiază pe țărani de ani de zile. <em>„Farmer's carry”?</em> Hai, mă. Mă întorc la sursă: <em>ȚĂRAN FIT!</em>",
+  "p1.b1": "La sursă? Dragă, sursa se trezește la cinci.",
+  "p1.alt": "Într-o curte de la țară, Dan, cu pălărie de paie, arată spre un afiș Țăran Fit, Olimpiada satului, cu trei probe: prășitul, cositul și fântâna. Bunica, cu basma roșie și ie, se uită cu brațele încrucișate.",
+  "p2.cap": "Proba 1: Prășitul. 34°C. Nicio umbră.",
+  "p2.b0": "Un rând de porumb. Cât de greu poate fi… stai. Rândul are <em>400 de metri?</em>",
+  "p2.b1": "Ăsta e cel scurt, dragă.",
+  "p2.alt": "Dan, aplecat și transpirat, prășește un rând foarte lung de porumb sub un soare arzător, în timp ce departe bunica a terminat deja câteva rânduri și îi face cu mâna.",
+  "p3.cap": "În interiorul lui Dan. Recenziile probei 1.",
+  "p3.b0": "Rotație! Priză! Abdomen! Umeri! E <em>antrenament funcțional pentru tot corpul!</em>",
+  "p3.b1": "Transpir cu găleata, campionule. Dar transpirația e <em>apă.</em> Eu tot aici sunt.",
+  "p3.alt": "Flex strălucește cu stele în ochi și se încordează, în timp ce Blob transpiră zdravăn într-o baltă, dar clar nu se micșorează deloc.",
+  "p4.cap": "Proba 2: Cositul.",
+  "p4.b0": "Ritm! Rotație! Forță! …De ce stă iarba tot în picioare?",
+  "p4.b1": "Cosești aerul, dragă. Iarba e mai jos.",
+  "p4.alt": "Pe o pajiște cu iarbă înaltă, Dan rotește coasa sus prin aer, iar iarba rămâne neatinsă. În spatele lui, bunica a cosit o fâșie perfect dreaptă. Într-un cerc, Flex strigă despre oblicii lui, iar Blob își acoperă urechile.",
+  "p5.cap": "Proba 3: Fântâna. Două găleți, 200 de metri.",
+  "p5.b0": "Gata! Acum am brațele <em>cu 12 centimetri mai lungi.</em>",
+  "p5.b1": "Bine. Acum încă o dată. Vaca bea 80 de litri.",
+  "p5.alt": "Lângă o fântână tradițională cu cumpănă, Dan se clatină cu două găleți pline, cu brațele întinse caraghios de lungi. Bunica trece pe lângă el cu două găleți pe cobiliță. Într-un cerc, Flex își laudă trapezii, iar Blob notează că 10 litri cântăresc 10 kile.",
+  "p6.cap": "Rezultatele finale ale primei Olimpiade a satului.",
+  "p6.b0": "Concurs anulat. Mă înscriu direct la <em>o marți obișnuită de-a bunicii.</em>",
+  "p6.b1": "Cel mai bun antrenament din viața mea. Fără abonament, fără oglinzi, fără biscuiți proteici.",
+  "p6.b2": "Iar premiul e pâine cu zacuscă. Sincer? <em>Susțin sportul ăsta.</em>",
+  "p6.alt": "O tablă de scor arată bunica cu trei medalii de aur și pe Dan cu o medalie de participare. Dan zace prăbușit pe o căpiță de fân, iar bunica stă mândră cu toate cele trei medalii. Înăuntru, Flex se încordează fericit, iar Blob ține o felie de pâine cu zacuscă.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Ai nevoie de sală ca să te pui în formă. Și dacă transpiri mult, înseamnă că arzi grăsime.",
+  "myth.2": "<b>Realitate:</b> cu mult înainte de săli, oamenii se făceau puternici muncind: săpau, cărau, ridicau și mergeau toată ziua. Sălile doar au împachetat mișcările astea, iar „farmer's carry” chiar poartă numele fermierilor. Grădinăritul, scările și căratul sacoșelor contează toate. Crește efortul treptat, îndoaie genunchii și ține spatele drept: bunica are 60 de ani de exercițiu. Iar transpirația e mai ales apă, pe care o bei la loc. Grăsimea se pierde prin mișcare regulată și prin ce mănânci săptămâni la rând, nu într-o după-amiază transpirată.",
+  "s.vo": "OLIMPIADA SATULUI",
+  "s.e1": "1. PRĂȘITUL",
+  "s.e2": "2. COSITUL",
+  "s.e3": "3. FÂNTÂNA",
+  "s.thunk": "ȚAC… ȚAC…",
+  "s.water": "APĂ PIERDUTĂ: 1,5 L",
+  "s.fat": "GRĂSIME PIERDUTĂ: ~0",
+  "s.swoosh": "VJUUUȘ!",
+  "s.obl": "OBLICII MEI!",
+  "s.ears": "URECHILE!",
+  "s.traps": "TRAPEZI DE OȚEL!",
+  "s.10l": "câte 10 L = 10 kg",
+  "s.res": "REZULTATE",
+  "s.r1": "Bunica: locul 1, 1, 1",
+  "s.r2": "Dan: a participat",
+  "s.r3": "(tehnic vorbind)"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

@@ -55,13 +55,13 @@
   <header>
     <div>
       <h1 class="logo"><a href="index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Privacy policy<small>What this site collects, and what it doesn't.</small></p>
+      <p class="ep"><span data-t="pv.title">Privacy policy</span><small data-t="pv.sub">What this site collects, and what it doesn't.</small></p>
     </div>
   </header>
 
-  <nav class="ep-nav" aria-label="Site"><a class="navbtn" href="index.html">← All episodes</a></nav>
+  <nav class="ep-nav" aria-label="Site"><a class="navbtn" href="index.html" data-t="pv.back">← All episodes</a></nav>
 
-  <article class="policy">
+  <article class="policy" data-lang-block="en">
     <div class="tldr">
       <p><b>Short version:</b> this is a webcomic. If you click “Sure, have one” on the cookie banner, Google Analytics counts your visit so we can see how many people read each episode. If you click “No thanks,” nothing is tracked. There are no ads, no accounts, and we never sell data.</p>
     </div>
@@ -88,10 +88,11 @@
           <tr><td>_ga</td><td>Google Analytics</td><td>Tells apart one visitor from another, so we can count readers</td><td>2 years</td></tr>
           <tr><td>_ga_Q17LMV3HV0</td><td>Google Analytics</td><td>Keeps track of a visit (session)</td><td>2 years</td></tr>
           <tr><td>fvb-consent</td><td>This site (browser storage)</td><td>Remembers whether you said yes or no, so the banner doesn't keep asking</td><td>Until you clear your browser data</td></tr>
+          <tr><td>fvb-lang</td><td>This site (browser storage)</td><td>Remembers your language choice (English or Romanian)</td><td>Until you clear your browser data</td></tr>
         </tbody>
       </table>
     </div>
-    <p>The two Google Analytics cookies are only set after you accept. The consent choice is stored in your own browser and never sent to us.</p>
+    <p>The two Google Analytics cookies are only set after you accept. Your consent choice and language are stored in your own browser and never sent to us.</p>
 
     <h2>Other services the site uses</h2>
     <ul>
@@ -121,12 +122,77 @@
 
     <h2>Changes</h2>
     <p>If this policy changes, the updated version will appear on this page with a new date.</p>
-    <p class="updated">Last updated: 30 September 2026</p>
+    <p class="updated">Last updated: 8 October 2026</p>
+  </article>
+  <article class="policy" data-lang-block="ro" lang="ro" hidden>
+    <div class="tldr">
+      <p><b>Pe scurt:</b> acesta e un webcomic. Dacă apeși „Sigur, ia unul” în bannerul de cookie-uri, Google Analytics îți numără vizita, ca să vedem câți oameni citesc fiecare episod. Dacă apeși „Nu, mersi”, nu se urmărește nimic. Nu avem reclame, nu avem conturi și nu vindem niciodată date.</p>
+    </div>
+
+    <h2>Cine administrează site-ul</h2>
+    <p>Flex vs Blob (flexandblob.com) este un webcomic personal, necomercial.</p>
+
+    <h2>Ce colectăm, și doar dacă ești de acord</h2>
+    <p>Dacă accepți cookie-urile, folosim <b>Google Analytics 4</b> ca să înțelegem cum e citit comicul. Ne arată lucruri precum:</p>
+    <ul>
+      <li>ce pagini și episoade au fost văzute și cam cât timp</li>
+      <li>locația ta aproximativă (țara sau orașul, niciodată adresa exactă)</li>
+      <li>tipul de dispozitiv, browserul și dimensiunea ecranului</li>
+      <li>cum ai ajuns pe site (de exemplu dintr-un motor de căutare sau de pe o rețea socială)</li>
+    </ul>
+    <p>Vedem aceste informații doar ca totaluri și tendințe. Nu putem vedea cine ești și nici nu încercăm să aflăm. Google Analytics 4 nu stochează adrese IP.</p>
+    <p>Dacă apeși „Nu, mersi”, Google Analytics nu se încarcă deloc și nu se colectează nimic din toate acestea.</p>
+
+    <h2>Cookie-uri și stocare în browser</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Nume</th><th>Setat de</th><th>De ce</th><th>Cât timp</th></tr></thead>
+        <tbody>
+          <tr><td>_ga</td><td>Google Analytics</td><td>Deosebește un vizitator de altul, ca să putem număra cititorii</td><td>2 ani</td></tr>
+          <tr><td>_ga_Q17LMV3HV0</td><td>Google Analytics</td><td>Ține evidența unei vizite (sesiuni)</td><td>2 ani</td></tr>
+          <tr><td>fvb-consent</td><td>Acest site (stocare în browser)</td><td>Ține minte dacă ai spus da sau nu, ca bannerul să nu te tot întrebe</td><td>Până îți ștergi datele din browser</td></tr>
+          <tr><td>fvb-lang</td><td>Acest site (stocare în browser)</td><td>Ține minte limba aleasă (engleză sau română)</td><td>Până îți ștergi datele din browser</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Cele două cookie-uri Google Analytics sunt setate doar după ce accepți. Alegerea ta și limba sunt păstrate în propriul tău browser și nu ne sunt trimise niciodată.</p>
+
+    <h2>Alte servicii folosite de site</h2>
+    <ul>
+      <li><b>Găzduire (GitHub Pages).</b> Ca orice serviciu de găzduire, GitHub primește adresa ta IP când browserul încarcă site-ul și o poate păstra în jurnalele de securitate. Vezi declarația de confidențialitate GitHub.</li>
+      <li><b>Fonturi (Google Fonts).</b> Fonturile comicului se încarcă de pe serverele Google, deci Google primește adresa ta IP când se încarcă pagina. Asta se întâmplă pentru orice vizitator, înainte de orice alegere privind cookie-urile.</li>
+    </ul>
+
+    <h2>Pe ce bază facem asta</h2>
+    <p>Analiza traficului funcționează doar cu acordul tău (articolul 6 alineatul (1) litera (a) din GDPR). Găzduirea și fonturile sunt necesare ca să poți vedea site-ul, ceea ce reprezintă interesul nostru legitim de a-l administra (articolul 6 alineatul (1) litera (f)).</p>
+
+    <h2>Unde ajung datele</h2>
+    <p>Google și GitHub pot prelucra date în Statele Unite. Ambele participă la Cadrul UE-SUA privind protecția datelor (EU-US Data Privacy Framework), pe care UE îl recunoaște ca oferind un nivel adecvat de protecție.</p>
+
+    <h2>Opțiunile și drepturile tale</h2>
+    <ul>
+      <li><b>Te poți răzgândi oricând</b> din linkul „Setări cookie” din partea de jos a fiecărei pagini. Dacă spui nu mai târziu, se șterg și cookie-urile Google Analytics.</li>
+      <li>Conform GDPR, poți cere să afli ce date există despre tine și poți cere corectarea sau ștergerea lor. Pentru că nu putem identifica cititorii individual, de obicei nu există nimic legat de tine personal, dar poți întreba oricând.</li>
+      <li>Dacă crezi că ceva nu e în regulă, poți depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal, ANSPDCP (dataprotection.ro), sau la autoritatea din țara ta.</li>
+    </ul>
+
+    <h2>Ce nu facem niciodată</h2>
+    <ul>
+      <li>Nu afișăm reclame și nu folosim cookie-uri de publicitate</li>
+      <li>Nu vindem și nu dăm datele nimănui pentru marketing</li>
+      <li>Nu îți cerem să îți faci cont sau să ne dai adresa de email</li>
+    </ul>
+
+    <h2>Modificări</h2>
+    <p>Dacă politica se schimbă, versiunea actualizată va apărea pe această pagină, cu o dată nouă.</p>
+    <p class="updated">Ultima actualizare: 8 octombrie 2026</p>
   </article>
 
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = { "ro": { "title": "Flex vs Blob · Confidențialitate", "pv.title": "Politica de confidențialitate", "pv.sub": "Ce colectează site-ul și ce nu.", "pv.back": "← Toate episoadele" } };</script>
+<script src="shared/i18n.js"></script>
 <script src="shared/consent.js"></script>
 </body>
 </html>

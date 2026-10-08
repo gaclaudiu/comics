@@ -66,10 +66,10 @@
     </g>
     <g id="caseFile">
       <path d="M-52 -30 H-14 L-8 -38 H52 V32 H-52 Z" fill="#F2D38A" stroke="#17131A" stroke-width="3" stroke-linejoin="round"/>
-      <text x="0" y="-8" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#17131A">CASE #004: SHOULDER</text>
+      <text x="0" y="-8" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#17131A" data-t="s.case">CASE #004: SHOULDER</text>
       <g transform="rotate(-12)">
         <rect x="-42" y="0" width="84" height="24" fill="none" stroke="#E23A4E" stroke-width="3"/>
-        <text x="0" y="18" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#E23A4E" letter-spacing="1">CASE CLOSED</text>
+        <text x="0" y="18" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#E23A4E" letter-spacing="1" data-t="s.closed">CASE CLOSED</text>
       </g>
     </g>
   </defs>
@@ -79,9 +79,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 4 · The Case of the Angry Shoulder<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 4 · The Case of the Angry Shoulder</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -89,16 +89,16 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Day 22. Dan's right shoulder has filed a formal complaint.</div>
+      <div class="caption" data-t="p1.cap">Day 22. Dan's right shoulder has filed a formal complaint.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>I googled it. It's either a pulled muscle or I have <em>three days to live.</em></p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">I googled it. It's either a pulled muscle or I have <em>three days to live.</em></span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan sits hunched at his desk holding his throbbing right shoulder while his laptop shows alarming search results">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="Dan sits hunched at his desk holding his throbbing right shoulder while his laptop shows alarming search results">
         <rect width="800" height="230" fill="#E5EAF2"/>
         <g transform="translate(120,40) rotate(-4)">
           <rect x="-34" y="-26" width="68" height="56" fill="#FFE7A1" stroke="#17131A" stroke-width="2.5"/>
           <text x="0" y="-4" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#17131A">CROSSFIT</text>
-          <text x="0" y="12" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#E23A4E">6 AM!!!</text>
+          <text x="0" y="12" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#E23A4E" data-t="s.6am">6 AM!!!</text>
         </g>
         <g transform="translate(680,56)">
           <circle r="30" fill="#fff" stroke="#17131A" stroke-width="4"/>
@@ -120,11 +120,11 @@
         <g transform="translate(520,90)">
           <rect x="-66" y="0" width="132" height="84" rx="6" fill="#2A2530" stroke="#17131A" stroke-width="4"/>
           <rect x="-58" y="8" width="116" height="68" fill="#fff"/>
-          <text x="-52" y="24" font-family="Arial, sans-serif" font-size="9" fill="#1E9C97">search: shoulder hurts why</text>
+          <text x="-52" y="24" font-family="Arial, sans-serif" font-size="9" fill="#1E9C97" data-t="s.search">search: shoulder hurts why</text>
           <path d="M-52 30 H52" stroke="#C9C3CF"/>
-          <text x="-52" y="44" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E">• It's probably fine</text>
-          <text x="-52" y="57" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E">• It's definitely not fine</text>
-          <text x="-52" y="70" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E">• Write your will</text>
+          <text x="-52" y="44" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.r1">• It's probably fine</text>
+          <text x="-52" y="57" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.r2">• It's definitely not fine</text>
+          <text x="-52" y="70" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.r3">• Write your will</text>
           <path d="M-80 84 H80 L70 92 H-70 Z" fill="#6E6873" stroke="#17131A" stroke-width="3" stroke-linejoin="round"/>
         </g>
         <rect x="190" y="182" width="480" height="14" fill="#A67C52" stroke="#17131A" stroke-width="4"/>
@@ -134,12 +134,12 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan. The Detective Bureau opens.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan. The Detective Bureau opens.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>The culprit is obvious: <em>THE KETTLEBELL.</em> Arrest it!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>The kettlebell was lying on the floor, Sherlock. Who swung it overhead 60 times with no warm-up?</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0">The culprit is obvious: <em>THE KETTLEBELL.</em> Arrest it!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">The kettlebell was lying on the floor, Sherlock. Who swung it overhead 60 times with no warm-up?</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex in a detective hat holds a magnifying glass next to an evidence board with red string. Blob in a fedora looks unimpressed.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Flex in a detective hat holds a magnifying glass next to an evidence board with red string. Blob in a fedora looks unimpressed.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(200,18)"><g class="swing">
           <rect x="-84" y="0" width="168" height="104" fill="#C9A06B" stroke="#17131A" stroke-width="4"/>
@@ -148,10 +148,10 @@
             <text y="22" text-anchor="middle" font-family="Kalam, cursive" font-size="7" fill="#17131A">kettlebell</text></g>
           <g transform="translate(0,62) rotate(4)"><rect x="-22" y="-20" width="44" height="46" fill="#fff" stroke="#17131A" stroke-width="2"/>
             <rect x="-8" y="-14" width="16" height="26" rx="3" fill="#2A2530"/>
-            <text y="22" text-anchor="middle" font-family="Kalam, cursive" font-size="7" fill="#17131A">the phone</text></g>
+            <text y="22" text-anchor="middle" font-family="Kalam, cursive" font-size="7" fill="#17131A" data-t="s.phone">the phone</text></g>
           <g transform="translate(56,30) rotate(5)"><rect x="-22" y="-20" width="44" height="46" fill="#fff" stroke="#17131A" stroke-width="2"/>
-            <text y="4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#E23A4E">60 REPS</text>
-            <text y="22" text-anchor="middle" font-family="Kalam, cursive" font-size="7" fill="#17131A">day one (!)</text></g>
+            <text y="4" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="15" fill="#E23A4E" data-t="s.reps">60 REPS</text>
+            <text y="22" text-anchor="middle" font-family="Kalam, cursive" font-size="7" fill="#17131A" data-t="s.dayone">day one (!)</text></g>
           <path d="M-56 18 L0 50 L56 18 M-56 18 L56 18" stroke="#E23A4E" stroke-width="2" fill="none"/>
           <circle cx="-56" cy="12" r="3.5" fill="#E23A4E"/><circle cx="0" cy="44" r="3.5" fill="#E23A4E"/><circle cx="56" cy="12" r="3.5" fill="#E23A4E"/>
         </g></g>
@@ -167,18 +167,18 @@
 
     <!-- PANEL 3 -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">The line-up.</div>
+      <div class="caption" data-t="p3.cap">The line-up.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>It's #2. Four tiny muscles doing a job for twelve. Look at them. Guilty.</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>My money's on #3. It walked in on day one lifting 24 kilos to impress a stranger.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">It's #2. Four tiny muscles doing a job for twelve. Look at them. Guilty.</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">My money's on #3. It walked in on day one lifting 24 kilos to impress a stranger.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="A police line-up with three suspects: a slouching phone, four tired little rotator cuff muscles, and a smug purple balloon labelled Ego wearing a crown">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="A police line-up with three suspects: a slouching phone, four tired little rotator cuff muscles, and a smug purple balloon labelled Ego wearing a crown">
         <rect width="400" height="250" fill="#D7DCE2"/>
         <g stroke="#17131A" stroke-width="1.5" opacity=".45">
           <path d="M0 70 H400 M0 110 H400 M0 150 H400 M0 190 H400"/>
         </g>
         <g font-family="Kalam, cursive" font-size="9" fill="#17131A" opacity=".6">
-          <text x="4" y="67">7 ft</text><text x="4" y="107">6 ft</text><text x="4" y="147">5 ft</text><text x="4" y="187">4 ft</text>
+          <text x="4" y="67" data-t="s.h7">7 ft</text><text x="4" y="107" data-t="s.h6">6 ft</text><text x="4" y="147" data-t="s.h5">5 ft</text><text x="4" y="187" data-t="s.h4">4 ft</text>
         </g>
         <!-- suspect 1: phone neck -->
         <g transform="translate(76,212)"><g class="sway">
@@ -210,28 +210,28 @@
           </g>
         </g>
         <g font-family="Bangers, Impact, sans-serif" font-size="11" text-anchor="middle" fill="#fff">
-          <rect x="30" y="216" width="92" height="26" fill="#17131A"/><text x="76" y="233">#1 PHONE NECK</text>
-          <rect x="150" y="216" width="100" height="26" fill="#17131A"/><text x="200" y="233">#2 ROTATOR CUFF</text>
-          <rect x="282" y="216" width="80" height="26" fill="#17131A"/><text x="322" y="233">#3 THE EGO</text>
+          <rect x="30" y="216" width="92" height="26" fill="#17131A"/><text x="76" y="233" data-t="s.sus1">#1 PHONE NECK</text>
+          <rect x="150" y="216" width="100" height="26" fill="#17131A"/><text x="200" y="233" data-t="s.sus2">#2 ROTATOR CUFF</text>
+          <rect x="282" y="216" width="80" height="26" fill="#17131A"/><text x="322" y="233" data-t="s.sus3">#3 THE EGO</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Day 24. The physiotherapist has spoken.</div>
+      <div class="caption" data-t="p4.cap">Day 24. The physiotherapist has spoken.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Six weeks of <em>THIS?</em> It's a rubber band. My niece has this in her hair.</p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Case closed. Too much, too soon, too proud.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Rehab with a rubber band. Humiliating. I love it.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Six weeks of <em>THIS?</em> It's a rubber band. My niece has this in her hair.</span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p4.b1">Case closed. Too much, too soon, too proud.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Rehab with a rubber band. Humiliating. I love it.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan in a physio room glumly stretches a small green resistance band. Inside, Flex and Blob stand over a case file stamped Case Closed.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="Dan in a physio room glumly stretches a small green resistance band. Inside, Flex and Blob stand over a case file stamped Case Closed.">
         <rect width="310" height="240" fill="#E7F1F0"/>
         <rect y="206" width="310" height="34" fill="#A9C7C3"/>
         <path d="M0 206 H310" stroke="#17131A" stroke-width="4"/>
         <g transform="translate(60,22)">
           <rect x="-40" y="0" width="80" height="26" fill="#1E9C97" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="19" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#fff" letter-spacing="1.5">PHYSIO</text>
+          <text x="0" y="19" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#fff" letter-spacing="1.5" data-t="s.physio">PHYSIO</text>
         </g>
         <g transform="translate(262,40)">
           <rect x="-30" y="0" width="60" height="80" fill="#fff" stroke="#17131A" stroke-width="3"/>
@@ -266,15 +266,59 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> Shoulder pain? Push through it, or let a search engine diagnose you.</p>
-    <p><b>Reality:</b> a common beginner cause is too much overhead work, too soon, with no warm-up. Pain that lasts more than a few days, gets worse when you lift your arm, or wakes you at night is a job for a physiotherapist or doctor, not for Flex, Blob or a search bar. Rehab is often boring bands and patience. Boring works.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> Shoulder pain? Push through it, or let a search engine diagnose you.</p>
+    <p data-t="myth.2"><b>Reality:</b> a common beginner cause is too much overhead work, too soon, with no warm-up. Pain that lasts more than a few days, gets worse when you lift your arm, or wakes you at night is a job for a physiotherapist or doctor, not for Flex, Blob or a search bar. Rehab is often boring bands and patience. Boring works.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 4 Cazul umărului supărat",
+  "ep.title": "Episodul 4 · Cazul umărului supărat",
+  "p1.cap": "Ziua 22. Umărul drept al lui Dan a depus o plângere oficială.",
+  "p1.b0": "Am căutat pe Google. Ori e o întindere, ori mai am <em>trei zile de trăit.</em>",
+  "p1.alt": "Dan stă cocoșat la birou și își ține umărul drept care pulsează, în timp ce laptopul îi arată rezultate de căutare alarmante.",
+  "p2.cap": "În interiorul lui Dan. Se deschide Biroul de Detectivi.",
+  "p2.b0": "Vinovatul e evident: <em>KETTLEBELL-UL.</em> Arestați-l!",
+  "p2.b1": "Kettlebell-ul stătea pe jos, Sherlock. Cine l-a aruncat deasupra capului de 60 de ori fără încălzire?",
+  "p2.alt": "Flex, cu pălărie de detectiv, ține o lupă lângă un panou cu probe și ață roșie. Blob, cu fedora, nu pare impresionat.",
+  "p3.cap": "Identificarea suspecților.",
+  "p3.b0": "E #2. Patru mușchi micuți care fac treaba a doisprezece. Uitați-vă la ei. Vinovați.",
+  "p3.b1": "Eu pariez pe #3. A intrat în prima zi ridicând 24 de kile ca să impresioneze un necunoscut.",
+  "p3.alt": "O identificare de poliție cu trei suspecți: un telefon cocoșat, patru mușchi mici și obosiți ai manșetei rotatorilor și un balon mov îngâmfat, cu coroană, pe care scrie Ego.",
+  "p4.cap": "Ziua 24. Kinetoterapeutul a vorbit.",
+  "p4.b0": "Șase săptămâni de <em>ASTA?</em> E o bandă de cauciuc. Nepoata mea o poartă în păr.",
+  "p4.b1": "Caz închis. Prea mult, prea repede, prea mândru.",
+  "p4.b2": "Recuperare cu o bandă de cauciuc. Umilitor. Îmi place.",
+  "p4.alt": "Dan, la kineto, întinde fără chef o bandă elastică verde. Înăuntru, Flex și Blob stau lângă un dosar ștampilat Caz închis.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Te doare umărul? Treci peste, sau lasă un motor de căutare să-ți pună diagnosticul.",
+  "myth.2": "<b>Realitate:</b> o cauză des întâlnită la începători e prea multă muncă deasupra capului, prea repede, fără încălzire. Durerea care ține mai mult de câteva zile, se agravează când ridici brațul sau te trezește noaptea e treaba unui kinetoterapeut sau a unui medic, nu a lui Flex, a lui Blob sau a unei bare de căutare. Recuperarea înseamnă adesea benzi plictisitoare și răbdare. Plictisitorul funcționează.",
+  "s.6am": "ORA 6!!!",
+  "s.search": "caut: doare umărul de ce",
+  "s.r1": "• Probabil nu e nimic",
+  "s.r2": "• Sigur e ceva grav",
+  "s.r3": "• Fă-ți testamentul",
+  "s.phone": "telefonul",
+  "s.reps": "60 REP.",
+  "s.dayone": "prima zi (!)",
+  "s.h7": "2,1 m",
+  "s.h6": "1,8 m",
+  "s.h5": "1,5 m",
+  "s.h4": "1,2 m",
+  "s.sus1": "#1 TELEFONUL",
+  "s.sus2": "#2 MANȘETA",
+  "s.sus3": "#3 ORGOLIUL",
+  "s.physio": "KINETO",
+  "s.case": "DOSAR #004: UMĂRUL",
+  "s.closed": "CAZ ÎNCHIS"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

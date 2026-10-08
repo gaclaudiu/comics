@@ -88,9 +88,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 3 · The CrossFit War<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 3 · The CrossFit War</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -98,23 +98,23 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Day 20. Dan joined CrossFit 40 minutes ago. He has told 11 people.</div>
+      <div class="caption" data-t="p1.cap">Day 20. Dan joined CrossFit 40 minutes ago. He has told 11 people.</div>
       <div class="bubbles">
-        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span>It's not a gym, it's a <em>BOX.</em> It's not a workout, it's a <em>WOD.</em> And I'm in a <em>COMMUNITY</em> now.</p>
+        <p class="bubble solo" style="--b:0"><span class="who dan">DAN</span><span data-t="p1.b0">It's not a gym, it's a <em>BOX.</em> It's not a workout, it's a <em>WOD.</em> And I'm in a <em>COMMUNITY</em> now.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="Dan in a CrossFit box lifts a kettlebell in a cloud of chalk. The whiteboard lists a brutal workout called The Destroyer.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="Dan in a CrossFit box lifts a kettlebell in a cloud of chalk. The whiteboard lists a brutal workout called The Destroyer.">
         <rect width="800" height="230" fill="#DCD8E0"/>
         <path d="M0 60 H800 M0 120 H800" stroke="#C9C3CF" stroke-width="3"/>
         <rect y="200" width="800" height="30" fill="#3A3540"/>
         <path d="M0 200 H800" stroke="#17131A" stroke-width="4"/>
         <g transform="translate(40,26) rotate(-1.5)">
           <rect width="210" height="140" fill="#fff" stroke="#17131A" stroke-width="4"/>
-          <text x="105" y="26" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#17131A" letter-spacing="1">WOD: THE DESTROYER</text>
-          <text x="16" y="52" font-family="Kalam, cursive" font-weight="700" font-size="15" fill="#E23A4E">21-15-9 of:</text>
+          <text x="105" y="26" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="16" fill="#17131A" letter-spacing="1" data-t="s.wod">WOD: THE DESTROYER</text>
+          <text x="16" y="52" font-family="Kalam, cursive" font-weight="700" font-size="15" fill="#E23A4E" data-t="s.of">21-15-9 of:</text>
           <text x="16" y="72" font-family="Kalam, cursive" font-size="14" fill="#17131A">• burpees • thrusters</text>
-          <text x="16" y="91" font-family="Kalam, cursive" font-size="14" fill="#17131A">• box jumps • rope climbs</text>
-          <text x="16" y="110" font-family="Kalam, cursive" font-size="14" fill="#17131A">• then? MORE burpees</text>
-          <text x="16" y="129" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#1E9C97">time cap: till you see ancestors</text>
+          <text x="16" y="91" font-family="Kalam, cursive" font-size="14" fill="#17131A" data-t="s.jumps">• box jumps • rope climbs</text>
+          <text x="16" y="110" font-family="Kalam, cursive" font-size="14" fill="#17131A" data-t="s.more">• then? MORE burpees</text>
+          <text x="16" y="129" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#1E9C97" data-t="s.cap">time cap: till you see ancestors</text>
         </g>
         <g transform="translate(640,0)">
           <path d="M0 200 V30 M130 200 V30 M-8 34 H138" stroke="#17131A" stroke-width="8" stroke-linecap="round"/>
@@ -144,12 +144,12 @@
 
     <!-- PANEL 2 -->
     <section class="panel inside" style="--i:1" aria-label="Panel 2">
-      <div class="caption">Inside Dan. 0.3 seconds into the warm-up.</div>
+      <div class="caption" data-t="p2.cap">Inside Dan. 0.3 seconds into the warm-up.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><em>WE'RE UNDER ATTACK!</em> Nobody declared war! I had a schedule! Chest on Mondays!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Burpees, kettlebells AND a rope. At the same time. There are conventions against this.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p2.b0"><em>WE'RE UNDER ATTACK!</em> Nobody declared war! I had a schedule! Chest on Mondays!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p2.b1">Burpees, kettlebells AND a rope. At the same time. There are conventions against this.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Alarm lights flash red inside Dan. Flex and Blob wear army helmets. Flex panics while Blob holds a map.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="Alarm lights flash red inside Dan. Flex and Blob wear army helmets. Flex panics while Blob holds a map.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".22"/>
         <g transform="translate(200,26)">
@@ -175,17 +175,17 @@
 
     <!-- PANEL 3 -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Minute 4. The trenches.</div>
+      <div class="caption" data-t="p3.cap">Minute 4. The trenches.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Blob… <em>truce?</em></p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>Truce. First time in history the muscle and the fat agree: this man needs a babysitter.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">Blob… <em>truce?</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">Truce. First time in history the muscle and the fat agree: this man needs a babysitter.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Flex and Blob hide side by side behind sandbags while explosions labelled burpee, thruster and box jump go off overhead.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Flex and Blob hide side by side behind sandbags while explosions labelled burpee, thruster and box jump go off overhead.">
         <rect width="400" height="250" fill="#F8D3CD"/>
         <rect class="alarm" width="400" height="250" fill="#E23A4E" opacity=".14"/>
         <g transform="translate(70,44)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A">BURPEE!</text></g></g>
         <g class="b2" transform="translate(330,50) scale(1.1)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="11" fill="#17131A">THRUSTER!</text></g></g>
-        <g class="b3" transform="translate(200,82) scale(.85)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A">BOX JUMP!</text></g></g>
+        <g class="b3" transform="translate(200,82) scale(.85)"><g class="boom"><use href="#star"/><text y="5" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" data-t="s.boxjump">BOX JUMP!</text></g></g>
         <g transform="translate(130,164)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/><use href="#helmetFlex"/></g></g>
         <g transform="translate(272,172)"><g class="shake"><use href="#blobBody"/><use href="#blobWorried"/><use href="#helmetBlob"/></g></g>
         <use href="#sandbag" transform="translate(40,226)"/><use href="#sandbag" transform="translate(100,226)"/><use href="#sandbag" transform="translate(160,226)"/>
@@ -197,13 +197,13 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Minute 12 of 12.</div>
+      <div class="caption" data-t="p4.cap">Minute 12 of 12.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who dan">DAN</span>Best. Workout. EVER. <em>Same time tomorrow!</em></p>
-        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span>Tomorrow?! We haven't even buried <em>today</em> yet!</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>Relax. He'll quit in three weeks. He'll just never stop talking about it.</p>
+        <p class="bubble" style="--b:0"><span class="who dan">DAN</span><span data-t="p4.b0">Best. Workout. EVER. <em>Same time tomorrow!</em></span></p>
+        <p class="bubble" style="--b:1"><span class="who flex">FLEX</span><span data-t="p4.b1">Tomorrow?! We haven't even buried <em>today</em> yet!</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">Relax. He'll quit in three weeks. He'll just never stop talking about it.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Dan lies flat on the floor in a puddle of sweat and chalk under a timer reading 12:00. Inside, Flex and Blob both wave white flags.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="Dan lies flat on the floor in a puddle of sweat and chalk under a timer reading 12:00. Inside, Flex and Blob both wave white flags.">
         <rect width="310" height="240" fill="#DCD8E0"/>
         <rect y="200" width="310" height="40" fill="#3A3540"/>
         <path d="M0 200 H310" stroke="#17131A" stroke-width="4"/>
@@ -219,7 +219,7 @@
           <path d="M-10 10 Q0 20 10 10" stroke="#17131A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
         </g>
         <g fill="#fff" stroke="#17131A" stroke-width="2"><circle cx="48" cy="150" r="8"/><circle cx="60" cy="140" r="6"/><circle cx="250" cy="176" r="7"/></g>
-        <text x="90" y="120" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A" transform="rotate(-10 90 120)">wheeze…</text>
+        <text x="90" y="120" font-family="Bangers, Impact, sans-serif" font-size="18" fill="#17131A" transform="rotate(-10 90 120)" data-t="s.wheeze">wheeze…</text>
 
         <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
         <use href="#gutWall" transform="translate(320,30) scale(.6,1)"/>
@@ -233,22 +233,56 @@
         </g>
         <g transform="translate(704,34) rotate(-3)">
           <rect x="-62" y="-18" width="124" height="34" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" letter-spacing="1">CEASEFIRE?</text>
+          <text x="0" y="6" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="17" fill="#17131A" letter-spacing="1" data-t="s.ceasefire">CEASEFIRE?</text>
         </g>
       </svg>
     </section>
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> The harder you go every single day, the faster you get fit.</p>
-    <p><b>Reality:</b> CrossFit isn't the problem. Going from couch to maximum effort every day is. Muscles get stronger while they recover, not while they're being flattened. Scale the workout, learn the technique first, and take rest days. Your joints will send a thank-you card.</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> The harder you go every single day, the faster you get fit.</p>
+    <p data-t="myth.2"><b>Reality:</b> CrossFit isn't the problem. Going from couch to maximum effort every day is. Muscles get stronger while they recover, not while they're being flattened. Scale the workout, learn the technique first, and take rest days. Your joints will send a thank-you card.</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 3 Războiul CrossFit",
+  "ep.title": "Episodul 3 · Războiul CrossFit",
+  "p1.cap": "Ziua 20. Dan s-a înscris la CrossFit acum 40 de minute. Le-a spus deja la 11 oameni.",
+  "p1.b0": "Nu e sală, e <em>BOX.</em> Nu e antrenament, e <em>WOD.</em> Și acum fac parte dintr-o <em>COMUNITATE.</em>",
+  "p1.alt": "Dan ridică o kettlebell într-un nor de magneziu, într-un box de CrossFit. Pe tablă e un antrenament brutal numit Distrugătorul.",
+  "p2.cap": "În interiorul lui Dan. La 0,3 secunde de la încălzire.",
+  "p2.b0": "<em>SUNTEM ATACAȚI!</em> Nu ne-a declarat nimeni război! Aveam un program! Piept lunea!",
+  "p2.b1": "Burpees, kettlebell ȘI frânghie. În același timp. Există convenții internaționale împotriva așa ceva.",
+  "p2.alt": "În interiorul lui Dan clipesc lumini roșii de alarmă. Flex și Blob poartă căști militare. Flex intră în panică, Blob ține o hartă.",
+  "p3.cap": "Minutul 4. Tranșeele.",
+  "p3.b0": "Blob… <em>armistițiu?</em>",
+  "p3.b1": "Armistițiu. Pentru prima oară în istorie, mușchiul și grăsimea sunt de acord: omul ăsta are nevoie de o bonă.",
+  "p3.alt": "Flex și Blob se ascund unul lângă altul după saci de nisip, în timp ce deasupra lor explodează burpees, thrusters și sărituri pe ladă.",
+  "p4.cap": "Minutul 12 din 12.",
+  "p4.b0": "Cel. Mai. Bun. Antrenament. <em>Mâine la aceeași oră!</em>",
+  "p4.b1": "Mâine?! Încă n-am îngropat-o nici pe <em>azi!</em>",
+  "p4.b2": "Liniștește-te. Se lasă în trei săptămâni. Doar că n-o să se oprească niciodată din povestit.",
+  "p4.alt": "Dan zace întins pe jos într-o baltă de transpirație și magneziu, sub un cronometru care arată 12:00. Înăuntru, Flex și Blob flutură steaguri albe.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Cu cât tragi mai tare în fiecare zi, cu atât te pui mai repede în formă.",
+  "myth.2": "<b>Realitate:</b> CrossFit-ul nu e problema. Problema e saltul de pe canapea direct la efort maxim, zi de zi. Mușchii devin mai puternici cât se refac, nu cât sunt striviți. Adaptează antrenamentul, învață întâi tehnica și ia zile de pauză. Încheieturile o să-ți trimită o felicitare.",
+  "s.wod": "WOD: DISTRUGĂTORUL",
+  "s.of": "21-15-9 din:",
+  "s.jumps": "• sărituri pe ladă • frânghie",
+  "s.more": "• apoi? ÎNCĂ burpees",
+  "s.cap": "limită: până îți vezi strămoșii",
+  "s.boxjump": "SĂRITURĂ!",
+  "s.wheeze": "hârrr…",
+  "s.ceasefire": "ARMISTIȚIU?"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>

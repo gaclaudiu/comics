@@ -96,9 +96,9 @@
   <header>
     <div>
       <h1 class="logo"><a href="../index.html"><span class="f">FLEX</span> <span class="vs">vs.</span> <span class="b">BLOB</span></a></h1>
-      <p class="ep">Episode 7 · Hold My Pants<small>An internal conflict, one page at a time.</small></p>
+      <p class="ep"><span data-t="ep.title">Episode 7 · Hold My Pants</span><small data-t="ui.subtitle">An internal conflict, one page at a time.</small></p>
     </div>
-    <button type="button" id="replay">▶ Replay</button>
+    <button type="button" id="replay" data-t="ui.replay">▶ Replay</button>
   </header>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
@@ -106,12 +106,12 @@
   <main class="page">
     <!-- PANEL 1 -->
     <section class="panel wide" style="--i:0" aria-label="Panel 1">
-      <div class="caption">Saturday, 5:12 a.m. Dan agreed to some “relaxing” carp fishing with Michael.</div>
+      <div class="caption" data-t="p1.cap">Saturday, 5:12 a.m. Dan agreed to some “relaxing” carp fishing with Michael.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span><em>FISH ON!</em> It's a monster! Dan, the landing net, <em>NOW!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span>On it! “Relaxing hobby,” you said. “Very peaceful,” you said.</p>
+        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span><span data-t="p1.b0"><em>FISH ON!</em> It's a monster! Dan, the landing net, <em>NOW!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span><span data-t="p1.b1">On it! “Relaxing hobby,” you said. “Very peaceful,” you said.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 230" role="img" aria-label="At dawn on a lake shore, Michael fights a bent fishing rod while a huge carp shadow lurks underwater. Dan runs up holding a cheap landing net with a 2.99 price tag.">
+      <svg class="art" data-t-aria="p1.alt" viewBox="0 0 800 230" role="img" aria-label="At dawn on a lake shore, Michael fights a bent fishing rod while a huge carp shadow lurks underwater. Dan runs up holding a cheap landing net with a 2.99 price tag.">
         <rect width="800" height="230" fill="#FFE2C6"/>
         <circle cx="640" cy="118" r="42" fill="#FFB35C"/>
         <rect y="112" width="800" height="118" fill="#5FA8D3"/>
@@ -130,7 +130,7 @@
           <rect x="-12" y="-14" width="24" height="12" rx="3" fill="#2A2530" stroke="#17131A" stroke-width="2"/>
           <circle class="spark" cx="6" cy="-8" r="3" fill="#E23A4E"/>
         </g>
-        <g class="sfx"><text x="470" y="118" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="20" fill="#FFC83D" stroke="#17131A" stroke-width="1.4" transform="rotate(-8 470 118)">BEEEEEEP!</text></g>
+        <g class="sfx"><text x="470" y="118" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="20" fill="#FFC83D" stroke="#17131A" stroke-width="1.4" transform="rotate(-8 470 118)" data-t="s.beep">BEEEEEEP!</text></g>
         <!-- Michael -->
         <g transform="translate(290,40) scale(.8)">
           <use href="#mikePants"/><use href="#mikeTop"/>
@@ -156,25 +156,25 @@
         <circle cx="152" cy="61" r="7" fill="#F2C29B" stroke="#17131A" stroke-width="2.5"/>
         <g transform="translate(176,72) rotate(-48)">
           <rect x="-16" y="-8" width="32" height="16" fill="#fff" stroke="#17131A" stroke-width="2"/>
-          <text y="4" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E">€2.99</text>
+          <text y="4" text-anchor="middle" font-family="Kalam, cursive" font-weight="700" font-size="9" fill="#E23A4E" data-t="s.price">€2.99</text>
         </g>
       </svg>
     </section>
 
     <!-- PANEL 2 -->
     <section class="panel" style="--i:1" aria-label="Panel 2">
-      <div class="caption">The net lasted 0.4 seconds.</div>
+      <div class="caption" data-t="p2.cap">The net lasted 0.4 seconds.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span>I'll scoop it with the half that's left! <em>HOLD MY PANTS!</em></p>
-        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span>Top five sentences I never wanted to hear.</p>
+        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span><span data-t="p2.b0">I'll scoop it with the half that's left! <em>HOLD MY PANTS!</em></span></p>
+        <p class="bubble r" style="--b:1"><span class="who dan">DAN</span><span data-t="p2.b1">Top five sentences I never wanted to hear.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="The landing net pole lies snapped on the grass. Michael leans far out over the water holding the broken hoop, while Dan leans back gripping the waistband of Michael's pants, revealing heart-print boxers.">
+      <svg class="art" data-t-aria="p2.alt" viewBox="0 0 400 250" role="img" aria-label="The landing net pole lies snapped on the grass. Michael leans far out over the water holding the broken hoop, while Dan leans back gripping the waistband of Michael's pants, revealing heart-print boxers.">
         <rect width="400" height="250" fill="#FFE2C6"/>
         <rect x="250" y="196" width="150" height="54" fill="#5FA8D3"/>
         <g class="ripple"><use href="#waves" transform="translate(250,214)"/><use href="#waves" transform="translate(240,236)"/></g>
         <path d="M0 210 L256 210 Q268 228 258 250 L0 250 Z" fill="#7DBB5A" stroke="#17131A" stroke-width="4"/>
         <path d="M24 230 L110 224 M110 224 l8 -6 M110 224 l10 2 M110 224 l6 6" stroke="#6E6873" stroke-width="5" stroke-linecap="round"/>
-        <g class="sfx"><text x="80" y="200" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(-10 80 200)">CRACK!</text></g>
+        <g class="sfx"><text x="80" y="200" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="26" fill="#FFC83D" stroke="#17131A" stroke-width="1.6" transform="rotate(-10 80 200)" data-t="s.crack">CRACK!</text></g>
         <!-- carp jumping -->
         <g transform="translate(372,186) rotate(-30) scale(.85)"><g class="flop"><use href="#carp"/></g></g>
         <path d="M318 206 q8 -12 16 0 M360 204 q8 -12 16 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
@@ -204,29 +204,29 @@
         <path d="M278 150 L284 142 M284 158 L292 152" stroke="#F2549A" stroke-width="3" stroke-linecap="round"/>
         <circle cx="276" cy="149" r="7" fill="#F2C29B" stroke="#17131A" stroke-width="2.5"/>
         <circle cx="282" cy="158" r="7" fill="#F2C29B" stroke="#17131A" stroke-width="2.5"/>
-        <text x="236" y="92" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#F2549A" stroke="#17131A" stroke-width=".8" transform="rotate(20 236 92)">STREEETCH</text>
+        <text x="236" y="92" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#F2549A" stroke="#17131A" stroke-width=".8" transform="rotate(20 236 92)" data-t="s.stretch">STREEETCH</text>
       </svg>
     </section>
 
     <!-- PANEL 3 -->
     <section class="panel inside" style="--i:2" aria-label="Panel 3">
-      <div class="caption">Inside Dan. Minute 3 of holding on.</div>
+      <div class="caption" data-t="p3.cap">Inside Dan. Minute 3 of holding on.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span>Six weeks of deadlifts… and <em>THIS</em> is what they were for!</p>
-        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span>And I'm the anchor. Finally, being heavy counts as a skill.</p>
+        <p class="bubble" style="--b:0"><span class="who flex">FLEX</span><span data-t="p3.b0">Six weeks of deadlifts… and <em>THIS</em> is what they were for!</span></p>
+        <p class="bubble r" style="--b:1"><span class="who blob">BLOB</span><span data-t="p3.b1">And I'm the anchor. Finally, being heavy counts as a skill.</span></p>
       </div>
-      <svg class="art" viewBox="0 0 400 250" role="img" aria-label="Tug of war inside Dan: Flex strains on a rope labelled Michael's waistband while Blob sits on the end of the rope as an anchor. A grip-strength meter reads 110 percent.">
+      <svg class="art" data-t-aria="p3.alt" viewBox="0 0 400 250" role="img" aria-label="Tug of war inside Dan: Flex strains on a rope labelled Michael's waistband while Blob sits on the end of the rope as an anchor. A grip-strength meter reads 110 percent.">
         <use href="#gutWall" transform="scale(.5,1)"/>
         <g transform="translate(300,16)">
           <rect x="-86" y="0" width="172" height="44" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text x="-76" y="18" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A" letter-spacing="1">GRIP STRENGTH</text>
+          <text x="-76" y="18" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#17131A" letter-spacing="1" data-t="s.grip">GRIP STRENGTH</text>
           <rect x="-76" y="24" width="152" height="12" fill="#E7E3EC" stroke="#17131A" stroke-width="2"/>
           <rect x="-76" y="24" width="152" height="12" fill="#E23A4E"/>
           <text x="80" y="18" text-anchor="end" font-family="Bangers, Impact, sans-serif" font-size="13" fill="#E23A4E">110%</text>
         </g>
         <path d="M60 204 Q160 176 400 164" stroke="#17131A" stroke-width="11" fill="none" stroke-linecap="round"/>
         <path d="M60 204 Q160 176 400 164" stroke="#C9A06B" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-        <text x="330" y="156" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" letter-spacing="1">MICHAEL'S WAISTBAND →</text>
+        <text x="330" y="156" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="12" fill="#17131A" letter-spacing="1" data-t="s.waist">MICHAEL'S WAISTBAND →</text>
         <g transform="translate(200,236) rotate(-14) scale(.85) translate(0,-80)">
           <g class="strain"><use href="#flexBody"/><use href="#flexStrain"/></g>
         </g>
@@ -238,13 +238,13 @@
 
     <!-- PANEL 4 -->
     <section class="panel wide three" style="--i:3" aria-label="Panel 4">
-      <div class="caption">Minute 4. Michael got the carp. Dan let go when he heard “GOT IT.” Physics did the rest.</div>
+      <div class="caption" data-t="p4.cap">Minute 4. Michael got the carp. Dan let go when he heard “GOT IT.” Physics did the rest.</div>
       <div class="bubbles">
-        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span><em>PHOTO!</em> Twenty kilos! Nobody look at my pants!</p>
-        <p class="bubble" style="--b:1"><span class="who dan">DAN</span>Congratulations. I'll be down here. Floating.</p>
-        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span>He floats! Fat is lighter than water, baby. Who's useless now?</p>
+        <p class="bubble" style="--b:0"><span class="who mike">MICHAEL</span><span data-t="p4.b0"><em>PHOTO!</em> Twenty kilos! Nobody look at my pants!</span></p>
+        <p class="bubble" style="--b:1"><span class="who dan">DAN</span><span data-t="p4.b1">Congratulations. I'll be down here. Floating.</span></p>
+        <p class="bubble r" style="--b:2"><span class="who blob">BLOB</span><span data-t="p4.b2">He floats! Fat is lighter than water, baby. Who's useless now?</span></p>
       </div>
-      <svg class="art" viewBox="0 0 800 240" role="img" aria-label="Michael proudly lifts a huge carp above his head, his pants around his ankles and heart boxers on show, while Dan floats in the lake up to his chin. Inside, Blob floats on the water like a raft wearing sunglasses and Flex clings on.">
+      <svg class="art" data-t-aria="p4.alt" viewBox="0 0 800 240" role="img" aria-label="Michael proudly lifts a huge carp above his head, his pants around his ankles and heart boxers on show, while Dan floats in the lake up to his chin. Inside, Blob floats on the water like a raft wearing sunglasses and Flex clings on.">
         <rect width="310" height="240" fill="#FFE2C6"/>
         <rect x="130" y="186" width="180" height="54" fill="#5FA8D3"/>
         <path d="M0 214 Q80 206 150 214 L162 240 L0 240 Z" fill="#7DBB5A" stroke="#17131A" stroke-width="4"/>
@@ -272,7 +272,7 @@
         <rect x="130" y="196" width="180" height="44" fill="#5FA8D3" opacity=".94"/>
         <g class="ripple"><use href="#waves" transform="translate(140,200)"/><use href="#waves" transform="translate(130,222)"/></g>
         <path d="M206 196 q10 -8 20 0 M250 196 q10 -8 20 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <g class="sfx"><text x="246" y="120" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="24" fill="#8FD3F4" stroke="#17131A" stroke-width="1.6" transform="rotate(8 246 120)">SPLOOSH</text></g>
+        <g class="sfx"><text x="246" y="120" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="24" fill="#8FD3F4" stroke="#17131A" stroke-width="1.6" transform="rotate(8 246 120)" data-t="s.splash">SPLOOSH</text></g>
 
         <path d="M310 0 L300 30 L318 60 L302 90 L320 120 L300 150 L318 180 L302 210 L312 240 L800 240 L800 0 Z" fill="#F8D3CD" stroke="#17131A" stroke-width="4"/>
         <use href="#gutWall" transform="translate(320,20) scale(.6,1)"/>
@@ -280,8 +280,8 @@
         <g class="ripple"><use href="#waves" transform="translate(320,204)"/><use href="#waves" transform="translate(330,224)"/></g>
         <g transform="translate(560,44) rotate(-2)">
           <rect x="-92" y="-22" width="184" height="46" fill="#FFFEF8" stroke="#17131A" stroke-width="3"/>
-          <text x="0" y="-3" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A" letter-spacing="1">FAT: 0.9 g/cm³</text>
-          <text x="0" y="16" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#1E9C97" letter-spacing="1">WATER: 1.0 g/cm³</text>
+          <text x="0" y="-3" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#17131A" letter-spacing="1" data-t="s.fat">FAT: 0.9 g/cm³</text>
+          <text x="0" y="16" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="14" fill="#1E9C97" letter-spacing="1" data-t="s.water">WATER: 1.0 g/cm³</text>
         </g>
         <g transform="translate(470,166) scale(.82)"><g class="shake"><use href="#flexBody"/><use href="#flexPanic"/></g></g>
         <g transform="translate(672,196)"><g class="float"><use href="#blobBody"/><use href="#blobShades"/></g></g>
@@ -290,15 +290,51 @@
   </main>
 
   <aside class="myth" aria-label="Myth buster">
-    <h2>MYTH BUSTED</h2>
-    <p><b>Myth:</b> Gym strength is just for show. You'll never use it in real life.</p>
-    <p><b>Reality:</b> grip, back and core strength are exactly what you use to carry shopping, lift a kid, or hold a friend's belt over a lake. Studies even link grip strength to healthier ageing. Bonus fact: body fat is less dense than water, so Blob is right. He does help you float. (Wear a life jacket anyway.)</p>
+    <h2 data-t="myth.h2">MYTH BUSTED</h2>
+    <p data-t="myth.1"><b>Myth:</b> Gym strength is just for show. You'll never use it in real life.</p>
+    <p data-t="myth.2"><b>Reality:</b> grip, back and core strength are exactly what you use to carry shopping, lift a kid, or hold a friend's belt over a lake. Studies even link grip strength to healthier ageing. Bonus fact: body fat is less dense than water, so Blob is right. He does help you float. (Wear a life jacket anyway.)</p>
   </aside>
 
   <nav class="ep-nav" aria-label="Episodes"></nav>
-  <p class="copy">© 2026 Flex vs Blob. All rights reserved.</p>
+  <p class="copy"><span data-t="ui.copy">© 2026 Flex vs Blob. All rights reserved.</span></p>
 </div>
 
+<script>window.I18N_PAGE = {
+ "ro": {
+  "title": "Flex vs Blob · Ep. 7 Ține-mă de pantaloni",
+  "ep.title": "Episodul 7 · Ține-mă de pantaloni",
+  "p1.cap": "Sâmbătă, 5:12 dimineața. Dan a acceptat o partidă „relaxantă” de pescuit la crap cu Michael.",
+  "p1.b0": "<em>A TRAS!</em> E un monstru! Dan, minciogul, <em>ACUM!</em>",
+  "p1.alt": "În zori, pe malul unui lac, Michael se luptă cu o lansetă îndoită, iar sub apă se vede umbra unui crap uriaș. Dan vine în fugă cu un mincioc ieftin cu eticheta de preț încă pe el.",
+  "p1.b1": "Vin! „Hobby relaxant”, ai zis. „Foarte liniștit”, ai zis.",
+  "p2.cap": "Minciogul a rezistat 0,4 secunde.",
+  "p2.b0": "Îl scot cu jumătatea care a rămas! <em>ȚINE-MĂ DE PANTALONI!</em>",
+  "p2.b1": "Top cinci propoziții pe care nu voiam să le aud vreodată.",
+  "p2.alt": "Coada minciogului zace ruptă în iarbă. Michael se apleacă mult peste apă cu cercul rupt, iar Dan se lasă pe spate ținându-l de elasticul pantalonilor, de sub care se văd boxeri cu inimioare.",
+  "p3.cap": "În interiorul lui Dan. Minutul 3 de ținut.",
+  "p3.b0": "Șase săptămâni de îndreptări… și pentru <em>ASTA</em> au fost!",
+  "p3.b1": "Iar eu sunt ancora. În sfârșit, să fii greu contează ca talent.",
+  "p3.alt": "Trasă de frânghie în interiorul lui Dan: Flex trage de o frânghie pe care scrie Elasticul lui Michael, iar Blob stă pe capătul ei ca o ancoră. Indicatorul de forță a prizei arată 110 la sută.",
+  "p4.cap": "Minutul 4. Michael a prins crapul. Dan a dat drumul când a auzit „L-AM PRINS!”. Fizica a făcut restul.",
+  "p4.b0": "<em>POZĂ!</em> Douăzeci de kile! Nu se uită nimeni la pantalonii mei!",
+  "p4.b1": "Felicitări. Eu sunt aici jos. Plutesc.",
+  "p4.b2": "Plutește! Grăsimea e mai ușoară decât apa, iubire. Cine e inutil acum?",
+  "p4.alt": "Michael ridică mândru deasupra capului un crap uriaș, cu pantalonii în vine și boxerii cu inimioare la vedere, în timp ce Dan plutește în lac cu apa până la bărbie. Înăuntru, Blob plutește ca o plută cu ochelari de soare, iar Flex se ține de el.",
+  "myth.h2": "MIT DEMONTAT",
+  "myth.1": "<b>Mit:</b> Forța de la sală e doar de fațadă. N-o folosești niciodată în viața reală.",
+  "myth.2": "<b>Realitate:</b> forța prizei, a spatelui și a abdomenului e exact ce folosești când cari sacoșele, ridici un copil sau ții un prieten de curea deasupra unui lac. Studiile leagă chiar forța prizei de o îmbătrânire mai sănătoasă. Bonus: grăsimea corporală e mai puțin densă decât apa, deci Blob are dreptate. Chiar te ajută să plutești. (Poartă totuși vestă de salvare.)",
+  "s.beep": "BIIIIIIP!",
+  "s.price": "9,99 lei",
+  "s.crack": "CRAC!",
+  "s.stretch": "ÎNTIIIND",
+  "s.grip": "FORȚA PRIZEI",
+  "s.waist": "ELASTICUL LUI MICHAEL →",
+  "s.splash": "PLEOSC!",
+  "s.fat": "GRĂSIME: 0,9 g/cm³",
+  "s.water": "APĂ: 1,0 g/cm³"
+ }
+};</script>
+<script src="../shared/i18n.js"></script>
 <script src="../episodes.js"></script>
 <script src="../shared/site.js"></script>
 <script src="../shared/consent.js"></script>
