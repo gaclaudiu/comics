@@ -23,4 +23,6 @@ window.EPISODES = [
     teaser: "23 days without rest. Flex is falling apart, the Brain is overheating, and Blob is somehow tired too." },
   { num: 11, title: "The Village Olympics", file: "011-village-olympics.html", date: "2026-10-05",
     teaser: "Dan invents Țăran Fit: hoe, scythe and well buckets. Bunica wins every event." },
+  { num: 12, title: "Zacuscă Season", file: "012-zacusca-season.html", date: "2026-10-07",
+    teaser: "Dan helps his mother make zacuscă: 20 kilos of peppers, four hours of stirring and \"a little oil.\"" },
 ];
