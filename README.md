@@ -1,6 +1,6 @@
 # Flex vs Blob
 
-A weekly webcomic about the internal fight between muscle (Flex) and fat (Blob) inside Dan, a guy trying to get fit.
+A weekly  webcomic about the internal fight between muscle (Flex) and fat (Blob) inside Dan, a guy trying to get fit.
 
 ## Folder layout
 
