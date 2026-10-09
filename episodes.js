@@ -50,4 +50,8 @@ window.EPISODES = [
     title_ro: "Sezonul de zacuscă",
     teaser_ro: "Dan o ajută pe mama lui să facă zacuscă: 20 de kile de gogoșari, patru ore de amestecat și „un pic de ulei”.",
     teaser: "Dan helps his mother make zacuscă: 20 kilos of peppers, four hours of stirring and \"a little oil.\"" },
+  { num: 13, title: "Grape Expectations", file: "013-grape-expectations.html", date: "2026-10-09",
+    title_ro: "Din vie în butoi",
+    teaser_ro: "Dan o ajută pe mama la cules: 40 de rânduri de vie, 600 de aplecări, struguri călcați desculț și „e doar suc, e sănătos”.",
+    teaser: "Dan helps Mama with the grape harvest: 40 rows of vines, 600 squats, barefoot grape stomping and \"it's just juice, it's healthy.\"" },
 ];
