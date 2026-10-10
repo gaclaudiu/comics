@@ -39,6 +39,14 @@
               : '<span class="navbtn off">' + T('ui.nextWeek') + '</span>');
     });
 
+    // episode pages: link from the Myth Busted box to the full list
+    var mythBox = current ? document.querySelector('aside.myth') : null;
+    if (mythBox) {
+      var more = mythBox.querySelector('.myth-more');
+      if (!more) { more = document.createElement('p'); more.className = 'myth-more'; mythBox.appendChild(more); }
+      more.innerHTML = '<a href="' + root + 'myths.html#ep-' + current + (L() === 'ro' ? '-ro' : '') + '">' + T('ui.allMyths', 'See all myths busted →') + '</a>';
+    }
+
     // home page: latest + archive
     var latest = eps[eps.length - 1];
     var latestEl = document.getElementById('latest');
@@ -87,6 +95,6 @@
   var btn = document.getElementById('replay');
   if (btn) btn.addEventListener('click', function () {
     var c = document.getElementById('comic');
-    c.classList.remove('play'); void c.offsetWidth; c.classList.add('play');
+    c.classList.remove('play', 'replaying'); void c.offsetWidth; c.classList.add('play', 'replaying');
   });
 })();

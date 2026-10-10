@@ -54,4 +54,8 @@ window.EPISODES = [
     title_ro: "Din vie în butoi",
     teaser_ro: "Dan o ajută pe mama la cules: 40 de rânduri de vie, 600 de aplecări, struguri călcați desculț și „e doar suc, e sănătos”.",
     teaser: "Dan helps Mama with the grape harvest: 40 rows of vines, 600 squats, barefoot grape stomping and \"it's just juice, it's healthy.\"" },
+  { num: 14, title: "Door Day", file: "014-door-day.html", date: "2026-10-10",
+    title_ro: "Forțând nota",
+    teaser_ro: "Dan ajunge devreme, antrenoarea întârzie, iar ușa sălii pierde lupta. Apoi apare Ana.",
+    teaser: "Dan arrives early, the coach is late, and the gym door loses a fight. Then Coach Ana shows up." },
 ];
