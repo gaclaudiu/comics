@@ -39,7 +39,8 @@
       'ui.hint': 'Citește în română →',
       'ui.hintClose': 'Închide',
       'ui.allMyths': 'Vezi toate miturile demontate →',
-      'ui.mythsCta': 'Mituri demontate: toate miturile din benzi →'
+      'ui.mythsCta': 'Mituri demontate: toate miturile din benzi →',
+      'ui.startHere': 'Ești nou? Începe aici →'
     },
     en: {
       'ui.first': '← First episode', 'ui.all': 'All episodes', 'ui.nextWeek': 'Next week →',
@@ -51,7 +52,8 @@
       'ui.cookiePolicy': 'Privacy policy', 'ui.cookieYes': 'Sure, have one', 'ui.cookieNo': 'No thanks',
       'ui.new': 'NEW · Episode ', 'ui.langLabel': 'Language',
       'ui.hint': 'Citește în română →', 'ui.hintClose': 'Close',
-      'ui.allMyths': 'See all myths busted →', 'ui.mythsCta': 'Myths Busted: every myth from the comic →'
+      'ui.allMyths': 'See all myths busted →', 'ui.mythsCta': 'Myths Busted: every myth from the comic →',
+      'ui.startHere': 'New here? Start here →'
     }
   };
   var PAGE = window.I18N_PAGE || {};

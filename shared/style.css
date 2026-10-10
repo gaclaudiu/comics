@@ -57,6 +57,7 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 .myth .myth-more{grid-column:-2/-1}
 .myth .myth-more a{color:var(--fat);font-family:var(--display);letter-spacing:1px;font-size:18px}
 .myths-cta{align-self:flex-start}
+.home-links{display:flex;flex-wrap:wrap;gap:12px}
 @media (max-width:520px){.myth{grid-template-columns:1fr}.myth h2{grid-row:auto}}
 .foot{font-size:14px;opacity:.7;text-align:right}
 
