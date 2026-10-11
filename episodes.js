@@ -58,4 +58,8 @@ window.EPISODES = [
     title_ro: "Forțând nota",
     teaser_ro: "Dan ajunge devreme, antrenoarea întârzie, iar ușa sălii pierde lupta. Apoi apare Ana.",
     teaser: "Dan arrives early, the coach is late, and the gym door loses a fight. Then Coach Ana shows up." },
+  { num: 15, title: "Lunge Distance Relationship", file: "015-lunge-distance.html", date: "2026-10-11",
+    title_ro: "Fandări și remușcări",
+    teaser_ro: "Fandările îl distrug pe Dan: a doua zi abia mai merge. Apoi are o revelație și decide să stăpânească fandarea.",
+    teaser: "Lunges wreck Dan's legs and he can barely walk the next day. Then he has a revelation: he will master the lunge." },
 ];
