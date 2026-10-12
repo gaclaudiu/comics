@@ -62,4 +62,8 @@ window.EPISODES = [
     title_ro: "Fandări și remușcări",
     teaser_ro: "Fandările îl distrug pe Dan: a doua zi abia mai merge. Apoi are o revelație și decide să stăpânească fandarea.",
     teaser: "Lunges wreck Dan's legs and he can barely walk the next day. Then he has a revelation: he will master the lunge." },
+  { num: 16, title: "The 10,000 Steps Cult", file: "016-steps-cult.html", date: "2026-10-12",
+    title_ro: "Secta celor 10.000 de pași",
+    teaser_ro: "23:58. Lui Dan îi lipsesc 588 de pași până la 10.000. Urmează cea mai lungă plimbare prin bucătărie din istorie.",
+    teaser: "23:58. Dan is 588 steps short of 10,000. What follows is the longest kitchen walk in history." },
 ];
