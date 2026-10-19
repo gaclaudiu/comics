@@ -66,4 +66,8 @@ window.EPISODES = [
     title_ro: "Secta celor 10.000 de pași",
     teaser_ro: "23:58. Lui Dan îi lipsesc 588 de pași până la 10.000. Urmează cea mai lungă plimbare prin bucătărie din istorie.",
     teaser: "23:58. Dan is 588 steps short of 10,000. What follows is the longest kitchen walk in history." },
+  { num: 17, title: "Sleep Is for the Strong", file: "017-sleep-strong.html", date: "2026-10-19",
+    title_ro: "Somnul e pentru cei puternici",
+    teaser_ro: "Dan lucrează și citește până la 2 noaptea. Flex nu mai poate reconstrui nimic, iar Creierul intră în grevă.",
+    teaser: "Dan works and reads until 2 a.m. Flex can't rebuild anything, and the Brain goes on strike." },
 ];
