@@ -70,4 +70,8 @@ window.EPISODES = [
     title_ro: "Somnul e pentru cei puternici",
     teaser_ro: "Dan lucrează și citește până la 2 noaptea. Flex nu mai poate reconstrui nimic, iar Creierul intră în grevă.",
     teaser: "Dan works and reads until 2 a.m. Flex can't rebuild anything, and the Brain goes on strike." },
+  { num: 18, title: "Walk the Talk", file: "018-walking-pad.html", date: "2026-11-12",
+    title_ro: "Muncă pe picioare",
+    teaser_ro: "Dan și-a luat o bandă de mers și acum lucrează mergând. Flex zice că e antrenament. Blob nici nu s-a trezit.",
+    teaser: "Dan buys a walking pad and now works while walking. Flex calls it training. Blob hasn't even woken up." },
 ];
