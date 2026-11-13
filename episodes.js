@@ -74,4 +74,8 @@ window.EPISODES = [
     title_ro: "Muncă pe picioare",
     teaser_ro: "Dan și-a luat o bandă de mers și acum lucrează mergând. Flex zice că e antrenament. Blob nici nu s-a trezit.",
     teaser: "Dan buys a walking pad and now works while walking. Flex calls it training. Blob hasn't even woken up." },
+  { num: 19, title: "Scare Tactics", file: "019-scare-tactics.html", date: "2026-11-13",
+    title_ro: "Tactici de intimidare",
+    teaser_ro: "Dan ține gantere sub birou ca să-și sperie mușchii și să-i țină ascuțiți pentru sală. Mușchii tremură. Sau e cafeaua?",
+    teaser: "Dan keeps kettlebells under his desk to scare his muscles into staying gym-sharp. The muscles are shaking. Or is it the coffee?" },
 ];
