@@ -78,4 +78,8 @@ window.EPISODES = [
     title_ro: "Tactici de intimidare",
     teaser_ro: "Dan ține gantere sub birou ca să-și sperie mușchii și să-i țină ascuțiți pentru sală. Mușchii tremură. Sau e cafeaua?",
     teaser: "Dan keeps kettlebells under his desk to scare his muscles into staying gym-sharp. The muscles are shaking. Or is it the coffee?" },
+  { num: 20, title: "Easy, She Said", file: "020-easy-she-said.html", date: "2026-11-14",
+    title_ro: "Ușor, zicea ea",
+    teaser_ro: "Antrenoarea Ana jură că metconul de azi e ușor. Doar zece minute. Ce-ar putea să meargă prost?",
+    teaser: "Coach Ana swears today's metcon is easy. Just ten minutes. What could possibly go wrong?" },
 ];
