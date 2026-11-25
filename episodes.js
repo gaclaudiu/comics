@@ -82,4 +82,8 @@ window.EPISODES = [
     title_ro: "Ușor, zicea ea",
     teaser_ro: "Antrenoarea Ana jură că metconul de azi e ușor. Doar zece minute. Ce-ar putea să meargă prost?",
     teaser: "Coach Ana swears today's metcon is easy. Just ten minutes. What could possibly go wrong?" },
+  { num: 21, title: "The 40% Rule", file: "021-forty-percent.html", date: "2026-11-25",
+    title_ro: "Regula de 40%",
+    teaser_ro: "La kilometrul 3, Creierul lui Dan declară rezervorul gol. Flex se uită sub carton. Surpriză.",
+    teaser: "At kilometre 3, Dan's Brain declares the tank empty. Flex checks under the sign. Surprise." },
 ];
