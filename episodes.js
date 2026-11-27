@@ -86,4 +86,8 @@ window.EPISODES = [
     title_ro: "Regula de 40%",
     teaser_ro: "La kilometrul 3, Creierul lui Dan declară rezervorul gol. Flex se uită sub carton. Surpriză.",
     teaser: "At kilometre 3, Dan's Brain declares the tank empty. Flex checks under the sign. Surprise." },
+  { num: 22, title: "Out of Office", file: "022-out-of-office.html", date: "2026-11-26",
+    title_ro: "Plecat de la birou",
+    teaser_ro: "Outlook-ul a picat. Fără emailuri, fără ședințe. Dan are brusc o zi întreagă liberă și știe exact unde s-o petreacă.",
+    teaser: "Outlook is down. No emails, no meetings. Dan suddenly has a whole free day, and he knows exactly where to spend it." },
 ];
